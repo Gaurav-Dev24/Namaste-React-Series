@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React Day 01</title>
+  </head>
+  <body>
+    <!-- Make sure to call it with correct attribute name such as "id" or "className" -->
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      const heading = React.createElement("h1", {className: "title"}, "Namaste React");
+      const paragraph = React.createElement("p",{className:"description"},"Hello this is paragraph");
+      console.log(heading)
+      console.log(paragraph)
+    //   use correct dom function to call class or id
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+    //   to render single element and it takes only one argument 
+    //   root.render(heading);
+    // to render multiple elements
+      root.render([heading,paragraph]);
+    </script>
+  </body>
+</html>
