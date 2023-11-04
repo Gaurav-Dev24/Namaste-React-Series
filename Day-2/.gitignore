@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+node_modules/parcel
+.parcel-cache
 /.pnp
 .pnp.js
 
