@@ -1,5 +1,5 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom/client"; // note always use "react-dom/client" to import ReactDOM
 
 const heading = React.createElement(
   "h1",
