@@ -23,5 +23,9 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  // this will make our app compatible with older versions of almost all the browsers
+  "browserslist": [
+    "defaults and fully supports es6-module",
+    "maintained node versions"]
 }
