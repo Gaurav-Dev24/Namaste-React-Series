@@ -2,7 +2,6 @@
   "name": "namaste-react-day-2",
   "version": "1.0.0",
   "description": "This is the react app using parcel as bundler",
-  "main": "App.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -19,6 +18,8 @@
   },
   "homepage": "https://github.com/Gaurav-Dev24/Namaste-React-Series#readme",
   "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "babel-plugin-transform-remove-consoles": "^1.0.7",
     "parcel": "^2.10.2",
     "process": "^0.11.10"
   },
@@ -28,5 +29,6 @@
   },
   "browserslist": [
     "defaults and fully supports es6-module",
-    "maintained node versions"]
+    "maintained node versions"
+  ]
 }
