@@ -2948,23 +2948,23 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client"); // note always use "react-dom/client" to import ReactDOM
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
-    className: "title",
-    key: "h1"
-}, // specifying key for multiple child elements in container
-"Namaste React");
-const paragraph = /*#__PURE__*/ (0, _reactDefault.default).createElement("p", {
-    className: "description",
-    key: "p"
-}, // specifying key for multiple child elements in container
-"Hello this is paragraph");
-// JSX --> Creating elements using JSX an alternative to React.createElement
+// const heading = React.createElement(
+//   "h1",
+//   { className: "title", key: "h1" }, // specifying key for multiple child elements in container
+//   "Namaste React"
+// );
+// const paragraph = React.createElement(
+//   "p",
+//   { className: "description", key: "p" }, // specifying key for multiple child elements in container
+//   "Hello this is paragraph"
+// );
+// JSX and React Element--> Creating elements using JSX an alternative to React.createElement
 const heading2 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
     id: "title",
     children: "Namaste Heading Two"
 }, "h2", false, {
     fileName: "App.js",
-    lineNumber: 18,
+    lineNumber: 17,
     columnNumber: 18
 }, undefined); //--> JSX expression
 // Components
@@ -2976,20 +2976,20 @@ const HeaderComponent = ()=>{
                 children: "Namaste React Functional Component"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 26,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "This is multiple element rendering in a component."
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 27,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 25,
+        lineNumber: 24,
         columnNumber: 10
     }, undefined);
 };
@@ -3001,20 +3001,20 @@ const HeaderComponent2 = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: "Namaste React Functional Component"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 33,
+                lineNumber: 32,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "This is multiple element rendering in a component."
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 34,
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 32,
+        lineNumber: 31,
         columnNumber: 32
     }, undefined);
 _c1 = HeaderComponent2;
@@ -3025,14 +3025,14 @@ _c1 = HeaderComponent2;
 // ]); // if we have multiple childs for an element we have to give them a unique key which can be anything
 // //   use correct dom function to call class or id
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-// //   to render single element and it takes only one argument
+// //   to render single element we use the below code and render() takes only one argument
 // //   root.render(heading);
-// // to render multiple elements we two ways
+// // to render multiple elements we have two ways
 // // root.render([heading,paragraph]);
 // root.render(container); // we will use this code if we have to render react elements.
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 51,
+    lineNumber: 50,
     columnNumber: 13
 }, undefined)); // we will use this code if we have to render react components.
 var _c, _c1;
