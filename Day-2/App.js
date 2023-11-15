@@ -20,6 +20,12 @@ const heading2 = (
   </h2>
 ); //--> JSX expression
 
+// Components
+
+const HeaderComponent = () => {
+  return <h1>Namaste React Functional Component</h1>;
+};
+
 const container = React.createElement("div", { id: "container" }, [
   heading,
   paragraph,
