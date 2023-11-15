@@ -23,7 +23,12 @@ const heading2 = (
 // Components
 
 const HeaderComponent = () => {
-  return <h1>Namaste React Functional Component</h1>;
+  return (
+    <div>
+      <h1>Namaste React Functional Component</h1>;
+      <h2>This is multiple element rendering in a component.</h2>;
+    </div>
+  );
 };
 
 const container = React.createElement("div", { id: "container" }, [
