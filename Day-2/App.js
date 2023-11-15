@@ -21,26 +21,37 @@ const heading2 = (
 ); //--> JSX expression
 
 // Components
-
+// If we want to write multiple lines of code in components then we have to use () brackets to wrap them up.
 const HeaderComponent = () => {
   return (
     <div>
-      <h1>Namaste React Functional Component</h1>;
-      <h2>This is multiple element rendering in a component.</h2>;
+      <h1>Namaste React Functional Component</h1>
+      <h2>This is multiple element rendering in a component.</h2>
     </div>
   );
 };
 
-const container = React.createElement("div", { id: "container" }, [
-  heading,
-  paragraph,
-  heading2,
-]); // if we have multiple childs for an element we have to give them a unique key which can be anything
+// We can also remove return keyword and write the code like below,
+const HeaderComponent2 = () =>  (
+    <div>
+      <h1>Namaste React Functional Component</h1>
+      <h2>This is multiple element rendering in a component.</h2>
+    </div>
+  );
 
-//   use correct dom function to call class or id
+// const container = React.createElement("div", { id: "container" }, [
+//   heading,
+//   paragraph,
+//   heading2,
+// ]); // if we have multiple childs for an element we have to give them a unique key which can be anything
+
+
+// //   use correct dom function to call class or id
 const root = ReactDOM.createRoot(document.getElementById("root"));
-//   to render single element and it takes only one argument
-//   root.render(heading);
-// to render multiple elements we two ways
-// root.render([heading,paragraph]);
-root.render(container);
+// //   to render single element and it takes only one argument
+// //   root.render(heading);
+// // to render multiple elements we two ways
+// // root.render([heading,paragraph]);
+// root.render(container); // we will use this code if we have to render react elements.
+
+root.render(<HeaderComponent/>); // we will use this code if we have to render react components.

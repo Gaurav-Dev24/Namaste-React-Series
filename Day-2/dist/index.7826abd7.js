@@ -2958,7 +2958,7 @@ const paragraph = /*#__PURE__*/ (0, _reactDefault.default).createElement("p", {
     key: "p"
 }, // specifying key for multiple child elements in container
 "Hello this is paragraph");
-// JSX --> Creating elements using JSX
+// JSX --> Creating elements using JSX an alternative to React.createElement
 const heading2 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
     id: "title",
     children: "Namaste Heading Two"
@@ -2966,21 +2966,78 @@ const heading2 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
     fileName: "App.js",
     lineNumber: 18,
     columnNumber: 18
-}, undefined);
-const container = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
-    id: "container"
-}, [
-    heading,
-    paragraph,
-    heading2
-]); // if we have multiple childs for an element we have to give them a unique key which can be anything
-//   use correct dom function to call class or id
+}, undefined); //--> JSX expression
+// Components
+// If we want to write multiple lines of code in components then we have to use () brackets to wrap them up.
+const HeaderComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Namaste React Functional Component"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 26,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "This is multiple element rendering in a component."
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 25,
+        columnNumber: 10
+    }, undefined);
+};
+_c = HeaderComponent;
+// We can also remove return keyword and write the code like below,
+const HeaderComponent2 = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Namaste React Functional Component"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 33,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "This is multiple element rendering in a component."
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 34,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 32,
+        columnNumber: 32
+    }, undefined);
+_c1 = HeaderComponent2;
+// const container = React.createElement("div", { id: "container" }, [
+//   heading,
+//   paragraph,
+//   heading2,
+// ]); // if we have multiple childs for an element we have to give them a unique key which can be anything
+// //   use correct dom function to call class or id
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-//   to render single element and it takes only one argument
-//   root.render(heading);
-// to render multiple elements we two ways
-// root.render([heading,paragraph]);
-root.render(container);
+// //   to render single element and it takes only one argument
+// //   root.render(heading);
+// // to render multiple elements we two ways
+// // root.render([heading,paragraph]);
+// root.render(container); // we will use this code if we have to render react elements.
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
+    fileName: "App.js",
+    lineNumber: 51,
+    columnNumber: 13
+}, undefined)); // we will use this code if we have to render react components.
+var _c, _c1;
+$RefreshReg$(_c, "HeaderComponent");
+$RefreshReg$(_c1, "HeaderComponent2");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
