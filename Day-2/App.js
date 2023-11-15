@@ -6,6 +6,7 @@ const heading = React.createElement(
   { className: "title", key: "h1" }, // specifying key for multiple child elements in container
   "Namaste React"
 );
+
 const paragraph = React.createElement(
   "p",
   { className: "description", key: "p" }, // specifying key for multiple child elements in container

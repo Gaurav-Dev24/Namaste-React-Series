@@ -2962,7 +2962,7 @@ const container = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", 
 }, [
     heading,
     paragraph
-]); // if we have multiple childs for an element we have to give them a unique which can be anything
+]); // if we have multiple childs for an element we have to give them a unique key which can be anything
 // console.log(heading)
 // console.log(paragraph)
 //   use correct dom function to call class or id
