@@ -17,16 +17,26 @@ import ReactDOM from "react-dom/client"; // note always use "react-dom/client" t
 
 // JSX and React Element--> Creating elements using JSX an alternative to React.createElement
 const heading2 = (
-  <h2 id="title" key="h2">
+  <h2 id="heading" key="h2">
     Namaste Heading Two
   </h2>
 ); //--> JSX expression
 
 // Components
+const Title = () => (
+  <h1 id="title" key="h1">
+    Namaste Title
+  </h1>
+)
 // If we want to write multiple lines of code in components then we have to use () brackets to wrap them up.
+
+// If we want to use component inisde a component it is known as "Component Composition"
 const HeaderComponent = () => {
   return (
     <div>
+      {heading2} {/*this is the way to call any element inside a functional component */}
+      <Title/> {/* this is the way to call a functional component inside another functional component */}
+      {/* {Title()} this is the another way to call functional component inside another functional component */}
       <h1>Namaste React Functional Component</h1>
       <h2>This is multiple element rendering in a component.</h2>
     </div>

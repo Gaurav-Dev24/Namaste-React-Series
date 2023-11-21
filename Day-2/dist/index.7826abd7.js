@@ -2960,7 +2960,7 @@ var _clientDefault = parcelHelpers.interopDefault(_client);
 // );
 // JSX and React Element--> Creating elements using JSX an alternative to React.createElement
 const heading2 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-    id: "title",
+    id: "heading",
     children: "Namaste Heading Two"
 }, "h2", false, {
     fileName: "App.js",
@@ -2968,32 +2968,50 @@ const heading2 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
     columnNumber: 18
 }, undefined); //--> JSX expression
 // Components
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        id: "title",
+        children: "Namaste Title"
+    }, "h1", false, {
+        fileName: "App.js",
+        lineNumber: 22,
+        columnNumber: 21
+    }, undefined);
+_c = Title;
 // If we want to write multiple lines of code in components then we have to use () brackets to wrap them up.
+// If we want to use component inisde a component it is known as "Component Composition"
 const HeaderComponent = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
+            heading2,
+            " ",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            " ",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Namaste React Functional Component"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 25,
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "This is multiple element rendering in a component."
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 26,
+                lineNumber: 34,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 24,
+        lineNumber: 29,
         columnNumber: 10
     }, undefined);
 };
-_c = HeaderComponent;
+_c1 = HeaderComponent;
 // We can also remove return keyword and write the code like below,
 const HeaderComponent2 = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -3001,23 +3019,23 @@ const HeaderComponent2 = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: "Namaste React Functional Component"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 32,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "This is multiple element rendering in a component."
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 33,
+                lineNumber: 41,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 31,
+        lineNumber: 39,
         columnNumber: 32
     }, undefined);
-_c1 = HeaderComponent2;
+_c2 = HeaderComponent2;
 // const container = React.createElement("div", { id: "container" }, [
 //   heading,
 //   paragraph,
@@ -3032,12 +3050,13 @@ const root = (0, _clientDefault.default).createRoot(document.getElementById("roo
 // root.render(container); // we will use this code if we have to render react elements.
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 50,
+    lineNumber: 58,
     columnNumber: 13
 }, undefined)); // we will use this code if we have to render react components.
-var _c, _c1;
-$RefreshReg$(_c, "HeaderComponent");
-$RefreshReg$(_c1, "HeaderComponent2");
+var _c, _c1, _c2;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "HeaderComponent");
+$RefreshReg$(_c2, "HeaderComponent2");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
