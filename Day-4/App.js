@@ -51,7 +51,7 @@ const RestaurantCard = () => {
     <div className="card">
       <img src={burgerKing.image} alt="card-img" />
       <h2>{burgerKing.name}</h2>
-      <h3>{burgerKing.cuisines.join(",")}</h3>
+      <h3>{burgerKing.cuisines.join(", ")}</h3>
       <h4>{burgerKing.rating} stars</h4>
     </div>
   );

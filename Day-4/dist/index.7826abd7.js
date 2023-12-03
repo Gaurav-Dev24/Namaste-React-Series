@@ -3065,7 +3065,7 @@ const RestaurantCard = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: burgerKing.cuisines.join(",")
+                children: burgerKing.cuisines.join(", ")
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 42,
