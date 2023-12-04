@@ -3028,16 +3028,95 @@ const Header = ()=>{
     }, undefined);
 };
 _c1 = Header;
-const burgerKing = {
-    name: "Burger King",
-    image: "https://images.unsplash.com/photo-1664232802830-592394491fd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMGRpc2h8ZW58MHx8MHx8fDA%3D",
-    cuisines: [
-        "Burger",
-        "American"
-    ],
-    rating: "4.2"
-};
-const RestaurantCard = ()=>{
+const restaurantData = [
+    {
+        name: "Burger King",
+        image: "https://images.unsplash.com/photo-1664232802830-592394491fd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMGRpc2h8ZW58MHx8MHx8fDA%3D",
+        cuisines: [
+            "Burger",
+            "American"
+        ],
+        rating: "4.2"
+    },
+    {
+        name: "KFC",
+        image: "https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Chicken",
+            "American"
+        ],
+        rating: "4.5"
+    },
+    {
+        name: "Uncle Ji Kitchen",
+        image: "https://images.pexels.com/photos/8819258/pexels-photo-8819258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        cuisines: [
+            "Paneer",
+            "Indian"
+        ],
+        rating: "4.0"
+    },
+    {
+        name: "Dominozz",
+        image: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Pizza",
+            "Italian"
+        ],
+        rating: "4.4"
+    },
+    {
+        name: "Pizzahut",
+        image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Pizza",
+            "Mexican"
+        ],
+        rating: "4.3"
+    },
+    {
+        name: "WOW",
+        image: "https://images.pexels.com/photos/18803177/pexels-photo-18803177/free-photo-of-plate-with-greasy-momos-dumplings.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        cuisines: [
+            "Momos",
+            "Japanese"
+        ],
+        rating: "4.0"
+    },
+    {
+        name: "WTF",
+        image: "https://plus.unsplash.com/premium_photo-1669150852127-2435412047f2?q=80&w=1417&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Burger",
+            "Indian"
+        ],
+        rating: "4.1"
+    },
+    {
+        name: "Kaveri restaurants",
+        image: "https://images.unsplash.com/photo-1625398407796-82650a8c135f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Masala Dosa",
+            "South Indian"
+        ],
+        rating: "4.5"
+    },
+    {
+        name: "MC Donald's",
+        image: "https://plus.unsplash.com/premium_photo-1683657860170-900d6cbceffe?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Burger",
+            "American"
+        ],
+        rating: "4.4"
+    }
+];
+// Config Driven UI
+// receiving reastaurantList props 
+// instead of props we can also write like {restaurant}
+const RestaurantCard = ({ restaurant })=>{
+    // now we can also destructure the restaurant like below
+    const { name, image, rating, cuisines } = restaurant;
     return(// Static way to call data
     // <div className="card">
     //   <img src="https://images.unsplash.com/photo-1664232802830-592394491fd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMGRpc2h8ZW58MHx8MHx8fDA%3D" alt="card-img" />
@@ -3045,118 +3124,141 @@ const RestaurantCard = ()=>{
     //   <h3>Burger, American</h3>
     //   <h4>4.2 Stars Rating</h4>
     // </div>
-    // Dynamically calling data with some objects or apis
+    // Dynamically calling data with some mock objects or apis
+    // calling props traditionally
+    // <div className="card">
+    //   <img src={props.restaurant.image} alt="card-img" />
+    //   <h2>{props.restaurant.name}</h2>
+    //   <h3>{props.restaurant.cuisines.join(", ")}</h3>
+    //   <h4>{props.restaurant.rating} stars</h4>
+    // </div>
+    // destructuring the props like const RestaurantCard = ({restaurant}) => {}
+    // If we will destructure like above code then we can directly call like below
+    // <div className="card">
+    //   <img src={restaurant.image} alt="card-img" />
+    //   <h2>{restaurant.name}</h2>
+    //   <h3>{restaurant.cuisines.join(", ")}</h3>
+    //   <h4>{restaurant.rating} stars</h4>
+    // </div>
+    // const RestaurantCard = ({restaurant}) => {
+    // now we can also destructure the restaurant like below
+    // const {name,image,rating,cuisines} = restaurant;
+    // If we will destructure like above code then we can directly call like below
     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: burgerKing.image,
+                src: image,
                 alt: "card-img"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 40,
+                lineNumber: 117,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: burgerKing.name
+                children: name
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 41,
+                lineNumber: 118,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: burgerKing.cuisines.join(", ")
+                children: cuisines.join(", ")
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 42,
+                lineNumber: 119,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: [
-                    burgerKing.rating,
+                    rating,
                     " stars"
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 43,
+                lineNumber: 120,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 39,
+        lineNumber: 116,
         columnNumber: 5
     }, undefined));
 };
 _c2 = RestaurantCard;
+// passing reastaurantList props
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "restaurant-list",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                restaurant: restaurantData[0]
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 49,
+                lineNumber: 127,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                restaurant: restaurantData[1]
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 50,
+                lineNumber: 128,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                restaurant: restaurantData[2]
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 51,
+                lineNumber: 129,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                restaurant: restaurantData[3]
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 52,
+                lineNumber: 130,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                restaurant: restaurantData[4]
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 53,
+                lineNumber: 131,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                restaurant: restaurantData[5]
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 54,
+                lineNumber: 132,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                restaurant: restaurantData[6]
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 55,
+                lineNumber: 133,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                restaurant: restaurantData[7]
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 56,
+                lineNumber: 134,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                restaurant: restaurantData[8]
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 57,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 58,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 59,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 60,
+                lineNumber: 135,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 48,
+        lineNumber: 126,
         columnNumber: 10
     }, undefined);
 };
@@ -3166,7 +3268,7 @@ const Footer = ()=>{
         children: "Footer"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 64,
+        lineNumber: 139,
         columnNumber: 10
     }, undefined);
 };
@@ -3179,17 +3281,17 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 74,
+                lineNumber: 149,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 75,
+                lineNumber: 150,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 76,
+                lineNumber: 151,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3211,7 +3313,7 @@ _c5 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 96,
+    lineNumber: 171,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4, _c5;

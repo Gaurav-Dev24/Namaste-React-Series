@@ -30,14 +30,72 @@ const Header = () => {
   );
 };
 
-const burgerKing = {
+const restaurantData = [
+{
   name : "Burger King",
   image: "https://images.unsplash.com/photo-1664232802830-592394491fd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMGRpc2h8ZW58MHx8MHx8fDA%3D",
   cuisines: ["Burger","American"],
   rating: "4.2"
-}
+},
+{
+  name : "KFC",
+  image: "https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  cuisines: ["Chicken","American"],
+  rating: "4.5"
+},
+{
+  name : "Uncle Ji Kitchen",
+  image: "https://images.pexels.com/photos/8819258/pexels-photo-8819258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  cuisines: ["Paneer","Indian"],
+  rating: "4.0"
+},
+{
+  name : "Dominozz",
+  image: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  cuisines: ["Pizza","Italian"],
+  rating: "4.4"
+},
+{
+  name : "Pizzahut",
+  image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  cuisines: ["Pizza","Mexican"],
+  rating: "4.3"
+},
+{
+  name : "WOW",
+  image: "https://images.pexels.com/photos/18803177/pexels-photo-18803177/free-photo-of-plate-with-greasy-momos-dumplings.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  cuisines: ["Momos","Japanese"],
+  rating: "4.0"
+},
+{
+  name : "WTF",
+  image: "https://plus.unsplash.com/premium_photo-1669150852127-2435412047f2?q=80&w=1417&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  cuisines: ["Burger","Indian"],
+  rating: "4.1"
+},
+{
+  name : "Kaveri restaurants",
+  image: "https://images.unsplash.com/photo-1625398407796-82650a8c135f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  cuisines: ["Masala Dosa","South Indian"],
+  rating: "4.5"
+},
+{
+  name : "MC Donald's",
+  image: "https://plus.unsplash.com/premium_photo-1683657860170-900d6cbceffe?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  cuisines: ["Burger","American"],
+  rating: "4.4"
+}]
 
-const RestaurantCard = () => {
+// Config Driven UI
+// receiving reastaurantList props 
+// instead of props we can also write like {restaurant}
+
+const RestaurantCard = ({restaurant}) => {
+
+  
+  // now we can also destructure the restaurant like below
+  const {name,image,rating,cuisines} = restaurant;
+
   return (
     // Static way to call data
     // <div className="card">
@@ -47,30 +105,54 @@ const RestaurantCard = () => {
     //   <h4>4.2 Stars Rating</h4>
     // </div>
 
-    // Dynamically calling data with some objects or apis
+    // Dynamically calling data with some mock objects or apis
+
+    // calling props traditionally
+    // <div className="card">
+    //   <img src={props.restaurant.image} alt="card-img" />
+    //   <h2>{props.restaurant.name}</h2>
+    //   <h3>{props.restaurant.cuisines.join(", ")}</h3>
+    //   <h4>{props.restaurant.rating} stars</h4>
+    // </div>
+
+    // destructuring the props like const RestaurantCard = ({restaurant}) => {}
+    // If we will destructure like above code then we can directly call like below
+    // <div className="card">
+    //   <img src={restaurant.image} alt="card-img" />
+    //   <h2>{restaurant.name}</h2>
+    //   <h3>{restaurant.cuisines.join(", ")}</h3>
+    //   <h4>{restaurant.rating} stars</h4>
+    // </div>
+
+    
+  
+  // const RestaurantCard = ({restaurant}) => {
+  // now we can also destructure the restaurant like below
+  // const {name,image,rating,cuisines} = restaurant;
+
+
+// If we will destructure like above code then we can directly call like below
     <div className="card">
-      <img src={burgerKing.image} alt="card-img" />
-      <h2>{burgerKing.name}</h2>
-      <h3>{burgerKing.cuisines.join(", ")}</h3>
-      <h4>{burgerKing.rating} stars</h4>
+      <img src={image} alt="card-img" />
+      <h2>{name}</h2>
+      <h3>{cuisines.join(", ")}</h3>
+      <h4>{rating} stars</h4>
     </div>
   );
 }
+// passing reastaurantList props
 const Body = () => {
   return (
     <div className="restaurant-list">
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
+      <RestaurantCard restaurant = {restaurantData[0]}/>
+      <RestaurantCard restaurant = {restaurantData[1]}/>
+      <RestaurantCard restaurant = {restaurantData[2]}/>
+      <RestaurantCard restaurant = {restaurantData[3]}/>
+      <RestaurantCard restaurant = {restaurantData[4]}/>
+      <RestaurantCard restaurant = {restaurantData[5]}/>
+      <RestaurantCard restaurant = {restaurantData[6]}/>
+      <RestaurantCard restaurant = {restaurantData[7]}/>
+      <RestaurantCard restaurant = {restaurantData[8]}/>
     </div>
   );
 };
