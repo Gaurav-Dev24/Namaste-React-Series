@@ -3030,6 +3030,7 @@ const Header = ()=>{
 _c1 = Header;
 const restaurantData = [
     {
+        id: 1,
         name: "Burger King",
         image: "https://images.unsplash.com/photo-1664232802830-592394491fd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMGRpc2h8ZW58MHx8MHx8fDA%3D",
         cuisines: [
@@ -3039,6 +3040,7 @@ const restaurantData = [
         rating: "4.2"
     },
     {
+        id: 2,
         name: "KFC",
         image: "https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         cuisines: [
@@ -3048,6 +3050,7 @@ const restaurantData = [
         rating: "4.5"
     },
     {
+        id: 3,
         name: "Uncle Ji Kitchen",
         image: "https://images.pexels.com/photos/8819258/pexels-photo-8819258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         cuisines: [
@@ -3057,6 +3060,7 @@ const restaurantData = [
         rating: "4.0"
     },
     {
+        id: 4,
         name: "Dominozz",
         image: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         cuisines: [
@@ -3066,6 +3070,7 @@ const restaurantData = [
         rating: "4.4"
     },
     {
+        id: 5,
         name: "Pizzahut",
         image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         cuisines: [
@@ -3075,6 +3080,7 @@ const restaurantData = [
         rating: "4.3"
     },
     {
+        id: 6,
         name: "WOW",
         image: "https://images.pexels.com/photos/18803177/pexels-photo-18803177/free-photo-of-plate-with-greasy-momos-dumplings.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         cuisines: [
@@ -3084,6 +3090,7 @@ const restaurantData = [
         rating: "4.0"
     },
     {
+        id: 7,
         name: "WTF",
         image: "https://plus.unsplash.com/premium_photo-1669150852127-2435412047f2?q=80&w=1417&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         cuisines: [
@@ -3093,6 +3100,7 @@ const restaurantData = [
         rating: "4.1"
     },
     {
+        id: 8,
         name: "Kaveri restaurants",
         image: "https://images.unsplash.com/photo-1625398407796-82650a8c135f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         cuisines: [
@@ -3102,6 +3110,7 @@ const restaurantData = [
         rating: "4.5"
     },
     {
+        id: 9,
         name: "MC Donald's",
         image: "https://plus.unsplash.com/premium_photo-1683657860170-900d6cbceffe?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         cuisines: [
@@ -3152,21 +3161,21 @@ const RestaurantCard = ({ restaurant })=>{
                 alt: "card-img"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 117,
+                lineNumber: 126,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: name
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 118,
+                lineNumber: 127,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: cuisines.join(", ")
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 119,
+                lineNumber: 128,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -3176,13 +3185,13 @@ const RestaurantCard = ({ restaurant })=>{
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 120,
+                lineNumber: 129,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 116,
+        lineNumber: 125,
         columnNumber: 5
     }, undefined));
 };
@@ -3194,15 +3203,15 @@ const Body = ()=>{
         children: restaurantData.map((restaurant)=>{
             return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
                 restaurant: restaurant
-            }, void 0, false, {
+            }, restaurant.id, false, {
                 fileName: "App.js",
-                lineNumber: 128,
+                lineNumber: 137,
                 columnNumber: 14
             }, undefined);
         })
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 126,
+        lineNumber: 135,
         columnNumber: 10
     }, undefined);
 };
@@ -3212,7 +3221,7 @@ const Footer = ()=>{
         children: "Footer"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 147,
+        lineNumber: 156,
         columnNumber: 10
     }, undefined);
 };
@@ -3225,17 +3234,17 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 157,
+                lineNumber: 166,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 158,
+                lineNumber: 167,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 159,
+                lineNumber: 168,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3257,7 +3266,7 @@ _c5 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 179,
+    lineNumber: 188,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4, _c5;
