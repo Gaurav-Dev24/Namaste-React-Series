@@ -144,7 +144,15 @@ const RestaurantCard = ({restaurant}) => {
 const Body = () => {
   return (
     <div className="restaurant-list">
-      <RestaurantCard restaurant = {restaurantData[0]}/>
+      {restaurantData.map((restaurant) => {
+        return <RestaurantCard restaurant = {restaurant}/>
+      })}
+
+      {/* // here we can also use spread operator like below but when we will pass props in the child component i.e, RestaurantCard then the syntax will be like below
+        // const RestaurantCard = ({name,cuisines,rating,image}) => {}
+        // return <RestaurantCard restaurant = {...restaurant}/> */}
+      
+      {/* <RestaurantCard restaurant = {restaurantData[0]}/>
       <RestaurantCard restaurant = {restaurantData[1]}/>
       <RestaurantCard restaurant = {restaurantData[2]}/>
       <RestaurantCard restaurant = {restaurantData[3]}/>
@@ -152,7 +160,7 @@ const Body = () => {
       <RestaurantCard restaurant = {restaurantData[5]}/>
       <RestaurantCard restaurant = {restaurantData[6]}/>
       <RestaurantCard restaurant = {restaurantData[7]}/>
-      <RestaurantCard restaurant = {restaurantData[8]}/>
+      <RestaurantCard restaurant = {restaurantData[8]}/> */}
     </div>
   );
 };

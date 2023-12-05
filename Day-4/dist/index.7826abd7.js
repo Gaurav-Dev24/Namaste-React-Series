@@ -3191,72 +3191,16 @@ _c2 = RestaurantCard;
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "restaurant-list",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: restaurantData[0]
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 127,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: restaurantData[1]
+        children: restaurantData.map((restaurant)=>{
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                restaurant: restaurant
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 128,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: restaurantData[2]
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 129,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: restaurantData[3]
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 130,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: restaurantData[4]
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 131,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: restaurantData[5]
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 132,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: restaurantData[6]
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 133,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: restaurantData[7]
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 134,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: restaurantData[8]
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 135,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
+                columnNumber: 14
+            }, undefined);
+        })
+    }, void 0, false, {
         fileName: "App.js",
         lineNumber: 126,
         columnNumber: 10
@@ -3268,7 +3212,7 @@ const Footer = ()=>{
         children: "Footer"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 139,
+        lineNumber: 147,
         columnNumber: 10
     }, undefined);
 };
@@ -3281,17 +3225,17 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 149,
+                lineNumber: 157,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 150,
+                lineNumber: 158,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 151,
+                lineNumber: 159,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3313,7 +3257,7 @@ _c5 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 171,
+    lineNumber: 179,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4, _c5;
