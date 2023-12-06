@@ -3118,10 +3118,21 @@ const restaurantData = [
             "American"
         ],
         rating: "4.4"
+    },
+    {
+        id: 10,
+        name: "Rang De Basanti Dhaba",
+        image: "https://plus.unsplash.com/premium_photo-1683657860170-900d6cbceffe?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Paneer Butter Masala",
+            "North Indian"
+        ],
+        rating: "4.5"
     }
 ];
 // Config Driven UI
 // receiving reastaurantList props 
+// we can use props like const RestaurantCard = (props) => { return()}
 // instead of props we can also write like {restaurant}
 const RestaurantCard = ({ restaurant })=>{
     // now we can also destructure the restaurant like below
@@ -3161,21 +3172,21 @@ const RestaurantCard = ({ restaurant })=>{
                 alt: "card-img"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 126,
+                lineNumber: 133,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: name
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 127,
+                lineNumber: 134,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: cuisines.join(", ")
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 128,
+                lineNumber: 135,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -3185,13 +3196,13 @@ const RestaurantCard = ({ restaurant })=>{
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 129,
+                lineNumber: 136,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 125,
+        lineNumber: 132,
         columnNumber: 5
     }, undefined));
 };
@@ -3205,13 +3216,13 @@ const Body = ()=>{
                 restaurant: restaurant
             }, restaurant.id, false, {
                 fileName: "App.js",
-                lineNumber: 137,
+                lineNumber: 144,
                 columnNumber: 14
             }, undefined);
         })
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 135,
+        lineNumber: 142,
         columnNumber: 10
     }, undefined);
 };
@@ -3221,7 +3232,7 @@ const Footer = ()=>{
         children: "Footer"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 156,
+        lineNumber: 163,
         columnNumber: 10
     }, undefined);
 };
@@ -3234,17 +3245,17 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 166,
+                lineNumber: 173,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 167,
+                lineNumber: 174,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 168,
+                lineNumber: 175,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3266,7 +3277,7 @@ _c5 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 188,
+    lineNumber: 195,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4, _c5;

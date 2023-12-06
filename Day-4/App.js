@@ -93,15 +93,23 @@ const restaurantData = [
   image: "https://plus.unsplash.com/premium_photo-1683657860170-900d6cbceffe?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   cuisines: ["Burger","American"],
   rating: "4.4"
-}]
+},
+{
+  id: 10,
+  name : "Rang De Basanti Dhaba",
+  image: "https://plus.unsplash.com/premium_photo-1683657860170-900d6cbceffe?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  cuisines: ["Paneer Butter Masala","North Indian"],
+  rating: "4.5"
+}
+]
 
 // Config Driven UI
 // receiving reastaurantList props 
+// we can use props like const RestaurantCard = (props) => { return()}
 // instead of props we can also write like {restaurant}
 
-const RestaurantCard = ({restaurant}) => {
 
-  
+const RestaurantCard = ({restaurant}) => {
   // now we can also destructure the restaurant like below
   const {name,image,rating,cuisines} = restaurant;
 
