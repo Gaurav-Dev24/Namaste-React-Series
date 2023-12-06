@@ -2951,6 +2951,7 @@ var _clientDefault = parcelHelpers.interopDefault(_client);
 // Default Import
 var _header = require("./components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
+// import * as XYZ from "./components/Header";
 // Named Import
 // import { Title } from "./components/Header";
 // combine both named & default import if both the components are in the same file like "Header.js"
@@ -3078,12 +3079,13 @@ const restaurantData = [
     }
 ];
 // Config Driven UI
-// receiving reastaurantList props 
+// receiving reastaurantList props
 // we can use props like const RestaurantCard = (props) => { return()}
 // instead of props we can also write like {restaurant}
-const RestaurantCard = ({ restaurant })=>{
+// const RestaurantCard = ({restaurant}) => {
+const RestaurantCard = ({ name, cuisines, rating, image })=>{
     // now we can also destructure the restaurant like below
-    const { name, image, rating, cuisines } = restaurant;
+    // const {name,image,rating,cuisines} = restaurant;
     return(// Static way to call data
     // <div className="card">
     //   <img src="https://images.unsplash.com/photo-1664232802830-592394491fd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMGRpc2h8ZW58MHx8MHx8fDA%3D" alt="card-img" />
@@ -3119,21 +3121,21 @@ const RestaurantCard = ({ restaurant })=>{
                 alt: "card-img"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 134,
+                lineNumber: 135,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: name
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 135,
+                lineNumber: 136,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: cuisines.join(", ")
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 136,
+                lineNumber: 137,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -3143,13 +3145,13 @@ const RestaurantCard = ({ restaurant })=>{
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 137,
+                lineNumber: 138,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 133,
+        lineNumber: 134,
         columnNumber: 5
     }, undefined));
 };
@@ -3159,17 +3161,21 @@ const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "restaurant-list",
         children: restaurantData.map((restaurant)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                restaurant: restaurant
-            }, restaurant.id, false, {
-                fileName: "src/App.js",
-                lineNumber: 145,
-                columnNumber: 14
-            }, undefined);
+            // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
+            return /*#__PURE__*/ (0, _react.createElement)(RestaurantCard, {
+                ...restaurant,
+                key: restaurant.id,
+                __source: {
+                    fileName: "src/App.js",
+                    lineNumber: 147,
+                    columnNumber: 14
+                },
+                __self: undefined
+            });
         })
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 143,
+        lineNumber: 144,
         columnNumber: 10
     }, undefined);
 };
@@ -3179,12 +3185,12 @@ const Footer = ()=>{
         children: "Footer"
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 164,
+        lineNumber: 166,
         columnNumber: 10
     }, undefined);
 };
 _c2 = Footer;
-// 
+//
 const AppLayout = ()=>{
     return(// React.Fragment is used to reduce the number of DOM nodes
     // <React.Fragment></React.Fragment>, <></>
@@ -3192,17 +3198,17 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 174,
+                lineNumber: 177,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 175,
+                lineNumber: 178,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 176,
+                lineNumber: 179,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3224,7 +3230,7 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 196,
+    lineNumber: 199,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
@@ -27436,7 +27442,6 @@ try {
 // if we export component like below then it will be import as import {Title}, "Named Import"
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Title", ()=>Title);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Title = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {

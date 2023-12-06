@@ -1,6 +1,6 @@
 // Named Export
 // if we export component like below then it will be import as import {Title}, "Named Import"
-export const Title = () => {
+const Title = () => {
     return (
       <a href="/">
         <img
@@ -14,7 +14,7 @@ export const Title = () => {
 
   // Default export
   // if we export component like below then it will be import as import "Header", "Default Import"
- const Header = () => {
+const Header = () => {
     // always make sure to use return() while creating react functional component
     return (
       <div className="header">
