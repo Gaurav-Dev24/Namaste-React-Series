@@ -1,34 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+// Default Import
+import Header from "./components/Header";
+// Named Import
+// import { Title } from "./components/Header";
 
-const Title = () => {
-  return (
-    <a href="/">
-      <img
-        src="https://w7.pngwing.com/pngs/351/837/png-transparent-villa-mamas-restaurant-%D9%85%D8%B7%D8%B9%D9%85-%D9%81%D9%8A%D9%84%D8%A7-%D9%85%D8%A7%D9%85%D8%A7%D8%B2%E2%80%8E-logo-sheetal-villa-dgs-group-apartment-cineplex-21-building-text-apartment.png"
-        alt="logo"
-        className="logo"
-      />
-    </a>
-  );
-};
+// combine both named & default import if both the components are in the same file like "Header.js"
+// import Header, { Title } from "./components/Header";
 
-const Header = () => {
-  // always make sure to use return() while creating react functional component
-  return (
-    <div className="header">
-      <Title />
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
 
 const restaurantData = [
 {
@@ -97,8 +76,22 @@ const restaurantData = [
 {
   id: 10,
   name : "Rang De Basanti Dhaba",
-  image: "https://plus.unsplash.com/premium_photo-1683657860170-900d6cbceffe?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  image: "https://images.unsplash.com/photo-1690401767645-595de0e0e5f8?q=80&w=1426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   cuisines: ["Paneer Butter Masala","North Indian"],
+  rating: "4.5"
+},
+{
+  id: 11,
+  name : "Tripti South Indian Dhaba ",
+  image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  cuisines: ["Masala Dosa","South Indian"],
+  rating: "4.2"
+},
+{
+  id: 12,
+  name : "Spice Garden",
+  image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=1371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  cuisines: ["Paneer","Veg Restaurant"],
   rating: "4.5"
 }
 ]
