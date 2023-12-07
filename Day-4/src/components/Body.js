@@ -1,8 +1,16 @@
 import { restaurantList } from "../config";
 import RestaurantCard from "./RestaurantCard";
+import { useState } from "react";
 
 // passing reastaurantList props like {...restaurant}
 const Body = () => {
+  // Normal JS variable
+  // const searchText = "KFC";
+
+  // React Local State Variable with defualt value "KFC"
+  // searchText is local state variable
+  const [serachInput, setSearchInput] = useState("KFC"); //to create state variable
+  // useState returns an array [variable,function to update the variable]
   return (
     <>
       {/* Search Bar */}
@@ -11,8 +19,13 @@ const Body = () => {
           type="text"
           className="search-input"
           placeholder="Search..."
-          value=""
+          value={serachInput}
+          onChange={(e) => {
+            // e.target.value => whatever we will write in input tag
+            setSearchInput(e.target.value)
+          }}
         />
+      <button className="search-btn">Search</button>
       </div>
 
       {/* Restaurant List */}

@@ -27470,25 +27470,47 @@ var _react = require("react");
 var _config = require("../config");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+var _s = $RefreshSig$();
 // passing reastaurantList props like {...restaurant}
 const Body = ()=>{
+    _s();
+    // Normal JS variable
+    // const searchText = "KFC";
+    // React Local State Variable with defualt value "KFC"
+    // searchText is local state variable
+    const [serachInput, setSearchInput] = (0, _react.useState)("KFC"); //to create state variable
+    // useState returns an array [variable,function to update the variable]
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "search-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "text",
-                    className: "search-input",
-                    placeholder: "Search...",
-                    value: ""
-                }, void 0, false, {
-                    fileName: "src/components/Body.js",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        className: "search-input",
+                        placeholder: "Search...",
+                        value: serachInput,
+                        onChange: (e)=>{
+                            // e.target.value => whatever we will write in input tag
+                            setSearchInput(e.target.value);
+                        }
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "search-btn",
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 21,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 8,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27500,7 +27522,7 @@ const Body = ()=>{
                         key: restaurant.id,
                         __source: {
                             fileName: "src/components/Body.js",
-                            lineNumber: 16,
+                            lineNumber: 28,
                             columnNumber: 16
                         },
                         __self: undefined
@@ -27508,12 +27530,13 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 13,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
+_s(Body, "y37gXpNDM6HarcF72p2eFMjjopI=");
 _c = Body;
 exports.default = Body;
 var _c;
