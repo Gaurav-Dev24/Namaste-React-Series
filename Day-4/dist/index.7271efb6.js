@@ -2951,6 +2951,10 @@ var _clientDefault = parcelHelpers.interopDefault(_client);
 // Default Import
 var _header = require("./components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
+var _body = require("./components/Body");
+var _bodyDefault = parcelHelpers.interopDefault(_body);
+var _footer = require("./components/Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
 // import * as XYZ from "./components/Header";
 // Named Import
 // import { Title } from "./components/Header";
@@ -3121,21 +3125,21 @@ const RestaurantCard = ({ name, cuisines, rating, image })=>{
                 alt: "card-img"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 135,
+                lineNumber: 137,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: name
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 136,
+                lineNumber: 138,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: cuisines.join(", ")
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 137,
+                lineNumber: 139,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -3145,52 +3149,17 @@ const RestaurantCard = ({ name, cuisines, rating, image })=>{
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 138,
+                lineNumber: 140,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 134,
+        lineNumber: 136,
         columnNumber: 5
     }, undefined));
 };
 _c = RestaurantCard;
-// passing reastaurantList props
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "restaurant-list",
-        children: restaurantData.map((restaurant)=>{
-            // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
-            return /*#__PURE__*/ (0, _react.createElement)(RestaurantCard, {
-                ...restaurant,
-                key: restaurant.id,
-                __source: {
-                    fileName: "src/App.js",
-                    lineNumber: 147,
-                    columnNumber: 14
-                },
-                __self: undefined
-            });
-        })
-    }, void 0, false, {
-        fileName: "src/App.js",
-        lineNumber: 144,
-        columnNumber: 10
-    }, undefined);
-};
-_c1 = Body;
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-        children: "Footer"
-    }, void 0, false, {
-        fileName: "src/App.js",
-        lineNumber: 166,
-        columnNumber: 10
-    }, undefined);
-};
-_c2 = Footer;
-//
 const AppLayout = ()=>{
     return(// React.Fragment is used to reduce the number of DOM nodes
     // <React.Fragment></React.Fragment>, <></>
@@ -3198,23 +3167,23 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 177,
+                lineNumber: 150,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 178,
+                lineNumber: 151,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 179,
+                lineNumber: 152,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true));
 };
-_c3 = AppLayout;
+_c1 = AppLayout;
 // const styleObj = {
 //     backgroundColor: "red",
 //   }
@@ -3230,21 +3199,19 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 199,
+    lineNumber: 172,
     columnNumber: 13
 }, undefined));
-var _c, _c1, _c2, _c3;
+var _c, _c1;
 $RefreshReg$(_c, "RestaurantCard");
-$RefreshReg$(_c1, "Body");
-$RefreshReg$(_c2, "Footer");
-$RefreshReg$(_c3, "AppLayout");
+$RefreshReg$(_c1, "AppLayout");
 
   $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Body":"8yaV8","./components/Footer":"8pPOA"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27703,6 +27670,79 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}]},["bgABq","1xC6H","2kQhy"], "2kQhy", "parcelRequire043c")
+},{"7422ead32dcc1e6b":"786KC"}],"8yaV8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0606.prelude(module);
+
+try {
+// passing reastaurantList props
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "restaurant-list",
+        children: restaurantData.map((restaurant)=>{
+            // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
+            return /*#__PURE__*/ (0, _react.createElement)(RestaurantCard, {
+                ...restaurant,
+                key: restaurant.id,
+                __source: {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 7,
+                    columnNumber: 14
+                },
+                __self: undefined
+            });
+        })
+    }, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 4,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$0606.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bc7c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+        children: "Footer"
+    }, void 0, false, {
+        fileName: "src/components/Footer.js",
+        lineNumber: 2,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Footer;
+exports.default = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$bc7c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["bgABq","1xC6H","2kQhy"], "2kQhy", "parcelRequire043c")
 
 //# sourceMappingURL=index.7271efb6.js.map

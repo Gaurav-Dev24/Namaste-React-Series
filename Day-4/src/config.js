@@ -1,0 +1,1 @@
+export const IMG_CDN_URL = "https://images.unsplash.com/photo-1664232802830-592394491fd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMGRpc2h8ZW58MHx8MHx8fDA%3D";
