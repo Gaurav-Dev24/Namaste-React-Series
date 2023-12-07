@@ -1,19 +1,31 @@
-import {restaurantList} from "../config"
+import { restaurantList } from "../config";
 import RestaurantCard from "./RestaurantCard";
 
-// passing reastaurantList props
+// passing reastaurantList props like {...restaurant}
 const Body = () => {
-    return (
+  return (
+    <>
+      {/* Search Bar */}
+      <div className="search-container">
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search..."
+          value=""
+        />
+      </div>
+
+      {/* Restaurant List */}
       <div className="restaurant-list">
         {restaurantList.map((restaurant) => {
           // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
           return <RestaurantCard {...restaurant} key={restaurant.id} />;
         })}
-  
+
         {/* // here we can also use spread operator like below but when we will pass props in the child component i.e, RestaurantCard then the syntax will be like below
           // const RestaurantCard = ({name,cuisines,rating,image}) => {}
           // return <RestaurantCard {...restaurant} key={restaurant.id}/> */}
-  
+
         {/* <RestaurantCard restaurant = {restaurantData[0]}/>
         <RestaurantCard restaurant = {restaurantData[1]}/>
         <RestaurantCard restaurant = {restaurantData[2]}/>
@@ -24,7 +36,8 @@ const Body = () => {
         <RestaurantCard restaurant = {restaurantData[7]}/>
         <RestaurantCard restaurant = {restaurantData[8]}/> */}
       </div>
-    );
-  };
+    </>
+  );
+};
 
-  export default Body;
+export default Body;

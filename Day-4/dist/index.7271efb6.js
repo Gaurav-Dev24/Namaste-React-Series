@@ -27470,28 +27470,49 @@ var _react = require("react");
 var _config = require("../config");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
-// passing reastaurantList props
+// passing reastaurantList props like {...restaurant}
 const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "restaurant-list",
-        children: (0, _config.restaurantList).map((restaurant)=>{
-            // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
-            return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
-                ...restaurant,
-                key: restaurant.id,
-                __source: {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "text",
+                    className: "search-input",
+                    placeholder: "Search...",
+                    value: ""
+                }, void 0, false, {
                     fileName: "src/components/Body.js",
                     lineNumber: 9,
-                    columnNumber: 14
-                },
-                __self: undefined
-            });
-        })
-    }, void 0, false, {
-        fileName: "src/components/Body.js",
-        lineNumber: 6,
-        columnNumber: 10
-    }, undefined);
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "restaurant-list",
+                children: (0, _config.restaurantList).map((restaurant)=>{
+                    // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
+                    return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
+                        ...restaurant,
+                        key: restaurant.id,
+                        __source: {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 16,
+                            columnNumber: 16
+                        },
+                        __self: undefined
+                    });
+                })
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _c = Body;
 exports.default = Body;
