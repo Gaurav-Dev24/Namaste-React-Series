@@ -2956,210 +2956,6 @@ var _bodyDefault = parcelHelpers.interopDefault(_body);
 var _footer = require("./components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 // import * as XYZ from "./components/Header";
-// Named Import
-// import { Title } from "./components/Header";
-// combine both named & default import if both the components are in the same file like "Header.js"
-// import Header, { Title } from "./components/Header";
-const restaurantData = [
-    {
-        id: 1,
-        name: "Burger King",
-        image: "https://images.unsplash.com/photo-1664232802830-592394491fd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMGRpc2h8ZW58MHx8MHx8fDA%3D",
-        cuisines: [
-            "Burger",
-            "American"
-        ],
-        rating: "4.2"
-    },
-    {
-        id: 2,
-        name: "KFC",
-        image: "https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        cuisines: [
-            "Chicken",
-            "American"
-        ],
-        rating: "4.5"
-    },
-    {
-        id: 3,
-        name: "Uncle Ji Kitchen",
-        image: "https://images.pexels.com/photos/8819258/pexels-photo-8819258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        cuisines: [
-            "Paneer",
-            "Indian"
-        ],
-        rating: "4.0"
-    },
-    {
-        id: 4,
-        name: "Dominozz",
-        image: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        cuisines: [
-            "Pizza",
-            "Italian"
-        ],
-        rating: "4.4"
-    },
-    {
-        id: 5,
-        name: "Pizzahut",
-        image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        cuisines: [
-            "Pizza",
-            "Mexican"
-        ],
-        rating: "4.3"
-    },
-    {
-        id: 6,
-        name: "WOW",
-        image: "https://images.pexels.com/photos/18803177/pexels-photo-18803177/free-photo-of-plate-with-greasy-momos-dumplings.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        cuisines: [
-            "Momos",
-            "Japanese"
-        ],
-        rating: "4.0"
-    },
-    {
-        id: 7,
-        name: "WTF",
-        image: "https://plus.unsplash.com/premium_photo-1669150852127-2435412047f2?q=80&w=1417&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        cuisines: [
-            "Burger",
-            "Indian"
-        ],
-        rating: "4.1"
-    },
-    {
-        id: 8,
-        name: "Kaveri restaurants",
-        image: "https://images.unsplash.com/photo-1625398407796-82650a8c135f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        cuisines: [
-            "Masala Dosa",
-            "South Indian"
-        ],
-        rating: "4.5"
-    },
-    {
-        id: 9,
-        name: "MC Donald's",
-        image: "https://plus.unsplash.com/premium_photo-1683657860170-900d6cbceffe?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        cuisines: [
-            "Burger",
-            "American"
-        ],
-        rating: "4.4"
-    },
-    {
-        id: 10,
-        name: "Rang De Basanti Dhaba",
-        image: "https://images.unsplash.com/photo-1690401767645-595de0e0e5f8?q=80&w=1426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        cuisines: [
-            "Paneer Butter Masala",
-            "North Indian"
-        ],
-        rating: "4.5"
-    },
-    {
-        id: 11,
-        name: "Tripti South Indian Dhaba ",
-        image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        cuisines: [
-            "Masala Dosa",
-            "South Indian"
-        ],
-        rating: "4.2"
-    },
-    {
-        id: 12,
-        name: "Spice Garden",
-        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=1371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        cuisines: [
-            "Paneer",
-            "Veg Restaurant"
-        ],
-        rating: "4.5"
-    }
-];
-// Config Driven UI
-// receiving reastaurantList props
-// we can use props like const RestaurantCard = (props) => { return()}
-// instead of props we can also write like {restaurant}
-// const RestaurantCard = ({restaurant}) => {
-const RestaurantCard = ({ name, cuisines, rating, image })=>{
-    // now we can also destructure the restaurant like below
-    // const {name,image,rating,cuisines} = restaurant;
-    return(// Static way to call data
-    // <div className="card">
-    //   <img src="https://images.unsplash.com/photo-1664232802830-592394491fd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMGRpc2h8ZW58MHx8MHx8fDA%3D" alt="card-img" />
-    //   <h2>Burger King</h2>
-    //   <h3>Burger, American</h3>
-    //   <h4>4.2 Stars Rating</h4>
-    // </div>
-    // Dynamically calling data with some mock objects or apis
-    // calling props traditionally
-    // <div className="card">
-    //   <img src={props.restaurant.image} alt="card-img" />
-    //   <h2>{props.restaurant.name}</h2>
-    //   <h3>{props.restaurant.cuisines.join(", ")}</h3>
-    //   <h4>{props.restaurant.rating} stars</h4>
-    // </div>
-    // destructuring the props like const RestaurantCard = ({restaurant}) => {}
-    // If we will destructure like above code then we can directly call like below
-    // <div className="card">
-    //   <img src={restaurant.image} alt="card-img" />
-    //   <h2>{restaurant.name}</h2>
-    //   <h3>{restaurant.cuisines.join(", ")}</h3>
-    //   <h4>{restaurant.rating} stars</h4>
-    // </div>
-    // const RestaurantCard = ({restaurant}) => {
-    // now we can also destructure the restaurant like below
-    // const {name,image,rating,cuisines} = restaurant;
-    // If we will destructure like above code then we can directly call like below
-    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: image,
-                alt: "card-img"
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 137,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: name
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 138,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 139,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    rating,
-                    " stars"
-                ]
-            }, void 0, true, {
-                fileName: "src/App.js",
-                lineNumber: 140,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/App.js",
-        lineNumber: 136,
-        columnNumber: 5
-    }, undefined));
-};
-_c = RestaurantCard;
 const AppLayout = ()=>{
     return(// React.Fragment is used to reduce the number of DOM nodes
     // <React.Fragment></React.Fragment>, <></>
@@ -3167,44 +2963,31 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 150,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 151,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 152,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true));
 };
-_c1 = AppLayout;
-// const styleObj = {
-//     backgroundColor: "red",
-//   }
-// const JSX = () => {
-//   return (
-//     <>
-//     {/* These are the two different way to give styling to react */}
-//       <h1 style ={styleObj}>First</h1>
-//       <h1 style={{background: "blue"}}>Second</h1>
-//     </>
-//   );
-// };
+_c = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 172,
+    lineNumber: 22,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
-$RefreshReg$(_c, "RestaurantCard");
-$RefreshReg$(_c1, "AppLayout");
+var _c;
+$RefreshReg$(_c, "AppLayout");
 
   $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
@@ -27405,7 +27188,10 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$bfed.prelude(module);
 
 try {
-// Named Export
+// Named Import
+// import { Title } from "./components/Header";
+// combine both named & default import if both the components are in the same file like "Header.js"
+// import Header, { Title } from "./components/Header";
 // if we export component like below then it will be import as import {Title}, "Named Import"
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -27419,12 +27205,12 @@ const Title = ()=>{
             className: "logo"
         }, void 0, false, {
             fileName: "src/components/Header.js",
-            lineNumber: 5,
+            lineNumber: 8,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Header.js",
-        lineNumber: 4,
+        lineNumber: 7,
         columnNumber: 10
     }, undefined);
 };
@@ -27438,7 +27224,7 @@ const Header = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 14,
+                lineNumber: 17,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27449,45 +27235,45 @@ const Header = ()=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 17,
+                            lineNumber: 20,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 18,
+                            lineNumber: 21,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 19,
+                            lineNumber: 22,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 20,
+                            lineNumber: 23,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 16,
+                    lineNumber: 19,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 15,
+                lineNumber: 18,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 13,
+        lineNumber: 16,
         columnNumber: 10
     }, undefined);
 };
@@ -27677,22 +27463,25 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$0606.prelude(module);
 
 try {
-// passing reastaurantList props
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _config = require("../config");
+var _restaurantCard = require("./RestaurantCard");
+var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+// passing reastaurantList props
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "restaurant-list",
-        children: restaurantData.map((restaurant)=>{
+        children: (0, _config.restaurantList).map((restaurant)=>{
             // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
-            return /*#__PURE__*/ (0, _react.createElement)(RestaurantCard, {
+            return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
                 ...restaurant,
                 key: restaurant.id,
                 __source: {
                     fileName: "src/components/Body.js",
-                    lineNumber: 7,
+                    lineNumber: 9,
                     columnNumber: 14
                 },
                 __self: undefined
@@ -27700,7 +27489,7 @@ const Body = ()=>{
         })
     }, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 4,
+        lineNumber: 6,
         columnNumber: 10
     }, undefined);
 };
@@ -27714,7 +27503,245 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../config":"jtCLN","./RestaurantCard":"bMboU"}],"jtCLN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
+parcelHelpers.export(exports, "restaurantList", ()=>restaurantList);
+const IMG_CDN_URL = "https://images.unsplash.com/photo-1664232802830-592394491fd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMGRpc2h8ZW58MHx8MHx8fDA%3D";
+const restaurantList = [
+    {
+        id: 1,
+        name: "Burger King",
+        image: "https://images.unsplash.com/photo-1664232802830-592394491fd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMGRpc2h8ZW58MHx8MHx8fDA%3D",
+        cuisines: [
+            "Burger",
+            "American"
+        ],
+        rating: "4.2"
+    },
+    {
+        id: 2,
+        name: "KFC",
+        image: "https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Chicken",
+            "American"
+        ],
+        rating: "4.5"
+    },
+    {
+        id: 3,
+        name: "Uncle Ji Kitchen",
+        image: "https://images.pexels.com/photos/8819258/pexels-photo-8819258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        cuisines: [
+            "Paneer",
+            "Indian"
+        ],
+        rating: "4.0"
+    },
+    {
+        id: 4,
+        name: "Dominozz",
+        image: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Pizza",
+            "Italian"
+        ],
+        rating: "4.4"
+    },
+    {
+        id: 5,
+        name: "Pizzahut",
+        image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Pizza",
+            "Mexican"
+        ],
+        rating: "4.3"
+    },
+    {
+        id: 6,
+        name: "WOW",
+        image: "https://images.pexels.com/photos/18803177/pexels-photo-18803177/free-photo-of-plate-with-greasy-momos-dumplings.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        cuisines: [
+            "Momos",
+            "Japanese"
+        ],
+        rating: "4.0"
+    },
+    {
+        id: 7,
+        name: "WTF",
+        image: "https://plus.unsplash.com/premium_photo-1669150852127-2435412047f2?q=80&w=1417&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Burger",
+            "Indian"
+        ],
+        rating: "4.1"
+    },
+    {
+        id: 8,
+        name: "Kaveri restaurants",
+        image: "https://images.unsplash.com/photo-1625398407796-82650a8c135f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Masala Dosa",
+            "South Indian"
+        ],
+        rating: "4.5"
+    },
+    {
+        id: 9,
+        name: "MC Donald's",
+        image: "https://plus.unsplash.com/premium_photo-1683657860170-900d6cbceffe?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Burger",
+            "American"
+        ],
+        rating: "4.4"
+    },
+    {
+        id: 10,
+        name: "Rang De Basanti Dhaba",
+        image: "https://images.unsplash.com/photo-1690401767645-595de0e0e5f8?q=80&w=1426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Paneer Butter Masala",
+            "North Indian"
+        ],
+        rating: "4.5"
+    },
+    {
+        id: 11,
+        name: "Tripti South Indian Dhaba ",
+        image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Masala Dosa",
+            "South Indian"
+        ],
+        rating: "4.2"
+    },
+    {
+        id: 12,
+        name: "Spice Garden",
+        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=1371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cuisines: [
+            "Paneer",
+            "Veg Restaurant"
+        ],
+        rating: "4.5"
+    }
+]; // const styleObj = {
+ //     backgroundColor: "red",
+ //   }
+ // const JSX = () => {
+ //   return (
+ //     <>
+ //     {/* These are the two different way to give styling to react */}
+ //       <h1 style ={styleObj}>First</h1>
+ //       <h1 style={{background: "blue"}}>Second</h1>
+ //     </>
+ //   );
+ // };
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bMboU":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ffb1.prelude(module);
+
+try {
+// Config Driven UI
+// import { IMG_CDN_URL } from "./config";
+// receiving reastaurantList props
+// we can use props like const RestaurantCard = (props) => { return()}
+// instead of props we can also write like {restaurant}
+// const RestaurantCard = ({restaurant}) => {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const RestaurantCard = ({ name, cuisines, rating, image })=>{
+    // now we can also destructure the restaurant like below
+    // const {name,image,rating,cuisines} = restaurant;
+    return(// Static way to call data
+    // <div className="card">
+    //   <img src={IMG_CDN_URL} alt="card-img" />
+    //   <h2>Burger King</h2>
+    //   <h3>Burger, American</h3>
+    //   <h4>4.2 Stars Rating</h4>
+    // </div>
+    // Dynamically calling data with some mock objects or apis
+    // calling props traditionally
+    // <div className="card">
+    //   <img src={props.restaurant.image} alt="card-img" />
+    //   <h2>{props.restaurant.name}</h2>
+    //   <h3>{props.restaurant.cuisines.join(", ")}</h3>
+    //   <h4>{props.restaurant.rating} stars</h4>
+    // </div>
+    // destructuring the props like const RestaurantCard = ({restaurant}) => {}
+    // If we will destructure like above code then we can directly call like below
+    // <div className="card">
+    //   <img src={restaurant.image} alt="card-img" />
+    //   <h2>{restaurant.name}</h2>
+    //   <h3>{restaurant.cuisines.join(", ")}</h3>
+    //   <h4>{restaurant.rating} stars</h4>
+    // </div>
+    // const RestaurantCard = ({restaurant}) => {
+    // now we can also destructure the restaurant like below
+    // const {name,image,rating,cuisines} = restaurant;
+    // If we will destructure like above code then we can directly call like below
+    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: image,
+                alt: "card-img"
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 51,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: name
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 52,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: cuisines.join(", ")
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 53,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    rating,
+                    " stars"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 54,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/RestaurantCard.js",
+        lineNumber: 50,
+        columnNumber: 5
+    }, undefined));
+};
+_c = RestaurantCard;
+exports.default = RestaurantCard;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$ffb1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

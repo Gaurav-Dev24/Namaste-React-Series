@@ -1,4 +1,7 @@
-// Named Export
+// Named Import
+// import { Title } from "./components/Header";
+// combine both named & default import if both the components are in the same file like "Header.js"
+// import Header, { Title } from "./components/Header";
 // if we export component like below then it will be import as import {Title}, "Named Import"
 const Title = () => {
     return (

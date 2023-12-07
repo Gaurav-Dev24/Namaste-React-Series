@@ -1,9 +1,11 @@
-// passing reastaurantList props
+import {restaurantList} from "../config"
+import RestaurantCard from "./RestaurantCard";
 
+// passing reastaurantList props
 const Body = () => {
     return (
       <div className="restaurant-list">
-        {restaurantData.map((restaurant) => {
+        {restaurantList.map((restaurant) => {
           // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
           return <RestaurantCard {...restaurant} key={restaurant.id} />;
         })}
