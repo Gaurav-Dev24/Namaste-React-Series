@@ -39,6 +39,9 @@ const Body = () => {
             // }
             // USING TERNARY OPERATOR
             // searchClicked === "true" ? setSearchClicked("false") : setSearchClicked("true")
+
+            // need to filter the data
+            
           }}
         >
           Search

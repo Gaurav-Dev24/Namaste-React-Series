@@ -27511,6 +27511,7 @@ const Body = ()=>{
                         // }
                         // USING TERNARY OPERATOR
                         // searchClicked === "true" ? setSearchClicked("false") : setSearchClicked("true")
+                        // need to filter the data
                         },
                         children: "Search"
                     }, void 0, false, {
@@ -27533,7 +27534,7 @@ const Body = ()=>{
                         key: restaurant.id,
                         __source: {
                             fileName: "src/components/Body.js",
-                            lineNumber: 42,
+                            lineNumber: 44,
                             columnNumber: 16
                         },
                         __self: undefined
@@ -27541,7 +27542,7 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 39,
+                lineNumber: 41,
                 columnNumber: 7
             }, undefined)
         ]
