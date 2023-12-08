@@ -11,6 +11,7 @@ const Body = () => {
   // searchText is local state variable
   const [serachInput, setSearchInput] = useState("KFC"); //to create state variable
   // useState returns an array [variable,function to update the variable]
+  // const [searchClicked, setSearchClicked] = useState("false");
   return (
     <>
       {/* Search Bar */}
@@ -22,10 +23,26 @@ const Body = () => {
           value={serachInput}
           onChange={(e) => {
             // e.target.value => whatever we will write in input tag
-            setSearchInput(e.target.value)
+            setSearchInput(e.target.value);
           }}
         />
-      <button className="search-btn">Search</button>
+        {/* <h1>{searchClicked}</h1> */}
+        {/* Here we don't have to pass "e" as parameter to onclick function because I don't want to read the value of serachClicked */}
+        <button
+          className="search-btn"
+          onClick={() => {
+            // NORMAL IF CONDITION
+            // if (searchClicked === "true") {
+            //   setSearchClicked("false");
+            // } else {
+            //   setSearchClicked("true");
+            // }
+            // USING TERNARY OPERATOR
+            // searchClicked === "true" ? setSearchClicked("false") : setSearchClicked("true")
+          }}
+        >
+          Search
+        </button>
       </div>
 
       {/* Restaurant List */}

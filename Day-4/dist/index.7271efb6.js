@@ -27480,6 +27480,7 @@ const Body = ()=>{
     // searchText is local state variable
     const [serachInput, setSearchInput] = (0, _react.useState)("KFC"); //to create state variable
     // useState returns an array [variable,function to update the variable]
+    // const [searchClicked, setSearchClicked] = useState("false");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27496,21 +27497,31 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 17,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "search-btn",
+                        onClick: ()=>{
+                        // NORMAL IF CONDITION
+                        // if (searchClicked === "true") {
+                        //   setSearchClicked("false");
+                        // } else {
+                        //   setSearchClicked("true");
+                        // }
+                        // USING TERNARY OPERATOR
+                        // searchClicked === "true" ? setSearchClicked("false") : setSearchClicked("true")
+                        },
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 21,
-                        columnNumber: 7
+                        lineNumber: 24,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27522,7 +27533,7 @@ const Body = ()=>{
                         key: restaurant.id,
                         __source: {
                             fileName: "src/components/Body.js",
-                            lineNumber: 28,
+                            lineNumber: 42,
                             columnNumber: 16
                         },
                         __self: undefined
@@ -27530,7 +27541,7 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 25,
+                lineNumber: 39,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27547,7 +27558,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../config":"jtCLN","./RestaurantCard":"bMboU"}],"jtCLN":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../config":"jtCLN","./RestaurantCard":"bMboU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jtCLN":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
