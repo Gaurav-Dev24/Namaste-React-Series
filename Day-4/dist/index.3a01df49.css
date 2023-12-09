@@ -25,6 +25,8 @@
 
 .nav-items > ul > li {
   padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .restaurant-list {

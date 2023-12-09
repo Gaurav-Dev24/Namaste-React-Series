@@ -2,15 +2,24 @@ import { restaurantList } from "../config";
 import RestaurantCard from "./RestaurantCard";
 import { useState } from "react";
 
+function filterData (serachInput, restaurants){
+  // return restaurants.filter((restaurant) => restaurant.name.includes(serachInput));
+const filterData = restaurants.filter((restaurant) => 
+restaurant.name.includes(serachInput)
+);
+return filterData;
+}
 // passing reastaurantList props like {...restaurant}
 const Body = () => {
   // Normal JS variable
   // const searchText = "KFC";
 
+  // useState returns an array [variable,function to update the variable]
   // React Local State Variable with defualt value "KFC"
   // searchText is local state variable
-  const [serachInput, setSearchInput] = useState("KFC"); //to create state variable
-  // useState returns an array [variable,function to update the variable]
+  const [serachInput, setSearchInput] = useState(""); //to create state variable
+  const[restaurants, setRestaurants] = useState(restaurantList);
+  
   // const [searchClicked, setSearchClicked] = useState("false");
   return (
     <>
@@ -41,7 +50,10 @@ const Body = () => {
             // searchClicked === "true" ? setSearchClicked("false") : setSearchClicked("true")
 
             // need to filter the data
-            
+            // update the state - restaurants
+            const data = filterData(serachInput, restaurants);
+            // serachInput === "" ? setRestaurants(restaurants) : setRestaurants(data);
+            setRestaurants(data);
           }}
         >
           Search
@@ -50,7 +62,7 @@ const Body = () => {
 
       {/* Restaurant List */}
       <div className="restaurant-list">
-        {restaurantList.map((restaurant) => {
+        {restaurants.map((restaurant) => {
           // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
           return <RestaurantCard {...restaurant} key={restaurant.id} />;
         })}

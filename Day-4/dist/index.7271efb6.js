@@ -27471,15 +27471,19 @@ var _config = require("../config");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 var _s = $RefreshSig$();
+function filterData(serachInput, restaurants) {
+    return restaurants.filter((restaurant)=>restaurant.name.includes(serachInput));
+}
 // passing reastaurantList props like {...restaurant}
 const Body = ()=>{
     _s();
     // Normal JS variable
     // const searchText = "KFC";
+    // useState returns an array [variable,function to update the variable]
     // React Local State Variable with defualt value "KFC"
     // searchText is local state variable
-    const [serachInput, setSearchInput] = (0, _react.useState)("KFC"); //to create state variable
-    // useState returns an array [variable,function to update the variable]
+    const [serachInput, setSearchInput] = (0, _react.useState)(""); //to create state variable
+    const [restaurants, setRestaurants] = (0, _react.useState)((0, _config.restaurantList));
     // const [searchClicked, setSearchClicked] = useState("false");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -27497,44 +27501,48 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 18,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "search-btn",
                         onClick: ()=>{
-                        // NORMAL IF CONDITION
-                        // if (searchClicked === "true") {
-                        //   setSearchClicked("false");
-                        // } else {
-                        //   setSearchClicked("true");
-                        // }
-                        // USING TERNARY OPERATOR
-                        // searchClicked === "true" ? setSearchClicked("false") : setSearchClicked("true")
-                        // need to filter the data
+                            // NORMAL IF CONDITION
+                            // if (searchClicked === "true") {
+                            //   setSearchClicked("false");
+                            // } else {
+                            //   setSearchClicked("true");
+                            // }
+                            // USING TERNARY OPERATOR
+                            // searchClicked === "true" ? setSearchClicked("false") : setSearchClicked("true")
+                            // need to filter the data
+                            // update the state - restaurants
+                            const data = filterData(serachInput, restaurants);
+                            // serachInput === "" ? setRestaurants(restaurants) : setRestaurants(data);
+                            setRestaurants(data);
                         },
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 24,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 17,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "restaurant-list",
-                children: (0, _config.restaurantList).map((restaurant)=>{
+                children: restaurants.map((restaurant)=>{
                     // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
                     return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
                         ...restaurant,
                         key: restaurant.id,
                         __source: {
                             fileName: "src/components/Body.js",
-                            lineNumber: 44,
+                            lineNumber: 52,
                             columnNumber: 16
                         },
                         __self: undefined
@@ -27542,13 +27550,13 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 41,
+                lineNumber: 49,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "y37gXpNDM6HarcF72p2eFMjjopI=");
+_s(Body, "aAH7M2GTYe5mQHBEkBtHc3WkPJA=");
 _c = Body;
 exports.default = Body;
 var _c;
