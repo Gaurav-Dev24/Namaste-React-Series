@@ -27472,7 +27472,9 @@ var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 var _s = $RefreshSig$();
 function filterData(serachInput, restaurants) {
-    return restaurants.filter((restaurant)=>restaurant.name.includes(serachInput));
+    // return restaurants.filter((restaurant) => restaurant.name.includes(serachInput));
+    const filterData = restaurants.filter((restaurant)=>restaurant.name.includes(serachInput));
+    return filterData;
 }
 // passing reastaurantList props like {...restaurant}
 const Body = ()=>{
@@ -27501,7 +27503,7 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 22,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27524,13 +27526,13 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 28,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 21,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27542,7 +27544,7 @@ const Body = ()=>{
                         key: restaurant.id,
                         __source: {
                             fileName: "src/components/Body.js",
-                            lineNumber: 52,
+                            lineNumber: 54,
                             columnNumber: 16
                         },
                         __self: undefined
@@ -27550,7 +27552,7 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 49,
+                lineNumber: 51,
                 columnNumber: 7
             }, undefined)
         ]
