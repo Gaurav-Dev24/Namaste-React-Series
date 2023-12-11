@@ -27520,8 +27520,8 @@ const Body = ()=>{
                             // need to filter the data
                             // update the state - restaurants
                             const data = filterData(serachInput, restaurants);
-                            // serachInput === "" ? setRestaurants(restaurants) : setRestaurants(data);
-                            setRestaurants(data);
+                            serachInput === "" ? setRestaurants((0, _config.restaurantList)) : setRestaurants(data);
+                        // setRestaurants(data);
                         },
                         children: "Search"
                     }, void 0, false, {

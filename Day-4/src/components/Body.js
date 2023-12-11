@@ -52,8 +52,8 @@ const Body = () => {
             // need to filter the data
             // update the state - restaurants
             const data = filterData(serachInput, restaurants);
-            // serachInput === "" ? setRestaurants(restaurants) : setRestaurants(data);
-            setRestaurants(data);
+            serachInput === "" ? setRestaurants(restaurantList) : setRestaurants(data);
+            // setRestaurants(data);
           }}
         >
           Search
