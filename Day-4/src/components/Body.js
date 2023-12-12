@@ -28,12 +28,17 @@ const Body = () => {
   // },[serachInput]) //-->It will be called every time the value of search input state variable changes.
   // useEffect(() => {
   //   // API call
-  // https://www.themealdb.com/api/json/v1/1/v
   // },[]) //-->To call an api once after initial render
 
-  useEffect(()=>{},[])
+  useEffect(()=>{
+    getRestaurants()
+  },[])
 
-
+async function getRestaurants(){
+  const data = await fetch("https://www.themealdb.com/api/json/v1/1/");
+  const json = await data.json();
+  console.log(data)
+}
   
   // const [searchClicked, setSearchClicked] = useState("false");
   return (

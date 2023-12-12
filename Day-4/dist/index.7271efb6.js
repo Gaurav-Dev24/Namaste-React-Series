@@ -27494,9 +27494,15 @@ const Body = ()=>{
     // },[serachInput]) //-->It will be called every time the value of search input state variable changes.
     // useEffect(() => {
     //   // API call
-    // https://www.themealdb.com/api/json/v1/1/v
     // },[]) //-->To call an api once after initial render
-    (0, _react.useEffect)(()=>{}, []);
+    (0, _react.useEffect)(()=>{
+        getRestaurants();
+    }, []);
+    async function getRestaurants() {
+        const data = await fetch("https://www.themealdb.com/api/json/v1/1/");
+        const json = await data.json();
+        console.log(data);
+    }
     // const [searchClicked, setSearchClicked] = useState("false");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -27514,7 +27520,7 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 37,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27537,13 +27543,13 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 43,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 36,
+                lineNumber: 42,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27555,7 +27561,7 @@ const Body = ()=>{
                         key: restaurant.id,
                         __source: {
                             fileName: "src/components/Body.js",
-                            lineNumber: 67,
+                            lineNumber: 73,
                             columnNumber: 16
                         },
                         __self: undefined
@@ -27563,7 +27569,7 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 64,
+                lineNumber: 70,
                 columnNumber: 7
             }, undefined)
         ]
