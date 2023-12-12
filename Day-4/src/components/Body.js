@@ -1,6 +1,6 @@
 import { restaurantList } from "../config";
 import RestaurantCard from "./RestaurantCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function filterData (serachInput, restaurants){
   // return restaurants.filter((restaurant) => restaurant.name.includes(serachInput));
@@ -19,6 +19,21 @@ const Body = () => {
   // searchText is local state variable
   const [serachInput, setSearchInput] = useState(""); //to create state variable
   const[restaurants, setRestaurants] = useState(restaurantList);
+
+  // useEffect(() => {
+  //   console.log("useEffect");
+  // },[]) //-->It will be called after initial render only once because the dependency array is empty
+  // useEffect(() => {
+  //   console.log("useEffect");
+  // },[serachInput]) //-->It will be called every time the value of search input state variable changes.
+  // useEffect(() => {
+  //   // API call
+  // https://www.themealdb.com/api/json/v1/1/v
+  // },[]) //-->To call an api once after initial render
+
+  useEffect(()=>{},[])
+
+
   
   // const [searchClicked, setSearchClicked] = useState("false");
   return (

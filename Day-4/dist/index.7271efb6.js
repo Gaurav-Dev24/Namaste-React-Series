@@ -27486,6 +27486,17 @@ const Body = ()=>{
     // searchText is local state variable
     const [serachInput, setSearchInput] = (0, _react.useState)(""); //to create state variable
     const [restaurants, setRestaurants] = (0, _react.useState)((0, _config.restaurantList));
+    // useEffect(() => {
+    //   console.log("useEffect");
+    // },[]) //-->It will be called after initial render only once because the dependency array is empty
+    // useEffect(() => {
+    //   console.log("useEffect");
+    // },[serachInput]) //-->It will be called every time the value of search input state variable changes.
+    // useEffect(() => {
+    //   // API call
+    // https://www.themealdb.com/api/json/v1/1/v
+    // },[]) //-->To call an api once after initial render
+    (0, _react.useEffect)(()=>{}, []);
     // const [searchClicked, setSearchClicked] = useState("false");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -27503,7 +27514,7 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 24,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27526,13 +27537,13 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 30,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 23,
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27544,7 +27555,7 @@ const Body = ()=>{
                         key: restaurant.id,
                         __source: {
                             fileName: "src/components/Body.js",
-                            lineNumber: 54,
+                            lineNumber: 67,
                             columnNumber: 16
                         },
                         __self: undefined
@@ -27552,13 +27563,13 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 51,
+                lineNumber: 64,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "aAH7M2GTYe5mQHBEkBtHc3WkPJA=");
+_s(Body, "hncLy4NkctnZ0ZNACsbdn1TbhJY=");
 _c = Body;
 exports.default = Body;
 var _c;
