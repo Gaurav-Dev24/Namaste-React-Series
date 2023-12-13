@@ -35,9 +35,10 @@ const Body = () => {
   },[])
 
 async function getRestaurants(){
-  const data = await fetch("https://www.themealdb.com/api/json/v1/1/");
+  const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448869999999");
   const json = await data.json();
-  console.log(data)
+  console.log(json)
+  setRestaurants(json?.data?.cards[2]?.data?.data?.cards);
 }
   
   // const [searchClicked, setSearchClicked] = useState("false");
