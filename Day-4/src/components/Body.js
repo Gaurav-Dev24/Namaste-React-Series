@@ -34,12 +34,12 @@ const Body = () => {
     getRestaurants()
   },[])
 
-async function getRestaurants(){
-  const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929");
-  const json = await data.json();
-  console.log(json)
-  setRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-}
+// async function getRestaurants(){
+  // const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929");
+  // const json = await data.json();
+  // console.log(json)
+  // setRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+// }
   
   // const [searchClicked, setSearchClicked] = useState("false");
   return (
