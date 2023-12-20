@@ -34,17 +34,17 @@ const Body = () => {
     getRestaurants()
   },[])
 
-// async function getRestaurants(){
-  // const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929");
-  // const json = await data.json();
-  // console.log(json)
-  // setRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-// }
+
+async function getRestaurants(){
+  const data = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php");
+  const json = await data.json();
+  console.log(json)
+  setRestaurants(json?.categories);
+}
   
   // const [searchClicked, setSearchClicked] = useState("false");
   return (
     <>
-      {/* Search Bar */}
       <div className="search-container">
         <input
           type="text"
@@ -73,8 +73,8 @@ const Body = () => {
             // need to filter the data
             // update the state - restaurants
             const data = filterData(serachInput, restaurants);
-            serachInput === "" ? setRestaurants(restaurantList) : setRestaurants(data);
-            // setRestaurants(data);
+            // serachInput === "" ? setRestaurants(restaurantList) : setRestaurants(data);
+            setRestaurants(data);
           }}
         >
           Search
@@ -85,7 +85,7 @@ const Body = () => {
       <div className="restaurant-list">
         {restaurants.map((restaurant) => {
           // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
-          return <RestaurantCard {...restaurant} key={restaurant.id} />;
+          return <RestaurantCard {...restaurant} key={restaurant.idCategory} />;
         })}
 
         {/* // here we can also use spread operator like below but when we will pass props in the child component i.e, RestaurantCard then the syntax will be like below

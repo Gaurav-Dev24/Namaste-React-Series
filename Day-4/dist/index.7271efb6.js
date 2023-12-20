@@ -27499,9 +27499,10 @@ const Body = ()=>{
         getRestaurants();
     }, []);
     async function getRestaurants() {
-        const data = await fetch("https://www.themealdb.com/api/json/v1/1/");
+        const data = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php");
         const json = await data.json();
-        console.log(data);
+        console.log(json);
+        setRestaurants(json?.categories);
     }
     // const [searchClicked, setSearchClicked] = useState("false");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -27537,8 +27538,8 @@ const Body = ()=>{
                             // need to filter the data
                             // update the state - restaurants
                             const data = filterData(serachInput, restaurants);
-                            serachInput === "" ? setRestaurants((0, _config.restaurantList)) : setRestaurants(data);
-                        // setRestaurants(data);
+                            // serachInput === "" ? setRestaurants(restaurantList) : setRestaurants(data);
+                            setRestaurants(data);
                         },
                         children: "Search"
                     }, void 0, false, {
@@ -27558,7 +27559,7 @@ const Body = ()=>{
                     // return <RestaurantCard restaurant = {restaurant} key={restaurant.id}/>
                     return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
                         ...restaurant,
-                        key: restaurant.id,
+                        key: restaurant.idCategory,
                         __source: {
                             fileName: "src/components/Body.js",
                             lineNumber: 73,
@@ -27739,82 +27740,83 @@ try {
 // we can use props like const RestaurantCard = (props) => { return()}
 // instead of props we can also write like {restaurant}
 // const RestaurantCard = ({restaurant}) => {
+// dummy data
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const RestaurantCard = ({ name, cuisines, rating, image })=>{
+const RestaurantCard = ({ strCategory, strCategoryDescription, strCategoryThumb })=>{
     // now we can also destructure the restaurant like below
     // const {name,image,rating,cuisines} = restaurant;
-    return(// Static way to call data
-    // <div className="card">
-    //   <img src={IMG_CDN_URL} alt="card-img" />
-    //   <h2>Burger King</h2>
-    //   <h3>Burger, American</h3>
-    //   <h4>4.2 Stars Rating</h4>
-    // </div>
-    // Dynamically calling data with some mock objects or apis
-    // calling props traditionally
-    // <div className="card">
-    //   <img src={props.restaurant.image} alt="card-img" />
-    //   <h2>{props.restaurant.name}</h2>
-    //   <h3>{props.restaurant.cuisines.join(", ")}</h3>
-    //   <h4>{props.restaurant.rating} stars</h4>
-    // </div>
-    // destructuring the props like const RestaurantCard = ({restaurant}) => {}
-    // If we will destructure like above code then we can directly call like below
-    // <div className="card">
-    //   <img src={restaurant.image} alt="card-img" />
-    //   <h2>{restaurant.name}</h2>
-    //   <h3>{restaurant.cuisines.join(", ")}</h3>
-    //   <h4>{restaurant.rating} stars</h4>
-    // </div>
-    // const RestaurantCard = ({restaurant}) => {
-    // now we can also destructure the restaurant like below
-    // const {name,image,rating,cuisines} = restaurant;
-    // If we will destructure like above code then we can directly call like below
-    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: image,
+                src: strCategoryThumb,
                 alt: "card-img"
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 51,
-                columnNumber: 9
+                lineNumber: 18,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: name
+                children: strCategory
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 52,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "src/components/RestaurantCard.js",
-                lineNumber: 53,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    rating,
-                    " stars"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/RestaurantCard.js",
-                lineNumber: 54,
-                columnNumber: 9
+                lineNumber: 19,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantCard.js",
-        lineNumber: 50,
-        columnNumber: 5
-    }, undefined));
+        lineNumber: 17,
+        columnNumber: 10
+    }, undefined);
 };
 _c = RestaurantCard;
+// const RestaurantCard = ({ 
+//     name, 
+//     cuisines, 
+//     rating, 
+//     image 
+//   }) => {
+//     // now we can also destructure the restaurant like below
+//     // const {name,image,rating,cuisines} = restaurant;
+//     return (
+//       // Static way to call data
+//       // <div className="card">
+//       //   <img src={IMG_CDN_URL} alt="card-img" />
+//       //   <h2>Burger King</h2>
+//       //   <h3>Burger, American</h3>
+//       //   <h4>4.2 Stars Rating</h4>
+//       // </div>
+//       // Dynamically calling data with some mock objects or apis
+//       // calling props traditionally
+//       // <div className="card">
+//       //   <img src={props.restaurant.image} alt="card-img" />
+//       //   <h2>{props.restaurant.name}</h2>
+//       //   <h3>{props.restaurant.cuisines.join(", ")}</h3>
+//       //   <h4>{props.restaurant.rating} stars</h4>
+//       // </div>
+//       // destructuring the props like const RestaurantCard = ({restaurant}) => {}
+//       // If we will destructure like above code then we can directly call like below
+//       // <div className="card">
+//       //   <img src={restaurant.image} alt="card-img" />
+//       //   <h2>{restaurant.name}</h2>
+//       //   <h3>{restaurant.cuisines.join(", ")}</h3>
+//       //   <h4>{restaurant.rating} stars</h4>
+//       // </div>
+//       // const RestaurantCard = ({restaurant}) => {
+//       // now we can also destructure the restaurant like below
+//       // const {name,image,rating,cuisines} = restaurant;
+//       // If we will destructure like above code then we can directly call like below
+//       <div className="card">
+//         <img src={image} alt="card-img" />
+//         <h2>{name}</h2>
+//         <h3>{cuisines.join(", ")}</h3>
+//         <h4>{rating} stars</h4>
+//       </div>
+//     );
+//   };
 exports.default = RestaurantCard;
 var _c;
 $RefreshReg$(_c, "RestaurantCard");
