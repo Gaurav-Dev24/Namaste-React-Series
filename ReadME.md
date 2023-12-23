@@ -11,7 +11,31 @@
 ---
 
 <details>
-  <summary>2. State the difference between Elements and Tags?</summary>
+  <summary>2. State the difference between HTML and XHTML. </summary>
+
+## HTML :-
+- HTML stands for **HyperText Markup Language**. It was developed by Tim Berners-Lee.
+
+- **It was developed in 1991**. It is **extended from SGML**. All **tags and attributes are not necessarily to be in lower or upper case**.
+
+- The **format is a document file format**. **Doctype is not necessary to write at the top**. The used filename **extensions are .html, .htm**.
+
+- It is **not necessary to close the tags in the order they are opened**. 
+
+## XHTML :-
+- XHTML stands for **Extensible Hypertext Markup Language**. It was developed by W3C i.e.lowercase World Wide Web Consortium.
+
+- **It was released in 2000**. It is **extended from XML and HTML**. In this, **every tag and attribute should be in lower case**.
+
+- The **format is a markup language**. **Doctype is very necessary to write at the top of the file**. The used Filename **extensions are .xhtml, .xht, .xml**.
+
+- It is **necessary to close the tags in the order they are opened**. 
+</details>
+
+---
+
+<details>
+  <summary>3. State the difference between Elements and Tags?</summary>
 
 ### Elements :-
 
@@ -56,7 +80,7 @@
 ---
 
 <details>
-  <summary>3. What are Attributes in tags? </summary>
+  <summary>4. What are Attributes in tags? </summary>
 
 - Attributes provide additional information about HTML elements and are used within the opening tag of an element.
 
@@ -76,7 +100,7 @@
 ---
 
 <details>
-  <summary>4. What are void elements in HTML?</summary>
+  <summary>5. What are void elements in HTML?</summary>
 
 - HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example
   ```html
@@ -91,7 +115,7 @@
 ---
 
 <details>
-  <summary>5. What are Meta tags? </summary>
+  <summary>6. What are Meta tags? </summary>
 
 - Meta tags in HTML provide metadata about the HTML document. Metadata is information about data, and in the context of HTML.
 
@@ -114,25 +138,31 @@
 ---
 
 <details>
-  <summary>6. State the difference between HTML5 and its previous versions. </summary>
+  <summary>7. State the difference between HTML and HTML5. </summary>
 
-- HTML5 uses a simplified, **shorter doctype declaration compared to previous versions**. The HTML5 doctype is `<!DOCTYPE html>`, making it easier to remember and use.
+## HTML :-
 
-- HTML5 introduces several **new semantic elements that provide more meaningful information about the structure of a document**. Examples include `<article>`, `<section>`, `<nav>`, `<header>`, `<footer>`, `<figure>`, and `<figcaption>`.
+- It didn’t support audio and video without the use of Flash player support. 
+- It uses cookies to store temporary data. Does not allow JavaScript to run in the browser. 
+- Not possible to draw shapes like circles, rectangles, triangles, etc. 
+- Elements like nav and header were not present. The doctype declaration is too long and complicated.
+- Vector graphics are possible in HTML with the help of various technologies such as VML, Silver-light, Flash, etc.
+- It does not allow drag-and-drop effects.
 
-- HTML5 includes native support for embedding audio and video content using the `<audio>` and `<video>` elements, **eliminating the need for third-party plugins like Flash**.
+## HTML5 :-
 
-- HTML5 introduces the `<canvas>` element, which allows developers to draw graphics and create animations directly within the browser using JavaScript.
-
-- HTML5 introduces new input types, such as `<input type="email">` and `<input type="url">`, making it easier to capture specific types of user input. **Additionally, it supports the "pattern" attribute for input validation**.
-
-- HTML5 incorporates features like the `<meta name="viewport">` tag, which **facilitates the creation of responsive and mobile-friendly websites**.
+- 	It supports audio and video controls with the use of <audio> and <video> tags.
+- It uses SQL databases and application cache to store offline data. 
+- Allows JavaScript to run in the background. This is possible due to JS Web worker API in HTML5.
+- HTML5 allows drawing shapes like circles, rectangles, triangles, etc.
+- New elements for web structure like nav, header, footer, etc. The doctype declaration is quite simple and easy.
+- Vector graphics is additionally an integral part of HTML5 like SVG and canvas.
 </details>
 
 ---
 
 <details>
-  <summary>7. What are HTML entities? </summary>
+  <summary>8. What are HTML entities? </summary>
 
 - HTML entities is essential when you want to display reserved characters or characters with special meanings in HTML without triggering their associated behaviors.
 
@@ -144,7 +174,7 @@
 ---
 
 <details>
-  <summary>8. Difference between Inline and Block Elements in Html? </summary>
+  <summary>9. Difference between Inline and Block Elements in Html? </summary>
 
 ## Block :-
 
@@ -170,7 +200,7 @@
 ---
 
 <details>
-  <summary>9. What is the difference between &lt; figure &gt; tag and &lt; img &gt; tag? </summary>
+  <summary>10. What is the difference between &lt; figure &gt; tag and &lt; img &gt; tag? </summary>
 
 ## Figure :-
 
@@ -203,7 +233,7 @@
 ---
 
 <details>
-  <summary>10. Difference between &lt; link &gt; and &lt; a &gt; tag.</summary>
+  <summary>11. Difference between &lt; link &gt; and &lt; a &gt; tag.</summary>
 
 ## "a" tag (Anchor Tag):-
 
@@ -233,7 +263,7 @@
 ---
 
 <details>
-  <summary>11. What is the difference between “display: none” and “visibility: hidden”, when used as attributes to the HTML element? </summary>
+  <summary>12. What is the difference between “display: none” and “visibility: hidden”, when used as attributes to the HTML element? </summary>
 
 ## `display: none` :-
 
@@ -269,7 +299,7 @@
 ---
 
 <details>
-  <summary>12. How do you create nested web pages in HTML? </summary>
+  <summary>13. How do you create nested web pages in HTML? </summary>
 
 - **Creating nested web pages using iframes in HTML involves embedding one HTML document within another using the `<iframe>`tag. Here's an example:-**
 
@@ -290,7 +320,6 @@
   <iframe src="child.html" width="600" height="400"></iframe>
 </body>
 </html>
-
 ```
 - **child.html**
 ```html
@@ -307,5 +336,301 @@
 </body>
 </html>
 ```
+- **Creating nested web pages using iframes in HTML involves embedding one HTML document within another using the `<iframe>`tag. Here's an example:-**
+
+- The &lt;embed&gt; tag in HTML is used for embedding external applications which are generally multimedia content like audio or video into an HTML document.
+
+- It is used as a container for embedding plug-ins such as flash animations. This tag is a new tag in HTML 5, and it requires only starting tag.
+
+- **embed**
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>embed Tag</title>
+      <style>
+        q {
+          color: #00cc00;
+          font-style: italic;
+        }
+      </style> 
+    </head>
+    <body>
+      <q>GeeksforGeeks</q> is loading.
+      <br>
+      <embed src="loading2.swf"
+      type="application/x-shockwave-flash">
+    </body>
+  </html>				 
+
+  ```
 </details>
+
 --- 
+
+<details>
+  <summary>14. What is the use of the target attribute in the &lt;link&gt; tag? </summary>
+
+- The HTML &lt;link&gt; **target Attribute** is used to specify the **window or a frame where the linked document is loaded**. It is not supported by HTML 5.
+
+  ```html
+    <link target="_blank|_self|_parent|_top|framename">
+  ```
+- Attribute Values :- 
+ - **_blank**: It opens the link in a new window.
+ - **_self**: It opens the linked document in the same frame.
+ - **_parent**: It opens the linked document in the parent frameset.
+ - **_top**: It opens the linked document in the full body of the window.
+ - **framename**: It opens the linked document in the named frame.
+
+</details>
+
+--- 
+
+<details>
+  <summary>15. What are semantic elements? </summary>
+
+- Semantic Elements have meaningful names which tell about the type of content. For instance header, footer, table, … etc. 
+
+- HTML5 introduces many semantic elements as mentioned below
+
+- **article**: It contains independent content which doesn’t require any other context. 
+- **aside**: It is used to place content in a sidebar i.e. aside from the existing content. 
+- **details**: It defines additional details that the user can hide or view. 
+- **figure & figcaption**: It is used to add an image to a web page with a small description.
+- **footer**: It is located at the bottom of any article or document, they can contain contact details, copyright information, etc.
+- **header**: It is used for the header of a section introductory of a page.
+- **main**: It defines the main content of the document. 
+- **mark**: It is used to highlight the text.
+- **nav**: It is used to define a set of navigation links in the form of a navigation bar or nav menu.
+- **section**: A page can be split into sections like Introduction, Contact Information, Details, etc and each of these sections can be in a different section tag.
+</details>
+
+--- 
+
+<details>
+  <summary>16. What is HTML Canvas? </summary>
+
+- The HTML **“canvas”** element is **used to draw graphics via JavaScript**.
+
+- The **“canvas” element is only a container for graphics**. One must use JavaScript to actually draw the graphics.
+
+- Canvas has **several methods for drawing paths, boxes, circles, text, and adding images**.
+
+- The **canvas would be a rectangular area on an HTML page**. By default, a **canvas has no border and no content**.
+
+- An **id attribute** has been specified to refer to it in a script, and a **width and height attribute** to define the size of the canvas. The **style attribute** is used to add a border.
+
+- **CANVAS**
+```html
+<!DOCTYPE html> 
+<html> 
+
+<body> 
+	<canvas id="myCanvas"
+			width="400"
+			height="200"
+			style="border:2px solid #000000;"> 
+	</canvas> 
+</body> 
+</html>
+
+```
+</details>
+
+--- 
+
+<details>
+  <summary>17. What are web storage APIs? </summary>
+
+- **SessionStorage** and **LocalStorage** are known as the **web storage API**. Data can be stored on the client side by using these APIs. 
+
+## SessionStorage :-
+
+- SessionStorage is **used for storing data on the client side**. **Maximum limit of data saving in SessionStorage is about 5 MB**.
+
+- **Data in the SessionStorage exist till the current tab is open** if we close the current tab then our data will also erase automatically from the SessionStorage. 
+
+## LocalStorage :-
+
+- Like SessionStorage, LocalStorage also **. **Maximum limit of data saving is about 5 MB in LocalStorage also**.
+
+- LocalStorage has **no expiration time, Data in the LocalStorage persist till the user manually delete it**. This is the only difference between LocalStorage and SessionStorage. 
+</details>
+
+---
+--- 
+
+<details>
+  <summary>18. What are the new input types in HTML5 for forms? </summary>
+
+## The following are the new input types in HTML5 for forms:
+
+- **date -**	Allows the user to select a date.	
+
+  ```html
+  <input type=”date”>
+  ```
+- **datetime -**	Allows the user to select date and time using UTC date and time format.	
+
+  ```html
+  <input type=”datetime”>
+  ```
+- **datetime-local -**	To select the date and time as per the local time.
+
+  ```html
+  <input type=”datetime-local”>
+  ```	
+- **month -**	Select month and year.
+
+  ```html
+    <input type=”month”>
+  ```
+- **time -**	The time of day.
+
+  ```html
+    <input type=”time”>
+  ```
+- **week -**	Enables you to select the week and year.
+
+  ```html
+    <input type=”week”>
+  ```
+- **color -**	Enables you to enter a simple color value.
+
+  ```html
+    <input type=”color””>
+  ```
+- **email -**	Validates the input using the standard email format.
+
+  ```html
+    <input type=”email”>
+  ```
+- **search -**	Searches a data set.
+
+  ```html
+    <input type=”search”>
+  ```
+- **number -**	Accepts only numbers.
+
+  ```html
+    <input type=”number”>
+  ```
+- **url -**	Accepts only URLs.
+
+  ```html
+    <input type=”url”>
+  ```
+</details>
+
+---
+
+<details>
+  <summary>19. Explain an image map in HTML. </summary>
+
+- An image map is **defined by the &lt;map&gt; tag**. Using this the image map tag, **we can linking the different web pages using a single image**. We can add one or more clickable areas in a single image using &lt;area&gt; tags. 
+</details>
+
+---
+
+<details>
+  <summary>20. What is the use of the figure tag in HTML 5? </summary>
+
+- The &lt;figure&gt; tag **identifies self-contained content related to the main content. It adds self-contained content like photos, diagrams, illustrations, etc**.
+
+- The figure, its caption, and its contents are referenced as a single unit from the main flow of the document. 
+
+- The **&lt;figure&gt; tag has two elements img src and figcaption**. **Img src is used for adding image sources in a document**, while **figcaption sets the caption of an image**.
+
+```html
+<figure>
+    <img src="pancakes.jpg" alt="Blueberry Pancakes">
+    <figcaption>A Stack of Blueberry Pancakes</figcaption>
+</figure>
+```
+</details>
+
+---
+
+<details>
+  <summary>21. What is a datalist tag? </summary>
+
+- The &lt;datalist&gt; tag provides autocomplete feature in the HTML files. **It enables users to add the autocomplete form based on the predefined options**.
+
+- It can be **used with an input tag so users can easily fill the data in the forms using predefined options**.
+
+```html
+  <label for="car">Choose your car from the list:</label>
+  <input list="cars" name="car" id="car">
+  <datalist id="cars">
+    <option value="Honda">
+    <option value="Hyundai">
+    <option value="Maruti">
+    <option value="Audi">
+    <option value="BMW">
+  </datalist>
+```
+</details>
+
+---
+
+<details>
+  <summary>22. Why is the required attribute used in HTML5? </summary>
+
+- This **attribute is mainly used for form validation**. Before submitting the form, **it compels the user to enter text in the text area or text field**.
+</details>
+
+---
+
+<details>
+  <summary>23. What is the use of Geolocation API in HTML5? </summary>
+
+- One of the **best HTML5 APIs is Geolocation API** which is **used to determine the geographical location of the user for a web application**.  
+
+- With HTML5, you can **now browse to the visitor’s current website’s latitude and longitude coordinates**. 
+
+- These **coordinates can be recorded by JavaScript and sent to the server, allowing it to display your position on the page**.
+
+- The geolocation API is used with **navigation.geolocation object**. A Geolocation object that **contains the user’s location information and can produce a customized result is returned via the read-only property of the object**.
+
+- **Syntax -**
+
+```javascript
+  var geoLocation = navigator.geolocation;
+```
+</details>
+
+---
+<details>
+  <summary>24. What is the benefit of collapsing the white space in HTML? </summary>
+
+- **White space** is a term **used to describe empty or blank values in the code the browser reads and displays**. The collapsing of these white spaces is a unique characteristic of HTML.
+
+- The **advantage of this feature is in its ability to reduce the time of transmitting data between server and client by removing unused bytes taken up by the white spaces**.
+
+- If you **accidentally leave excess white space, the browser will disregard it and perfectly display the UI**.
+</details>
+
+---
+<details>
+  <summary>25. What is an SVG tag in HTML? Give Example. </summary>
+
+- **Scalable Vector Graphics** is the abbreviation for the HTML SVG. A **modularized language called HTML SVG is used to describe visuals in XML**. 
+
+- **Vector and hybrid vector/raster graphics in two dimensions are described in XML**. It comes from the W3C. **Text files containing XML define the actions of SVG images**. 
+
+- The **ability to produce and edit SVG images as XML files means that they can be done with a text editor**, but usually speaking, drawing applications like Inkspace are preferred for this purpose.
+
+  ```html
+    <!DOCTYPE html>
+    <html>
+    <body>
+      <svg width= "200" height= "200">
+      <circle  cx= "50" cy="50" r="45" stroke="pink" stroke-width="4" fill="cyan" />
+      </svg>
+    </body>
+    </html>
+  ```
+</details>
+
+---
