@@ -615,18 +615,58 @@ var geoLocation = navigator.geolocation;
 
   <details>
     <summary>5. Lists of CSS Frameworks</summary>
+
+  - **The best CSS frameworks are**:
+
+    * Bootstrap
+    * Foundation
+    * Bulma
+    * UIKit
+    * Semantic UI
+    * Materialize
+    * Pure
+    * Tailwind CSS
   </details>
 
   ---
 
   <details>
     <summary>6. How many different ways are their to add CSS to HTML file?</summary>
+
+  - **There are three types of CSS which are given below:**
+    * **Inline CSS:** Inline CSS contains the **CSS property in the body section attached with the element known as inline CSS**. This kind of style is specified within an HTML tag using the style attribute.
+
+    * **Internal or Embedded CSS:** This can be **used when a single HTML document must be styled uniquely.** The CSS ruleset should be within the HTML file in the head section i.e the **CSS is embedded within the HTML file**.
+
+    * **External CSS:** External CSS **contains a separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, … etc).** CSS property is written in a separate file with **.css** extension and should be linked to the HTML document using the **link tag**. **This means that for each element, style can be set only once and that will be applied across web pages**.
   </details>
 
   ---
 
   <details>
     <summary>7. What is a CSS preprocessor? What are SASS, LESS, and Stylus? Why do people use them?</summary>
+
+  - **CSS preprocessor is a tool used to enhance the basic functionality and let us use the complex logical syntax** such as **variables**, **functions**, **mixins**, and **code nesting within vanilla CSS scripts themselves**.
+
+  -  CSS preprocessor **allows us to generate CSS from the preprocessor’s own unique syntax**. It extends the basic functionality of default vanilla CSS through its own scripting language.
+
+  - **There are 3 preprocessor of CSS :-**
+    * **SaaS (Syntactically Awesome Style Sheets) :-** 
+      + It **reduces the repetition of CSS, thus saving time. It uses .sass extension.**
+
+      + SASS can be **written in two different syntaxes**. The original syntax, called the **indented syntax**, uses indentation to separate code blocks and newline characters to separate rules.
+
+      + The **newer syntax**, Sassy CSS (SCSS), **uses block formatting, like CSS, and braces to denote code blocks and semicolons to separate rules within a block.** The *indented syntax and SCSS files have the extensions .sass and .scss respectively*. 
+    
+    * **Less (Leener Stylesheets) :-**
+      +  **Easy to add to any JavaScript project with the help of npm or less.js file.** Here, **@ is used to define the variables.**
+
+      + **It uses the extension .less. LESS syntax is similar to SCSS with some exceptions.** 
+    
+    * **Stylus :-**
+      + **Stylus is quite flexible when it comes to writing syntax**. It **supports native CSS and allows omission of colons, semicolons, and brackets**. 
+
+      + There is no need to use @ or $ to define the variables.
   </details>
   
   ---
