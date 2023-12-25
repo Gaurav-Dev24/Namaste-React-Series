@@ -666,43 +666,116 @@ var geoLocation = navigator.geolocation;
     * **Stylus :-**
       + **Stylus is quite flexible when it comes to writing syntax**. It **supports native CSS and allows omission of colons, semicolons, and brackets**. 
 
-      + There is no need to use @ or $ to define the variables.
+      + There is **no need to use @ or $ to define the variables**.
   </details>
   
   ---
 
   <details>
     <summary>8. What is the difference among inline, inline-block, and block elements?</summary>
+
+| **Inline** | **Inline-Block** | **Block** |
+| ---------- | ---------------- | --------- |
+| Inline elements **do not start on a new line**; they appear on the same line as the content and tags beside them. | Inline-block elements are **similar to inline elements, but they can have padding, margins, and set height and width values**. | Block elements **always start on a new line and occupy an entire row or width**. |
+| Inline elements **do not force a new line to begin after them, and they flow with the content**. | Like inline elements, inline-block elements **do not start on a new line, but they can have a width and height, and they respect top and bottom margins and paddings**. | Block elements **create a "block" or "box" on the page, and subsequent elements start on a new line below them.** |
+| Some examples of inline elements are &lt;a&gt;, &lt;strong&gt;, &lt;span&gt;, and &lt;img&gt;. | This makes inline-block elements useful for **creating layouts where you want elements to sit next to each other horizontally**, but you also want to control their dimensions. | Examples of block elements include &lt;div&gt;, &lt;p&gt;, &lt;h1&gt; to &lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt;. |
+
   </details>
 
   ---
 
   <details>
     <summary>9. What are pseudo elements and pseudo classes?</summary>
+
+  | **pseudo elements** | **pseudo-class** | 
+  | ---------- | ---------------- | 
+  | Pseudo elements help to **create items that do not normally exist in the document tree**.  | Pseudo classes **select regular elements under specific conditions** such as when a user is hovering over a link.  | 
+  | The examples of pseudo elements are: **::before**, **::after**, **::selection**, **::first-letter**, **::first-line** | The examples of pseudo classes are: **:hover**, **:active**, **:link**, **:visited**, **:focus** | 
   </details>
 
   ---
 
   <details>
     <summary>10. What are the differences between adaptive design and responsive design?</summary>
+
+  | **Adaptive Design** | **Responsive Design** | 
+  | ------------------- | --------------------- |
+  | It **focuses on multiple fixed layout sizes in website development**. | It **focuses on showing content based on available browser space.** | 
+  | In this kind of website design, **first the available space is detected and then the layout**, with most appropriate size, is picked and used to display the content. **Resized browser window has no effect on the design**. | In this kind of website design, **when the browser window is resized, the content of the website is dynamically and optimally rearranged to accommodate the window.** | 
+  | It uses six standard screen widths, **320 px**, **480 px**, **760 px**, **960 px**, **1200 px**, and **1600 px**. | Depending on the target device’s properties, **it uses CSS media queries to change styles for adapting to different screens.** | 
+  | It **takes a lot of time and effort** because  the options and realities of the end users  need to be examined first and then the best possible adaptive solutions are designed. | Building and designing fluid websites that can accommodate content depending on the screen size **does not take much work**. | 
+  | It **gives a lot of control over the design for specific screens**. | It **does not allow much control over the design.** | 
   </details>
 
   ---
 
   <details>
     <summary>11. What is the use of ruleset?</summary>
+
+  - In CSS, **a ruleset is a fundamental structure that defines the styling properties for a specific set of HTML elements**. 
+
+  - A ruleset consists of two main parts: a selector and a declaration block.
+
+    + **Selector**:
+
+      - The selector is used to target one or more HTML elements to which the styling rules will be applied.
+
+      - It can be an HTML tag (e.g., p for paragraphs), a class (e.g., .my-class), an ID (e.g., #my-id), or a combination of these.
+
+    + **Declaration Block**:
+
+      - The declaration block is enclosed in curly braces {} and contains one or more declarations separated by semicolons.
+
+      - Each declaration consists of a property and a value, specifying the style rule for the selected element(s).
+
+        ```css
+        /* Selector */
+              p {
+                /* Declaration Block */
+                color: blue;
+                font-size: 16px;
+                margin: 10px;
+              }
+        ```
   </details>
 
   ---
 
   <details>
-    <summary>12. What are the advantages of External Style Sheets?</summary>
+    <summary>12. What are the advantages and disadvantages of External Style Sheets?</summary>
+
+  - Advantages :- The advantages of using external style sheets are as follows:
+
+      + Styles of numerous **documents can be organized from one single file.**
+
+      + Classes can be made for use on numerous HTML element types in many forms of the site.
+      
+      + In complex contexts, methods such as **selector** and **grouping** can be implemented to apply styles.
+
+  - Disadvantages :- The disadvantages of using external style sheets are as follows:
+
+      + An **extra download is necessary to import style information for each file.**
+
+      + The **execution of the file may be deferred till the external style sheet is loaded.**
+
+      + While implementing style sheets, we need to test web pages with multiple browsers in order to check compatibility issues.
   </details>
 
   ---
 
   <details>
     <summary>13. What is the float property of CSS?</summary>
+
+  * The CSS float property is used to move the image to the right or left along with the texts to be wrapped around it. 
+  * It doesn't change the property of the elements used before it.
+  * The float property defines the flow of content. Below are the types of floating properties:
+
+    | **Float Type** | **Usage** | 
+    | ---------- | ---------------- | 
+    | float: left | Element floats on the left side of the container | 
+    | float: right | Element floats on the right side of the container | 
+    | float: inherit | The element inherits the floating property of its parent (div, table, etc…) | 
+    | float: none | Element is displayed as it is (Default). | 
   </details>
 
   ---
