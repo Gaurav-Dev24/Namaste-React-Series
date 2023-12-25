@@ -771,7 +771,7 @@ var geoLocation = navigator.geolocation;
   * The float property defines the flow of content. Below are the types of floating properties:
 
     | **Float Type** | **Usage** | 
-    | ---------- | ---------------- | 
+    | -------------- | ---------- | 
     | float: left | Element floats on the left side of the container | 
     | float: right | Element floats on the right side of the container | 
     | float: inherit | The element inherits the floating property of its parent (div, table, etc…) | 
@@ -781,64 +781,283 @@ var geoLocation = navigator.geolocation;
   ---
 
   <details>
-    <summary>14.</summary>
+    <summary>14. What are the properties of Flexbox?</summary>
+
+  - **The different properties of flex-box are as followed :-**
+
+    + **display :-** **It is used to describe a flex container.** The flex value is utilized to establish a flex container.
+
+    + **flex-direction :-** **It is employed to determine the direction of the primary axis, which is the axis that flex items are arranged along.** This property can have the values **row**, **row-reverse**, **column**, and **column-reverse**.
+
+    + **justify-content :-** **It aligns flex items parallel to the primary axis.** This property can take many different values, including **flex-start**, **flex-end**, **center**, **space-between**, **space-around**, and **space-evenly**.
+
+    + **align-items :-** **It align flex items perpendicular to the primary axis.** **Flex-start**, **flex-end**, **center**, **baseline**, and **stretch** are all possible values for this attribute.
+
+    + **flex-wrap :-** **It determines whether or not flex items should wrap when their width exceeds the width of the flex container.** This property’s possible values are **nowrap**, **wrap**, and **wrap-reverse**.
+
+    + **align-content :-** When there is **extra space in the flex container, use align-content to align flex lines perpendicular to the major axis.** This property’s likely values are **flex-start**, **flex-end**, **center**, **space-between**, **space-around**, and **stretch**.
+
+    + **flex :-** It is **used to establish** the **flex grow**, **flex shrink**, and **flex basis** of a **flex** item. The **shorthand property** flex creates all three values at the same time. **The individual properties are flex-grow, flex-shrink, and flex-basis**.
   </details>
 
   ---
 
   <details>
-    <summary>15.</summary>
+    <summary>15. Why is the imported function an easy way to insert a file?</summary>
+
+  - An imported style sheet permits us to **import external files or combine one style sheet with another**.
+
+  - The import function **gives the provision to combine many elements or functionalities into one**.
+
+  - The **syntax to import** any file is **@import notation**, which is used inside the &lt;Style&gt; tag. There is a **one rule** that implies that the **last imported sheet will override the previous ones.**
+
+    ```html
+    <Link Rel=Stylesheet Href=”Main.Css” Type=”Text/Css>
+        <STYLE type=”text=css”>
+          <!–
+            @import url(http://www.xyz.css); ..your code
+          –>
+        </STYLE>
+    ```
   </details>
 
   ---
 
   <details>
-    <summary>16.</summary>
+    <summary>16. How is border-box different from content-box?</summary>
+
+  | **Border Box** | **Content Box** |
+  | -------------  | --------------- |
+  | The **border-box property contains** the **content**, **border**, and **padding in height and width properties**.  | **Content-box**, on the other hand, is the **default value box-sizing property.**   |
+  | **The border box includes both the content and the padding of an element.**  | **The content box represents the actual content of the element, such as text, images, or other media.**   |
+  | **If you set the width and height of an element using the border-box model**, the specified dimensions include **both the content box and any padding or border around it.**  | When you **set the width and height of an element using CSS**, you are usually **setting the dimensions of the content box.**   |
+  | This can be particularly **useful when you want to control the total space an element occupies, including its content, padding, and border.**  | If you set the width of an element to 100 pixels, for example, the content box will be 100 pixels wide.   |
+
+  #### Border Box
+
+  ```css
+    .border-box {
+      box-sizing: border-box;
+      width: 100px;
+      height: 50px;
+      border: 2px solid black;
+    }
+
+    <div class="border-box">This is the border box</div>
+
+  ```
+  #### Content Box
+
+  ```css
+  .content-box {
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+  }
+  <div class="content-box">This is the content box</div>
+
+  ```
   </details>
 
   ---
 
   <details>
-    <summary>17.</summary>
+    <summary>17. Explain the concept of specificity in CSS.</summary>
+
+  - In CSS, **specificity is a set of rules that determines which styles are applied to an element when multiple conflicting styles are present.**
+
+  - Specificity is **important for understanding how the browser decides which CSS rules to apply when there are competing selectors targeting the same element.** 
+
+  - The **more specific a selector** is, the **higher its specificity**.
+
+  - **Specificity is typically expressed as a four-part value**, represented as **a**, **b**, **c**, **d**, where each part corresponds to a different level of specificity:
+
+      + **Inline Styles (a):**
+        * This is the **highest level of specificity.**
+        * It **involves styles applied directly to an element using the style attribute.**
+
+          ```html
+          <p style="color: red;">This is a paragraph.</p>
+          ```
+
+      + **ID Selectors (b):**
+        * ID selectors **target elements with a specific id attribute.**
+        * They are **more specific than class selectors or tag selectors.**
+
+          ```css
+            #uniqueElement {
+              color: blue;
+            }
+          ```
+
+      + **Class Selectors, Attribute Selectors, and Pseudo-Classes (c):**
+        * These selectors **target elements based on their class, attribute, or state.**
+        * They **are less specific than ID selectors but more specific than tag selectors.**
+
+          ```css
+            .someClass {
+              font-size: 16px;
+            }
+
+            [type="text"] {
+              background-color: #eee;
+            }
+
+            a:hover {
+              text-decoration: underline;
+            }
+          ```
+
+      + **Type Selectors and Pseudo-Elements (d):**
+        * **These are the least specific selectors** and **target elements based on their type** (e.g., div, p, a) or pseudo-elements (e.g., ::before, ::after).
+
+          ```css
+            p {
+              margin: 10px;
+            }
+
+            li::before {
+              content: "•";
+            }
+          ``` 
+  </details>
+
+  ---
+
+  <details>
+    <summary>18. Describe the difference between position: relative;, absolute;, fixed;, and static;.</summary>
+
+  - In CSS, the **position property is used to control the positioning of elements on a web page.** The values you can use with the **position property include relative, absolute, fixed, and static.**
+
+    - **position: static; :-** 
+      + This is the **default value.**
+      + Elements with **position: static;** are **positioned in the normal flow of the document.**
+      + The **top**, **right**, **bottom**, and **left properties have no effect on statically positioned elements.**
+
+        ```css
+          .static-example {
+              position: static;
+          }
+        ```
+      
+    * **position: relative; :-**
+      + **Positioned relative to its normal position in the document flow.**
+      + The **top**, **right**, **bottom**, and **left** properties can be **used to adjust the element's position relative to where it would be in the normal flow.**
+
+        ```css
+          .relative-example {
+              position: relative;
+              top: 10px;
+              left: 20px;
+          }
+        ```
+
+    * **position: absolute; :-** 
+      + **Positioned relative to the nearest positioned ancestor** (instead of positioned relative to the viewport, like fixed).
+      + If there is **no positioned ancestor, it is positioned relative to the initial containing block (often the &lt;html&gt; element).**
+      + The **top**, **right**, **bottom**, and **left properties are used to position the element.**
+
+        ```css
+          .absolute-example {
+              position: absolute;
+              top: 50px;
+              left: 100px;
+            }
+        ```
+
+    * **position: fixed; :-**
+      + **Positioned relative to the viewport (browser window).**
+      + **It remains fixed at its position even when the page is scrolled.**
+      + The **top**, **right**, **bottom**, and **left properties are used to position the element.**
+
+        ```css
+          .absolute-example {
+              position: absolute;
+              top: 50px;
+              left: 100px;
+            }
+        ```
+    ## Note :- 
+      - It's important to note that when using relative, absolute, or fixed, the positioned element is taken out of the normal flow of the document, and other elements may be positioned relative to it. 
+  </details>
+
+  ---
+
+  <details>
+    <summary>19. What is the purpose of the z-index property?</summary>
+
+  - The z-index property in CSS is used to **control the stacking order of positioned elements on a web page along the z-axis (depth axis)**.
+
+  - **When elements overlap**, the z-index property determines **the order in which they are stacked**, with **higher values appearing in front of or on top of lower values.**
+
+  - **Elements are stacked in the order they appear in the HTML document.** **Elements that come later** in the document are **stacked on top of earlier elements by default.**
+
+  - The z-index property can be **applied to positioned elements (position: relative;, position: absolute;, or position: fixed;).**
+
+  - **Negative values are also allowed**, and they **place the element behind elements with positive or zero z-index values.**
+
+  - **The z-index property only works on positioned elements.** If an element is not positioned (position: static; is the default), the z-index has no effect.
+
+  - **Keep in mind** that the z-index property only **affects the stacking order within the same stacking context**, and **stacking contexts are created** by elements with a **specified position value other than static and a z-index value other than auto.**
+  </details>
+
+  ---
+
+  <details>
+    <summary>20. Explain the CSS 'box-sizing' property.</summary>
+  </details>
+
+  + The **box-sizing property** in CSS is **used to control how the total width and height of an element are calculated, including its content, padding, and border.**
+
+  + It has **two possible values:** *content-box* **and** *border-box.*
+
+  + Using **box-sizing: border-box;** can be particularly useful in layouts, as it simplifies calculations.
+
+  + With border-box, you can **set the dimensions of an element without worrying about adding the padding and border sizes separately.**
+
+  + You can also set **box-sizing: border-box; globally using the universal selector * to apply it to all elements on the page.**
+
+  + **Keep in mind that changing the box-sizing property may affect existing layouts**, so it's essential to test and adjust accordingly.
+  ---
+
+  <details>
+    <summary>21. How does Flexbox differ from Grid layout?</summary>
+  </details>
+
+  ---
+
+  <details>
+    <summary>22. Explain the concept of CSS Grid Layout and provide an example.</summary>
+  </details>
+
+  ---
+
+  <details>
+    <summary>23. Describe the use of CSS transitions and animations.</summary>
+  </details>
+
+  ---
+
+  <details>
+    <summary>24. How does the CSS transform property work, and what are some use cases for it?</summary>
   </details>
   <details>
-    <summary>18.</summary>
+    <summary>25. Explain the concept of Critical CSS.</summary>
   </details>
   <details>
-    <summary>19.</summary>
+    <summary>26. Explain the difference between em and rem units in CSS.</summary>
   </details>
   <details>
-    <summary>20.</summary>
+    <summary>27. What is the CSS will-change property used for?</summary>
   </details>
   <details>
-    <summary>21.</summary>
+    <summary>28. What are CSS Variables (Custom Properties), and how are they useful?</summary>
   </details>
   <details>
-    <summary>22.</summary>
+    <summary>29. Discuss the importance of performance considerations in CSS, especially in the context of large-scale applications.</summary>
   </details>
   <details>
-    <summary>23.</summary>
-  </details>
-  <details>
-    <summary>24.</summary>
-  </details>
-  <details>
-    <summary>25.</summary>
-  </details>
-  <details>
-    <summary>26.</summary>
-  </details>
-  <details>
-    <summary>27.</summary>
-  </details>
-  <details>
-    <summary>28.</summary>
-  </details>
-  <details>
-    <summary>29.</summary>
-  </details>
-  <details>
-    <summary>30.</summary>
+    <summary>30. What is the purpose of media queries in responsive design?</summary>
   </details>
 
 </details>
