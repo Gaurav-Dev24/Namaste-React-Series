@@ -16,12 +16,12 @@
   <details>
     <summary>2. State the difference between HTML and XHTML. </summary>
 
-| **HTML** | **XHTML** | 
-| -------- | -------- | 
-| HTML stands for **HyperText Markup Language**. It was developed by Tim Berners-Lee. | XHTML stands for **Extensible Hypertext Markup Language**. It was developed by W3C i.e.lowercase World Wide Web Consortium. | 
-| **It was developed in 1991**. It is **extended from SGML**. All **tags and attributes are not necessarily to be in lower or upper case**. | **It was released in 2000**. It is **extended from XML and HTML**. In this, **every tag and attribute should be in lower case**. | 
-| The **format is a document file format**. **Doctype is not necessary to write at the top**. The used filename **extensions are .html, .htm**. | The **format is a markup language**. **Doctype is very necessary to write at the top of the file**. The used Filename **extensions are .xhtml, .xht, .xml**. | 
-| It is **not necessary to close the tags in the order they are opened**. | It is **necessary to close the tags in the order they are opened**. | 
+| **HTML**                                                                                                                                      | **XHTML**                                                                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| HTML stands for **HyperText Markup Language**. It was developed by Tim Berners-Lee.                                                           | XHTML stands for **Extensible Hypertext Markup Language**. It was developed by W3C i.e.lowercase World Wide Web Consortium.                                  |
+| **It was developed in 1991**. It is **extended from SGML**. All **tags and attributes are not necessarily to be in lower or upper case**.     | **It was released in 2000**. It is **extended from XML and HTML**. In this, **every tag and attribute should be in lower case**.                             |
+| The **format is a document file format**. **Doctype is not necessary to write at the top**. The used filename **extensions are .html, .htm**. | The **format is a markup language**. **Doctype is very necessary to write at the top of the file**. The used Filename **extensions are .xhtml, .xht, .xml**. |
+| It is **not necessary to close the tags in the order they are opened**.                                                                       | It is **necessary to close the tags in the order they are opened**.                                                                                          |
 
 </details>
 
@@ -30,12 +30,12 @@
   <details>
     <summary>3. State the difference between Elements and Tags?</summary>
 
-| Elements | Tags | 
-| -------- | -------- | 
-| An element **consists of an opening tag, content, and a closing tag**. It represents a complete, structured unit within an HTML document. | A tag is a **fundamental building block of HTML**.Tags are used to define HTML elements. | 
-| Elements can be as **simple as a pair of tags or it can include content between the opening and closing tags.** Ex- &lt;p&gt; &lt;/p&gt;, &lt;p&gt;This is a paragraph&lt;/p&gt; | Tags are represented by angle brackets `("<" and ">")`.**Tags come in pairs: an opening tag and a closing tag**. | 
-| Elements can also have attributes that provide additional information about the element. | **Opening tag:** &lt;tagname&gt; . **Closing tag:** &lt;/tagname&gt; | 
-| **Example of an element with content:**  &lt;p&gt;This is a paragraph&lt;/p&gt;. **Example of an element without content (empty element):** &lt;img src="image.jpg" alt="An image" /&gt; |**Example**: &lt;p&gt; (opening tag), &lt;/p&gt; (closing tag) | 
+| Elements                                                                                                                                                                                | Tags                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| An element **consists of an opening tag, content, and a closing tag**. It represents a complete, structured unit within an HTML document.                                               | A tag is a **fundamental building block of HTML**.Tags are used to define HTML elements.                         |
+| Elements can be as **simple as a pair of tags or it can include content between the opening and closing tags.** Ex- &lt;p&gt; &lt;/p&gt;, &lt;p&gt;This is a paragraph&lt;/p&gt;        | Tags are represented by angle brackets `("<" and ">")`.**Tags come in pairs: an opening tag and a closing tag**. |
+| Elements can also have attributes that provide additional information about the element.                                                                                                | **Opening tag:** &lt;tagname&gt; . **Closing tag:** &lt;/tagname&gt;                                             |
+| **Example of an element with content:** &lt;p&gt;This is a paragraph&lt;/p&gt;. **Example of an element without content (empty element):** &lt;img src="image.jpg" alt="An image" /&gt; | **Example**: &lt;p&gt; (opening tag), &lt;/p&gt; (closing tag)                                                   |
 
 </details>
 
@@ -102,14 +102,14 @@
   <details>
     <summary>7. State the difference between HTML and HTML5. </summary>
 
-| HTML | HTML5 | 
-| -------- | -------- | 
-| It **didn’t support &lt;audio&gt; and &lt;video&gt; without the use of Flash player support.** | It **supports audio and video controls with the use of &lt;audio&gt; and &lt;video&gt; tags.** | 
-| It **uses cookies to store temporary data**. **Does not allow JavaScript** to run in the browser. | It uses **SQL databases and application cache to store offline data**. | 
-| **Not possible to draw shapes** like circles, rectangles, triangles, etc. | **Allows JavaScript to run in the background**. This is possible due to JS Web worker API in HTML5. | 
-| Elements like **nav** and **header** were not present. The **doctype declaration is too long and complicated**. | **HTML5 allows drawing shapes** like circles, rectangles, triangles, etc. | 
-| **Vector graphics are possible in HTML with the help of various technologies** such as VML, Silver-light, Flash, etc. | New elements for web structure like **nav**, **header**, **footer**, etc. The **doctype declaration is quite simple and easy**. | 
-| It **does not allow drag-and-drop effects**. | **Vector graphics is additionally an integral part** of HTML5 like **SVG** and **canvas.** | 
+| HTML                                                                                                                  | HTML5                                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| It **didn’t support &lt;audio&gt; and &lt;video&gt; without the use of Flash player support.**                        | It **supports audio and video controls with the use of &lt;audio&gt; and &lt;video&gt; tags.**                                  |
+| It **uses cookies to store temporary data**. **Does not allow JavaScript** to run in the browser.                     | It uses **SQL databases and application cache to store offline data**.                                                          |
+| **Not possible to draw shapes** like circles, rectangles, triangles, etc.                                             | **Allows JavaScript to run in the background**. This is possible due to JS Web worker API in HTML5.                             |
+| Elements like **nav** and **header** were not present. The **doctype declaration is too long and complicated**.       | **HTML5 allows drawing shapes** like circles, rectangles, triangles, etc.                                                       |
+| **Vector graphics are possible in HTML with the help of various technologies** such as VML, Silver-light, Flash, etc. | New elements for web structure like **nav**, **header**, **footer**, etc. The **doctype declaration is quite simple and easy**. |
+| It **does not allow drag-and-drop effects**.                                                                          | **Vector graphics is additionally an integral part** of HTML5 like **SVG** and **canvas.**                                      |
 
 </details>
 
@@ -130,12 +130,12 @@
   <details>
     <summary>9. Difference between Inline and Block Elements in Html? </summary>
 
-| **Inline** | **Block** | 
-| -------- | -------- | 
-| **Inline elements do not start on a new line and only take up as much width as necessary. They do not force a new line to begin after them.**. | **Block-level elements typically start on a new line and take up the full width available, extending the entire width of their container**. | 
-| Inline elements flow within the content and appear next to each other horizontally.. | Block-level elements create a "block" or a rectangular box in the document flow, stacking vertically on top of each other. | 
-| Examples :- `<span>`, `<a>`, `<img>`, `<br>`,`<input>`, `<strong>` and `<em>` etc. | Examples :- `<div>`, `<p>`, `<h1> to <h6>`, `<ul>`,`<ol>`, `<li>`, `<table>` and `<form>` etc. | 
-| **Inline elements cannot contain block-level elements but can contain other inline elements**. | **Block-level elements can contain other block-level and inline elements**. | 
+| **Inline**                                                                                                                                     | **Block**                                                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Inline elements do not start on a new line and only take up as much width as necessary. They do not force a new line to begin after them.**. | **Block-level elements typically start on a new line and take up the full width available, extending the entire width of their container**. |
+| Inline elements flow within the content and appear next to each other horizontally..                                                           | Block-level elements create a "block" or a rectangular box in the document flow, stacking vertically on top of each other.                  |
+| Examples :- `<span>`, `<a>`, `<img>`, `<br>`,`<input>`, `<strong>` and `<em>` etc.                                                             | Examples :- `<div>`, `<p>`, `<h1> to <h6>`, `<ul>`,`<ol>`, `<li>`, `<table>` and `<form>` etc.                                              |
+| **Inline elements cannot contain block-level elements but can contain other inline elements**.                                                 | **Block-level elements can contain other block-level and inline elements**.                                                                 |
 
 </details>
 
@@ -144,11 +144,12 @@
   <details>
     <summary>10. What is the difference between &lt; figure &gt; tag and &lt; img &gt; tag? </summary>
 
-| **Figure** | **Img** | 
-| -------- | -------- | 
-| The `<figure>` tag is used to **group together an image `(<img>)` and its caption** `(<figcaption>)`. | The `<img>` (image) tag is **used to embed images in an HTML document**. It is a **void or self-closing tag, meaning it does not have a closing tag**. | 
-| It **provides semantic meaning to the relationship between the image and its associated content**. | The **src** attribute of the `<img>` tag specifies the **source (URL or file path) of the image**. Additional attributes, such as **alt** for **alternative text**, **width**, **height**, and others, can be used to provide information about the image. | 
-| It is a **block-level element**. **Example :-** &lt;figure&gt;&lt;img src="image.jpg" alt="An example image" /&gt;&lt;figcaption&gt;This is the caption for the image.&lt;/figcaption&gt;&lt;/figure&gt; | Example :- &lt;img src="image.jpg" alt="An example image" /&gt; |
+| **Figure**                                                                                                                                                                                               | **Img**                                                                                                                                                                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The `<figure>` tag is used to **group together an image `(<img>)` and its caption** `(<figcaption>)`.                                                                                                    | The `<img>` (image) tag is **used to embed images in an HTML document**. It is a **void or self-closing tag, meaning it does not have a closing tag**.                                                                                                     |
+| It **provides semantic meaning to the relationship between the image and its associated content**.                                                                                                       | The **src** attribute of the `<img>` tag specifies the **source (URL or file path) of the image**. Additional attributes, such as **alt** for **alternative text**, **width**, **height**, and others, can be used to provide information about the image. |
+| It is a **block-level element**. **Example :-** &lt;figure&gt;&lt;img src="image.jpg" alt="An example image" /&gt;&lt;figcaption&gt;This is the caption for the image.&lt;/figcaption&gt;&lt;/figure&gt; | Example :- &lt;img src="image.jpg" alt="An example image" /&gt;                                                                                                                                                                                            |
+
   </details>
 
 ---
@@ -156,12 +157,13 @@
   <details>
     <summary>11. Difference between &lt; link &gt; and &lt; a &gt; tag.</summary>
 
-| **"a" tag (Anchor Tag)** | **link tag** | 
-| ------------------------ | ------------ | 
-| The `<a>` tag is **primarily used to create hyperlinks**, allowing users to navigate to other pages or resources. | **The `<link>` tag is used to include external resources and define relationships between the current document and external resources**. It is commonly used to link external stylesheets, icons, and other resources. |
-| **It can be used to link to external resources (other websites) or internal resources (other pages within the same website)**. The **href** attribute is used to specify the destination URL. | **It is often placed within the `<head>` section of an HTML document**. Common attributes include rel (relationship), href (URL of the external resource), and type (the MIME type of the resource). |
-| The `<a>` tag can also be used to **create links within the same page using the fragment identifier (#)** to target an element with a specific id attribute. | Row 3, Col 2 |
-| Example :- `<a href="https://www.example.com">Visit Example.com</a>` | Example :- `<link rel="stylesheet" href="styles.css" />` |
+| **"a" tag (Anchor Tag)**                                                                                                                                                                      | **link tag**                                                                                                                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The `<a>` tag is **primarily used to create hyperlinks**, allowing users to navigate to other pages or resources.                                                                             | **The `<link>` tag is used to include external resources and define relationships between the current document and external resources**. It is commonly used to link external stylesheets, icons, and other resources. |
+| **It can be used to link to external resources (other websites) or internal resources (other pages within the same website)**. The **href** attribute is used to specify the destination URL. | **It is often placed within the `<head>` section of an HTML document**. Common attributes include rel (relationship), href (URL of the external resource), and type (the MIME type of the resource).                   |
+| The `<a>` tag can also be used to **create links within the same page using the fragment identifier (#)** to target an element with a specific id attribute.                                  | Row 3, Col 2                                                                                                                                                                                                           |
+| Example :- `<a href="https://www.example.com">Visit Example.com</a>`                                                                                                                          | Example :- `<link rel="stylesheet" href="styles.css" />`                                                                                                                                                               |
+
   </details>
 
 ---
@@ -169,12 +171,12 @@
   <details>
     <summary>12. What is the difference between “display: none” and “visibility: hidden”, when used as attributes to the HTML element? </summary>
 
-| **display: none** | **visibility: hidden** | 
-| -------- | -------- | 
-| **The display: none property removes the element from the normal document flow, and it effectively hides the element completely**. | **The visibility: hidden property hides the element while still maintaining its position in the layout. The element is not visible, but it still occupies space in the document flow.** |  
-| The **hidden element takes up no space in the layout, meaning it doesn't affect the positioning of surrounding elements** as if it were not in the document at all. | The hidden **element is not rendered, but it still affects the layout as if it were visible.** Child elements within the hidden element are also hidden. |  
-| **Child elements within the hidden element are also hidden.** The element is not rendered, and it cannot be interacted with by the user.   | **The element is not visible, but it is still part of the document structure and can potentially be interacted with by the user through scripting.** |  
-| Example :- .hidden-element {display: none;} | Example :- .hidden-element {visibility: hidden;} |  
+| **display: none**                                                                                                                                                   | **visibility: hidden**                                                                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **The display: none property removes the element from the normal document flow, and it effectively hides the element completely**.                                  | **The visibility: hidden property hides the element while still maintaining its position in the layout. The element is not visible, but it still occupies space in the document flow.** |
+| The **hidden element takes up no space in the layout, meaning it doesn't affect the positioning of surrounding elements** as if it were not in the document at all. | The hidden **element is not rendered, but it still affects the layout as if it were visible.** Child elements within the hidden element are also hidden.                                |
+| **Child elements within the hidden element are also hidden.** The element is not rendered, and it cannot be interacted with by the user.                            | **The element is not visible, but it is still part of the document structure and can potentially be interacted with by the user through scripting.**                                    |
+| Example :- .hidden-element {display: none;}                                                                                                                         | Example :- .hidden-element {visibility: hidden;}                                                                                                                                        |
 
 </details>
 
@@ -334,9 +336,9 @@
 
 - **SessionStorage** and **LocalStorage** are known as the **web storage API**. Data can be stored on the client side by using these APIs.
 
-| SessionStorage | LocalStorage | 
-| -------------- | ------------ | 
-| SessionStorage is **used for storing data on the client side**. **Maximum limit of data saving in SessionStorage is about 5 MB**. | Like SessionStorage, LocalStorage also **. **Maximum limit of data saving is about 5 MB in LocalStorage also\*\*. |
+| SessionStorage                                                                                                                                                     | LocalStorage                                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SessionStorage is **used for storing data on the client side**. **Maximum limit of data saving in SessionStorage is about 5 MB**.                                  | Like SessionStorage, LocalStorage also **. **Maximum limit of data saving is about 5 MB in LocalStorage also\*\*.                                                                |
 | **Data in the SessionStorage exist till the current tab is open** if we close the current tab then our data will also erase automatically from the SessionStorage. | LocalStorage has **no expiration time, Data in the LocalStorage persist till the user manually delete it**. This is the only difference between LocalStorage and SessionStorage. |
 
 </details>
@@ -543,9 +545,11 @@ var geoLocation = navigator.geolocation;
   </details>
 
 ---
+
 </details>
 
 ---
+
 <!-- ************** CSS Started *************** -->
 <details>
   <summary>CSS Interview Questions</summary>
@@ -557,30 +561,32 @@ var geoLocation = navigator.geolocation;
 
 - **CSS allows you to apply styles to web pages**. More importantly, CSS **enables you to do this independent of the HTML that makes up each web page**.
 
-- *It can also be used with any XML documents including plain XML, SVG, and XUL*.
+- _It can also be used with any XML documents including plain XML, SVG, and XUL_.
 
 **Some of the frameworks of CSS are :-**
-- CSS frameworks are libraries that make web page styling easier. Some of them are **Foundation**, **Bootstrap**, **Gumby**, **Ukit**, **Semantic UI**, etc. 
+
+- CSS frameworks are libraries that make web page styling easier. Some of them are **Foundation**, **Bootstrap**, **Gumby**, **Ukit**, **Semantic UI**, etc.
   </details>
 
-  ---
+  ***
 
   <details>
     <summary>2. What are the elements of the CSS Box Model?</summary>
 
-  - The CSS box model **defines the layout and design of CSS elements**. It is a container that **contains multiple properties** including **borders**, **margin**, **padding**, and the **content** itself. 
+  - The CSS box model **defines the layout and design of CSS elements**. It is a container that **contains multiple properties** including **borders**, **margin**, **padding**, and the **content** itself.
 
   - The elements are:
-    * **Margin** - It removes the area around the border. It is transparent.
-    * **Border** - It represents the area around the padding.
-    * **Padding** - It removes the area around the content. It is transparent.
-    * **Content** - It represents the content like text, images, etc.
+
+    - **Margin** - It removes the area around the border. It is transparent.
+    - **Border** - It represents the area around the padding.
+    - **Padding** - It removes the area around the content. It is transparent.
+    - **Content** - It represents the content like text, images, etc.
 
   - The **web browser renders every element as a rectangular box according to the CSS box model**.
 
   </details>
 
-  ---
+  ***
 
   <details>
     <summary>3. What is a CSS selector?</summary>
@@ -589,288 +595,302 @@ var geoLocation = navigator.geolocation;
   - It is **also referred as a link between the HTML document and the style sheet**.
   - There are several different types of selectors in CSS.
 
-    * **CSS Element Selector**
-    * **CSS Id Selector**
-    * **CSS Class Selector**
-    * **CSS Universal Selector**
-    * **CSS Group Selector**
+    - **CSS Element Selector**
+    - **CSS Id Selector**
+    - **CSS Class Selector**
+    - **CSS Universal Selector**
+    - **CSS Group Selector**
+
   - For [more details](https://medium.com/@subhamkr1995dob/article-on-the-introduction-to-css-and-its-selectors-c4c254135387) about css selectors
   </details>
 
-  ---
+  ***
 
   <details>
     <summary>4. State the difference between CSS and CSS3.</summary>
 
-  | **CSS** | **CSS3** |
-  | -------- | -------- | 
-  | 	**CSS is capable of positioning texts and objects**. CSS is somehow backward compatible with CSS3. | On the other hand, **CSS3 is capable of making the web page more attractive and takes less time to create**. If you write CSS3 code in CSS, it will be invalid. | 
-  | **Responsive designing is not supported in CSS** | **CSS3 is the latest version, hence it supports responsive design.** | 
-  | CSS cannot be split into modules. | Whereas, whereas CSS3 can be breakdown into modules. | 
-  | Using CSS, we **cannot build 3D animation and transformation**. | But in CSS3 we can **perform all kinds of animation and transformations as it supports animation and 3D transformations**. | 
-  | CSS is **very slow as compared to CSS3** | Whereas, **CSS3 is faster than CSS**. | 
+  | **CSS**                                                                                            | **CSS3**                                                                                                                                                        |
+  | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | **CSS is capable of positioning texts and objects**. CSS is somehow backward compatible with CSS3. | On the other hand, **CSS3 is capable of making the web page more attractive and takes less time to create**. If you write CSS3 code in CSS, it will be invalid. |
+  | **Responsive designing is not supported in CSS**                                                   | **CSS3 is the latest version, hence it supports responsive design.**                                                                                            |
+  | CSS cannot be split into modules.                                                                  | Whereas, whereas CSS3 can be breakdown into modules.                                                                                                            |
+  | Using CSS, we **cannot build 3D animation and transformation**.                                    | But in CSS3 we can **perform all kinds of animation and transformations as it supports animation and 3D transformations**.                                      |
+  | CSS is **very slow as compared to CSS3**                                                           | Whereas, **CSS3 is faster than CSS**.                                                                                                                           |
+
   </details>
 
-  ---
+  ***
 
   <details>
     <summary>5. Lists of CSS Frameworks</summary>
 
   - **The best CSS frameworks are**:
 
-    * Bootstrap
-    * Foundation
-    * Bulma
-    * UIKit
-    * Semantic UI
-    * Materialize
-    * Pure
-    * Tailwind CSS
-  </details>
+    - Bootstrap
+    - Foundation
+    - Bulma
+    - UIKit
+    - Semantic UI
+    - Materialize
+    - Pure
+    - Tailwind CSS
+    </details>
 
-  ---
+  ***
 
   <details>
     <summary>6. How many different ways are their to add CSS to HTML file?</summary>
 
   - **There are three types of CSS which are given below:**
-    * **Inline CSS:** Inline CSS contains the **CSS property in the body section attached with the element known as inline CSS**. This kind of style is specified within an HTML tag using the style attribute.
 
-    * **Internal or Embedded CSS:** This can be **used when a single HTML document must be styled uniquely.** The CSS ruleset should be within the HTML file in the head section i.e the **CSS is embedded within the HTML file**.
+    - **Inline CSS:** Inline CSS contains the **CSS property in the body section attached with the element known as inline CSS**. This kind of style is specified within an HTML tag using the style attribute.
 
-    * **External CSS:** External CSS **contains a separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, … etc).** CSS property is written in a separate file with **.css** extension and should be linked to the HTML document using the **link tag**. **This means that for each element, style can be set only once and that will be applied across web pages**.
-  </details>
+    - **Internal or Embedded CSS:** This can be **used when a single HTML document must be styled uniquely.** The CSS ruleset should be within the HTML file in the head section i.e the **CSS is embedded within the HTML file**.
 
-  ---
+    - **External CSS:** External CSS **contains a separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, … etc).** CSS property is written in a separate file with **.css** extension and should be linked to the HTML document using the **link tag**. **This means that for each element, style can be set only once and that will be applied across web pages**.
+    </details>
+
+  ***
 
   <details>
     <summary>7. What is a CSS preprocessor? What are SASS, LESS, and Stylus? Why do people use them?</summary>
 
   - **CSS preprocessor is a tool used to enhance the basic functionality and let us use the complex logical syntax** such as **variables**, **functions**, **mixins**, and **code nesting within vanilla CSS scripts themselves**.
 
-  -  CSS preprocessor **allows us to generate CSS from the preprocessor’s own unique syntax**. It extends the basic functionality of default vanilla CSS through its own scripting language.
+  - CSS preprocessor **allows us to generate CSS from the preprocessor’s own unique syntax**. It extends the basic functionality of default vanilla CSS through its own scripting language.
 
   - **There are 3 preprocessor of CSS :-**
-    * **SaaS (Syntactically Awesome Style Sheets) :-** 
-      + It **reduces the repetition of CSS, thus saving time. It uses .sass extension.**
 
-      + SASS can be **written in two different syntaxes**. The original syntax, called the **indented syntax**, uses indentation to separate code blocks and newline characters to separate rules.
+    - **SaaS (Syntactically Awesome Style Sheets) :-**
 
-      + The **newer syntax**, Sassy CSS (SCSS), **uses block formatting, like CSS, and braces to denote code blocks and semicolons to separate rules within a block.** The *indented syntax and SCSS files have the extensions .sass and .scss respectively*. 
-    
-    * **Less (Leener Stylesheets) :-**
-      +  **Easy to add to any JavaScript project with the help of npm or less.js file.** Here, **@ is used to define the variables.**
+      - It **reduces the repetition of CSS, thus saving time. It uses .sass extension.**
 
-      + **It uses the extension .less. LESS syntax is similar to SCSS with some exceptions.** 
-    
-    * **Stylus :-**
-      + **Stylus is quite flexible when it comes to writing syntax**. It **supports native CSS and allows omission of colons, semicolons, and brackets**. 
+      - SASS can be **written in two different syntaxes**. The original syntax, called the **indented syntax**, uses indentation to separate code blocks and newline characters to separate rules.
 
-      + There is **no need to use @ or $ to define the variables**.
-  </details>
-  
-  ---
+      - The **newer syntax**, Sassy CSS (SCSS), **uses block formatting, like CSS, and braces to denote code blocks and semicolons to separate rules within a block.** The _indented syntax and SCSS files have the extensions .sass and .scss respectively_.
+
+    - **Less (Leener Stylesheets) :-**
+
+      - **Easy to add to any JavaScript project with the help of npm or less.js file.** Here, **@ is used to define the variables.**
+
+      - **It uses the extension .less. LESS syntax is similar to SCSS with some exceptions.**
+
+    - **Stylus :-** + **Stylus is quite flexible when it comes to writing syntax**. It **supports native CSS and allows omission of colons, semicolons, and brackets**.
+
+          + There is **no need to use @ or $ to define the variables**.
+
+      </details>
+
+  ***
 
   <details>
     <summary>8. What is the difference among inline, inline-block, and block elements?</summary>
 
-| **Inline** | **Inline-Block** | **Block** |
-| ---------- | ---------------- | --------- |
-| Inline elements **do not start on a new line**; they appear on the same line as the content and tags beside them. | Inline-block elements are **similar to inline elements, but they can have padding, margins, and set height and width values**. | Block elements **always start on a new line and occupy an entire row or width**. |
-| Inline elements **do not force a new line to begin after them, and they flow with the content**. | Like inline elements, inline-block elements **do not start on a new line, but they can have a width and height, and they respect top and bottom margins and paddings**. | Block elements **create a "block" or "box" on the page, and subsequent elements start on a new line below them.** |
-| Some examples of inline elements are &lt;a&gt;, &lt;strong&gt;, &lt;span&gt;, and &lt;img&gt;. | This makes inline-block elements useful for **creating layouts where you want elements to sit next to each other horizontally**, but you also want to control their dimensions. | Examples of block elements include &lt;div&gt;, &lt;p&gt;, &lt;h1&gt; to &lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt;. |
+| **Inline**                                                                                                        | **Inline-Block**                                                                                                                                                                | **Block**                                                                                                                    |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Inline elements **do not start on a new line**; they appear on the same line as the content and tags beside them. | Inline-block elements are **similar to inline elements, but they can have padding, margins, and set height and width values**.                                                  | Block elements **always start on a new line and occupy an entire row or width**.                                             |
+| Inline elements **do not force a new line to begin after them, and they flow with the content**.                  | Like inline elements, inline-block elements **do not start on a new line, but they can have a width and height, and they respect top and bottom margins and paddings**.         | Block elements **create a "block" or "box" on the page, and subsequent elements start on a new line below them.**            |
+| Some examples of inline elements are &lt;a&gt;, &lt;strong&gt;, &lt;span&gt;, and &lt;img&gt;.                    | This makes inline-block elements useful for **creating layouts where you want elements to sit next to each other horizontally**, but you also want to control their dimensions. | Examples of block elements include &lt;div&gt;, &lt;p&gt;, &lt;h1&gt; to &lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt;. |
 
   </details>
 
-  ---
+---
 
   <details>
     <summary>9. What are pseudo elements and pseudo classes?</summary>
 
-  | **pseudo elements** | **pseudo-class** | 
-  | ---------- | ---------------- | 
-  | Pseudo elements help to **create items that do not normally exist in the document tree**.  | Pseudo classes **select regular elements under specific conditions** such as when a user is hovering over a link.  | 
-  | The examples of pseudo elements are: **::before**, **::after**, **::selection**, **::first-letter**, **::first-line** | The examples of pseudo classes are: **:hover**, **:active**, **:link**, **:visited**, **:focus** | 
+| **pseudo elements**                                                                                                   | **pseudo-class**                                                                                                  |
+| --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Pseudo elements help to **create items that do not normally exist in the document tree**.                             | Pseudo classes **select regular elements under specific conditions** such as when a user is hovering over a link. |
+| The examples of pseudo elements are: **::before**, **::after**, **::selection**, **::first-letter**, **::first-line** | The examples of pseudo classes are: **:hover**, **:active**, **:link**, **:visited**, **:focus**                  |
+
   </details>
 
-  ---
+---
 
   <details>
     <summary>10. What are the differences between adaptive design and responsive design?</summary>
 
-  | **Adaptive Design** | **Responsive Design** | 
-  | ------------------- | --------------------- |
-  | It **focuses on multiple fixed layout sizes in website development**. | It **focuses on showing content based on available browser space.** | 
-  | In this kind of website design, **first the available space is detected and then the layout**, with most appropriate size, is picked and used to display the content. **Resized browser window has no effect on the design**. | In this kind of website design, **when the browser window is resized, the content of the website is dynamically and optimally rearranged to accommodate the window.** | 
-  | It uses six standard screen widths, **320 px**, **480 px**, **760 px**, **960 px**, **1200 px**, and **1600 px**. | Depending on the target device’s properties, **it uses CSS media queries to change styles for adapting to different screens.** | 
-  | It **takes a lot of time and effort** because  the options and realities of the end users  need to be examined first and then the best possible adaptive solutions are designed. | Building and designing fluid websites that can accommodate content depending on the screen size **does not take much work**. | 
-  | It **gives a lot of control over the design for specific screens**. | It **does not allow much control over the design.** | 
+| **Adaptive Design**                                                                                                                                                                                                           | **Responsive Design**                                                                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| It **focuses on multiple fixed layout sizes in website development**.                                                                                                                                                         | It **focuses on showing content based on available browser space.**                                                                                                   |
+| In this kind of website design, **first the available space is detected and then the layout**, with most appropriate size, is picked and used to display the content. **Resized browser window has no effect on the design**. | In this kind of website design, **when the browser window is resized, the content of the website is dynamically and optimally rearranged to accommodate the window.** |
+| It uses six standard screen widths, **320 px**, **480 px**, **760 px**, **960 px**, **1200 px**, and **1600 px**.                                                                                                             | Depending on the target device’s properties, **it uses CSS media queries to change styles for adapting to different screens.**                                        |
+| It **takes a lot of time and effort** because the options and realities of the end users need to be examined first and then the best possible adaptive solutions are designed.                                                | Building and designing fluid websites that can accommodate content depending on the screen size **does not take much work**.                                          |
+| It **gives a lot of control over the design for specific screens**.                                                                                                                                                           | It **does not allow much control over the design.**                                                                                                                   |
+
   </details>
 
-  ---
+---
 
   <details>
     <summary>11. What is the use of ruleset?</summary>
 
-  - In CSS, **a ruleset is a fundamental structure that defines the styling properties for a specific set of HTML elements**. 
+- In CSS, **a ruleset is a fundamental structure that defines the styling properties for a specific set of HTML elements**.
 
-  - A ruleset consists of two main parts: a selector and a declaration block.
+- A ruleset consists of two main parts: a selector and a declaration block.
 
-    + **Selector**:
+  - **Selector**:
 
-      - The selector is used to target one or more HTML elements to which the styling rules will be applied.
+    - The selector is used to target one or more HTML elements to which the styling rules will be applied.
 
-      - It can be an HTML tag (e.g., p for paragraphs), a class (e.g., .my-class), an ID (e.g., #my-id), or a combination of these.
+    - It can be an HTML tag (e.g., p for paragraphs), a class (e.g., .my-class), an ID (e.g., #my-id), or a combination of these.
 
-    + **Declaration Block**:
+  - **Declaration Block**:
 
-      - The declaration block is enclosed in curly braces {} and contains one or more declarations separated by semicolons.
+        - The declaration block is enclosed in curly braces {} and contains one or more declarations separated by semicolons.
 
-      - Each declaration consists of a property and a value, specifying the style rule for the selected element(s).
+        - Each declaration consists of a property and a value, specifying the style rule for the selected element(s).
 
-        ```css
-        /* Selector */
-              p {
-                /* Declaration Block */
-                color: blue;
-                font-size: 16px;
-                margin: 10px;
-              }
-        ```
-  </details>
+          ```css
+          /* Selector */
+                p {
+                  /* Declaration Block */
+                  color: blue;
+                  font-size: 16px;
+                  margin: 10px;
+                }
+          ```
 
-  ---
+    </details>
+
+---
 
   <details>
     <summary>12. What are the advantages and disadvantages of External Style Sheets?</summary>
 
-  - Advantages :- The advantages of using external style sheets are as follows:
+- Advantages :- The advantages of using external style sheets are as follows:
 
-      + Styles of numerous **documents can be organized from one single file.**
+  - Styles of numerous **documents can be organized from one single file.**
 
-      + Classes can be made for use on numerous HTML element types in many forms of the site.
-      
-      + In complex contexts, methods such as **selector** and **grouping** can be implemented to apply styles.
+  - Classes can be made for use on numerous HTML element types in many forms of the site.
 
-  - Disadvantages :- The disadvantages of using external style sheets are as follows:
+  - In complex contexts, methods such as **selector** and **grouping** can be implemented to apply styles.
+
+- Disadvantages :- The disadvantages of using external style sheets are as follows:
 
       + An **extra download is necessary to import style information for each file.**
 
       + The **execution of the file may be deferred till the external style sheet is loaded.**
 
       + While implementing style sheets, we need to test web pages with multiple browsers in order to check compatibility issues.
+
   </details>
 
-  ---
+---
 
   <details>
     <summary>13. What is the float property of CSS?</summary>
 
-  * The CSS float property is used to move the image to the right or left along with the texts to be wrapped around it. 
-  * It doesn't change the property of the elements used before it.
-  * The float property defines the flow of content. Below are the types of floating properties:
+- The CSS float property is used to move the image to the right or left along with the texts to be wrapped around it.
+- It doesn't change the property of the elements used before it.
+- The float property defines the flow of content. Below are the types of floating properties:
 
-    | **Float Type** | **Usage** | 
-    | -------------- | ---------- | 
-    | float: left | Element floats on the left side of the container | 
-    | float: right | Element floats on the right side of the container | 
-    | float: inherit | The element inherits the floating property of its parent (div, table, etc…) | 
-    | float: none | Element is displayed as it is (Default). | 
+  | **Float Type** | **Usage**                                                                   |
+  | -------------- | --------------------------------------------------------------------------- |
+  | float: left    | Element floats on the left side of the container                            |
+  | float: right   | Element floats on the right side of the container                           |
+  | float: inherit | The element inherits the floating property of its parent (div, table, etc…) |
+  | float: none    | Element is displayed as it is (Default).                                    |
+
   </details>
 
-  ---
+---
 
   <details>
     <summary>14. What are the properties of Flexbox?</summary>
 
-  - **The different properties of flex-box are as followed :-**
+- **The different properties of flex-box are as followed :-**
 
-    + **display :-** **It is used to describe a flex container.** The flex value is utilized to establish a flex container.
+  - **display :-** **It is used to describe a flex container.** The flex value is utilized to establish a flex container.
 
-    + **flex-direction :-** **It is employed to determine the direction of the primary axis, which is the axis that flex items are arranged along.** This property can have the values **row**, **row-reverse**, **column**, and **column-reverse**.
+  - **flex-direction :-** **It is employed to determine the direction of the primary axis, which is the axis that flex items are arranged along.** This property can have the values **row**, **row-reverse**, **column**, and **column-reverse**.
 
-    + **justify-content :-** **It aligns flex items parallel to the primary axis.** This property can take many different values, including **flex-start**, **flex-end**, **center**, **space-between**, **space-around**, and **space-evenly**.
+  - **justify-content :-** **It aligns flex items parallel to the primary axis.** This property can take many different values, including **flex-start**, **flex-end**, **center**, **space-between**, **space-around**, and **space-evenly**.
 
-    + **align-items :-** **It align flex items perpendicular to the primary axis.** **Flex-start**, **flex-end**, **center**, **baseline**, and **stretch** are all possible values for this attribute.
+  - **align-items :-** **It align flex items perpendicular to the primary axis.** **Flex-start**, **flex-end**, **center**, **baseline**, and **stretch** are all possible values for this attribute.
 
-    + **flex-wrap :-** **It determines whether or not flex items should wrap when their width exceeds the width of the flex container.** This property’s possible values are **nowrap**, **wrap**, and **wrap-reverse**.
+  - **flex-wrap :-** **It determines whether or not flex items should wrap when their width exceeds the width of the flex container.** This property’s possible values are **nowrap**, **wrap**, and **wrap-reverse**.
 
-    + **align-content :-** When there is **extra space in the flex container, use align-content to align flex lines perpendicular to the major axis.** This property’s likely values are **flex-start**, **flex-end**, **center**, **space-between**, **space-around**, and **stretch**.
+  - **align-content :-** When there is **extra space in the flex container, use align-content to align flex lines perpendicular to the major axis.** This property’s likely values are **flex-start**, **flex-end**, **center**, **space-between**, **space-around**, and **stretch**.
 
-    + **flex :-** It is **used to establish** the **flex grow**, **flex shrink**, and **flex basis** of a **flex** item. The **shorthand property** flex creates all three values at the same time. **The individual properties are flex-grow, flex-shrink, and flex-basis**.
+  - **flex :-** It is **used to establish** the **flex grow**, **flex shrink**, and **flex basis** of a **flex** item. The **shorthand property** flex creates all three values at the same time. **The individual properties are flex-grow, flex-shrink, and flex-basis**.
   </details>
 
-  ---
+---
 
   <details>
     <summary>15. Why is the imported function an easy way to insert a file?</summary>
 
-  - An imported style sheet permits us to **import external files or combine one style sheet with another**.
+- An imported style sheet permits us to **import external files or combine one style sheet with another**.
 
-  - The import function **gives the provision to combine many elements or functionalities into one**.
+- The import function **gives the provision to combine many elements or functionalities into one**.
 
-  - The **syntax to import** any file is **@import notation**, which is used inside the &lt;Style&gt; tag. There is a **one rule** that implies that the **last imported sheet will override the previous ones.**
+- The **syntax to import** any file is **@import notation**, which is used inside the &lt;Style&gt; tag. There is a **one rule** that implies that the **last imported sheet will override the previous ones.**
 
-    ```html
-    <Link Rel=Stylesheet Href=”Main.Css” Type=”Text/Css>
-        <STYLE type=”text=css”>
-          <!–
-            @import url(http://www.xyz.css); ..your code
-          –>
-        </STYLE>
-    ```
+  ```html
+  <Link Rel=Stylesheet Href=”Main.Css” Type=”Text/Css>
+  <style type="”text" ="css”">
+    <!–
+      @import url(http://www.xyz.css); ..your code
+    –>
+  </style>
+  ```
+
   </details>
 
-  ---
+---
 
   <details>
     <summary>16. How is border-box different from content-box?</summary>
 
-  | **Border Box** | **Content Box** |
-  | -------------  | --------------- |
-  | The **border-box property contains** the **content**, **border**, and **padding in height and width properties**.  | **Content-box**, on the other hand, is the **default value box-sizing property.**   |
-  | **The border box includes both the content and the padding of an element.**  | **The content box represents the actual content of the element, such as text, images, or other media.**   |
-  | **If you set the width and height of an element using the border-box model**, the specified dimensions include **both the content box and any padding or border around it.**  | When you **set the width and height of an element using CSS**, you are usually **setting the dimensions of the content box.**   |
-  | This can be particularly **useful when you want to control the total space an element occupies, including its content, padding, and border.**  | If you set the width of an element to 100 pixels, for example, the content box will be 100 pixels wide.   |
+| **Border Box**                                                                                                                                                               | **Content Box**                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| The **border-box property contains** the **content**, **border**, and **padding in height and width properties**.                                                            | **Content-box**, on the other hand, is the **default value box-sizing property.**                                             |
+| **The border box includes both the content and the padding of an element.**                                                                                                  | **The content box represents the actual content of the element, such as text, images, or other media.**                       |
+| **If you set the width and height of an element using the border-box model**, the specified dimensions include **both the content box and any padding or border around it.** | When you **set the width and height of an element using CSS**, you are usually **setting the dimensions of the content box.** |
+| This can be particularly **useful when you want to control the total space an element occupies, including its content, padding, and border.**                                | If you set the width of an element to 100 pixels, for example, the content box will be 100 pixels wide.                       |
 
-  #### Border Box
+#### Border Box
 
-  ```css
-    .border-box {
-      box-sizing: border-box;
-      width: 100px;
-      height: 50px;
-      border: 2px solid black;
-    }
-
-    <div class="border-box">This is the border box</div>
-
-  ```
-  #### Content Box
-
-  ```css
-  .content-box {
+```css
+  .border-box {
+    box-sizing: border-box;
     width: 100px;
     height: 50px;
     border: 2px solid black;
   }
-  <div class="content-box">This is the content box</div>
 
-  ```
+  <div class="border-box">This is the border box</div>
+
+```
+
+#### Content Box
+
+```css
+.content-box {
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+}
+<div class="content-box">This is the content box</div>
+
+```
+
   </details>
 
-  ---
+---
 
   <details>
     <summary>17. Explain the concept of specificity in CSS.</summary>
 
-  - In CSS, **specificity is a set of rules that determines which styles are applied to an element when multiple conflicting styles are present.**
+- In CSS, **specificity is a set of rules that determines which styles are applied to an element when multiple conflicting styles are present.**
 
-  - Specificity is **important for understanding how the browser decides which CSS rules to apply when there are competing selectors targeting the same element.** 
+- Specificity is **important for understanding how the browser decides which CSS rules to apply when there are competing selectors targeting the same element.**
 
-  - The **more specific a selector** is, the **higher its specificity**.
+- The **more specific a selector** is, the **higher its specificity**.
 
-  - **Specificity is typically expressed as a four-part value**, represented as **a**, **b**, **c**, **d**, where each part corresponds to a different level of specificity:
+- **Specificity is typically expressed as a four-part value**, represented as **a**, **b**, **c**, **d**, where each part corresponds to a different level of specificity:
 
       + **Inline Styles (a):**
         * This is the **highest level of specificity.**
@@ -919,344 +939,664 @@ var geoLocation = navigator.geolocation;
             li::before {
               content: "•";
             }
-          ``` 
+          ```
+
   </details>
 
-  ---
+---
 
   <details>
     <summary>18. Describe the difference between position: relative;, absolute;, fixed;, and static;.</summary>
 
-  - In CSS, the **position property is used to control the positioning of elements on a web page.** The values you can use with the **position property include relative, absolute, fixed, and static.**
+- In CSS, the **position property is used to control the positioning of elements on a web page.** The values you can use with the **position property include relative, absolute, fixed, and static.**
 
-    - **position: static; :-** 
-      + This is the **default value.**
-      + Elements with **position: static;** are **positioned in the normal flow of the document.**
-      + The **top**, **right**, **bottom**, and **left properties have no effect on statically positioned elements.**
+  - **position: static; :-**
 
-        ```css
-          .static-example {
-              position: static;
-          }
-        ```
-      
-    * **position: relative; :-**
-      + **Positioned relative to its normal position in the document flow.**
-      + The **top**, **right**, **bottom**, and **left** properties can be **used to adjust the element's position relative to where it would be in the normal flow.**
+    - This is the **default value.**
+    - Elements with **position: static;** are **positioned in the normal flow of the document.**
+    - The **top**, **right**, **bottom**, and **left properties have no effect on statically positioned elements.**
 
-        ```css
-          .relative-example {
-              position: relative;
-              top: 10px;
-              left: 20px;
-          }
-        ```
+      ```css
+      .static-example {
+        position: static;
+      }
+      ```
 
-    * **position: absolute; :-** 
-      + **Positioned relative to the nearest positioned ancestor** (instead of positioned relative to the viewport, like fixed).
-      + If there is **no positioned ancestor, it is positioned relative to the initial containing block (often the &lt;html&gt; element).**
-      + The **top**, **right**, **bottom**, and **left properties are used to position the element.**
+  * **position: relative; :-**
 
-        ```css
-          .absolute-example {
-              position: absolute;
-              top: 50px;
-              left: 100px;
-            }
-        ```
+    - **Positioned relative to its normal position in the document flow.**
+    - The **top**, **right**, **bottom**, and **left** properties can be **used to adjust the element's position relative to where it would be in the normal flow.**
 
-    * **position: fixed; :-**
-      + **Positioned relative to the viewport (browser window).**
-      + **It remains fixed at its position even when the page is scrolled.**
-      + The **top**, **right**, **bottom**, and **left properties are used to position the element.**
+      ```css
+      .relative-example {
+        position: relative;
+        top: 10px;
+        left: 20px;
+      }
+      ```
 
-        ```css
-          .absolute-example {
-              position: absolute;
-              top: 50px;
-              left: 100px;
-            }
-        ```
-    ## Note :- 
-      - It's important to note that when using relative, absolute, or fixed, the positioned element is taken out of the normal flow of the document, and other elements may be positioned relative to it. 
+  * **position: absolute; :-**
+
+    - **Positioned relative to the nearest positioned ancestor** (instead of positioned relative to the viewport, like fixed).
+    - If there is **no positioned ancestor, it is positioned relative to the initial containing block (often the &lt;html&gt; element).**
+    - The **top**, **right**, **bottom**, and **left properties are used to position the element.**
+
+      ```css
+      .absolute-example {
+        position: absolute;
+        top: 50px;
+        left: 100px;
+      }
+      ```
+
+  * **position: fixed; :-**
+
+    - **Positioned relative to the viewport (browser window).**
+    - **It remains fixed at its position even when the page is scrolled.**
+    - The **top**, **right**, **bottom**, and **left properties are used to position the element.**
+
+      ```css
+      .absolute-example {
+        position: absolute;
+        top: 50px;
+        left: 100px;
+      }
+      ```
+
+  ## Note :-
+
+      - It's important to note that when using relative, absolute, or fixed, the positioned element is taken out of the normal flow of the document, and other elements may be positioned relative to it.
+
   </details>
 
-  ---
+---
 
   <details>
     <summary>19. What is the purpose of the z-index property?</summary>
 
-  - The z-index property in CSS is used to **control the stacking order of positioned elements on a web page along the z-axis (depth axis)**.
+- The z-index property in CSS is used to **control the stacking order of positioned elements on a web page along the z-axis (depth axis)**.
 
-  - **When elements overlap**, the z-index property determines **the order in which they are stacked**, with **higher values appearing in front of or on top of lower values.**
+- **When elements overlap**, the z-index property determines **the order in which they are stacked**, with **higher values appearing in front of or on top of lower values.**
 
-  - **Elements are stacked in the order they appear in the HTML document.** **Elements that come later** in the document are **stacked on top of earlier elements by default.**
+- **Elements are stacked in the order they appear in the HTML document.** **Elements that come later** in the document are **stacked on top of earlier elements by default.**
 
-  - The z-index property can be **applied to positioned elements (position: relative;, position: absolute;, or position: fixed;).**
+- The z-index property can be **applied to positioned elements (position: relative;, position: absolute;, or position: fixed;).**
 
-  - **Negative values are also allowed**, and they **place the element behind elements with positive or zero z-index values.**
+- **Negative values are also allowed**, and they **place the element behind elements with positive or zero z-index values.**
 
-  - **The z-index property only works on positioned elements.** If an element is not positioned (position: static; is the default), the z-index has no effect.
+- **The z-index property only works on positioned elements.** If an element is not positioned (position: static; is the default), the z-index has no effect.
 
-  - **Keep in mind** that the z-index property only **affects the stacking order within the same stacking context**, and **stacking contexts are created** by elements with a **specified position value other than static and a z-index value other than auto.**
-  </details>
+- **Keep in mind** that the z-index property only **affects the stacking order within the same stacking context**, and **stacking contexts are created** by elements with a **specified position value other than static and a z-index value other than auto.**
+</details>
 
-  ---
+---
 
   <details>
     <summary>20. Explain the CSS 'box-sizing' property.</summary>
-  </details>
 
-  + The **box-sizing property** in CSS is **used to control how the total width and height of an element are calculated, including its content, padding, and border.**
+- The **box-sizing property** in CSS is **used to control how the total width and height of an element are calculated, including its content, padding, and border.**
 
-  + It has **two possible values:** *content-box* **and** *border-box.*
+- It has **two possible values:** _content-box_ **and** _border-box._
 
-  + Using **box-sizing: border-box;** can be particularly useful in layouts, as it simplifies calculations.
+- Using **box-sizing: border-box;** can be particularly useful in layouts, as it simplifies calculations.
 
-  + With border-box, you can **set the dimensions of an element without worrying about adding the padding and border sizes separately.**
+- With border-box, you can **set the dimensions of an element without worrying about adding the padding and border sizes separately.**
 
-  + You can also set **box-sizing: border-box; globally using the universal selector * to apply it to all elements on the page.**
+- You can also set **box-sizing: border-box; globally using the universal selector \* to apply it to all elements on the page.**
 
-  + **Keep in mind that changing the box-sizing property may affect existing layouts**, so it's essential to test and adjust accordingly.
-  ---
+- **Keep in mind that changing the box-sizing property may affect existing layouts**, so it's essential to test and adjust accordingly.
+</details>
+
+---
 
   <details>
     <summary>21. How does Flexbox differ from Grid layout?</summary>
+
+| **FLEXBOX**                                                                                                                              | **GRID**                                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| It is a **one-dimensional layout model**, primarily **designed for laying out items in a single direction—either as a row or a column.** | It is a **two-dimensional layout model** that allows you to **define both rows and columns in a grid, creating a more complex layout structure.** |
+| **You can define whether items should flow in rows or columns**, and the **cross axis is perpendicular to the main axis.**               | **Involves both rows and columns, and you can control them independently.**                                                                       |
+| Provides **properties like justify-content and align-items to align items along the main and cross axes.**                               | Offers similar alignment **properties (justify-items, align-items), but you can also align entire grid areas.**                                   |
+| **Allows you to reorder items using the order property.**                                                                                | **Doesn't automatically reorder items; it focuses on the placement of items in the defined grid.**                                                |
+| **Well-suited for building dynamic and responsive interfaces**, especially when dealing with **content of unknown size**.                | **Useful for larger, more structured layouts**where you have a defined grid structure.                                                            |
+| **Deals with either rows or columns at a time.**                                                                                         | **Simultaneously handles rows and columns**, allowing for complex layout structures.                                                              |
+| **Items are placed along a single axis**, either **horizontally** or **vertically**.                                                     | **Items are placed in both rows and columns**, and you have **precise control over their placement**.                                             |
+
   </details>
 
-  ---
+---
 
   <details>
     <summary>22. Explain the concept of CSS Grid Layout and provide an example.</summary>
-  </details>
 
-  ---
+- CSS Grid Layout is a powerful **two-dimensional layout system** that allows you to **design complex web layouts with rows and columns**.
+
+- It provides a **grid-based structure** for both the **container** and its **children**, offering **precise control over the placement and alignment of elements**.
+
+- We can **create responsive and flexible designs more efficiently than traditional layout methods**.
+
+- Here's a brief explanation of the key concepts in CSS Grid Layout:
+
+  - **Grid Container:-**
+
+    - The element on which you apply **display: grid** becomes the grid container.
+    - It **holds the grid items (children)** and **defines the grid context.**
+
+  - **Grid Items:-**
+    - The **direct children of the grid container** are the grid items.
+    - They are **placed within the grid cells** created by the grid container.
+  - **Grid Lines:-**
+
+    - **Horizontal and vertical lines** that **divide the grid into rows and columns**.
+    - **Numbered starting from 1**, and you can refer to them in positioning grid items.
+
+  - **Grid Tracks:-**
+
+    - The **space between two adjacent grid lines**, either a **row track** or a **column track**.
+    - Can be sized explicitly or implicitly based on content.
+
+  - **Grid Areas:-** + Named areas of the grid **created by combining multiple cells**. + Useful for **assigning content to specific regions** of the grid.
+
+        ```html
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr; /* Three columns, the middle one twice as wide as the others */
+                grid-template-rows: 100px 200px; /* Two rows with specified heights */
+                gap: 10px; /* Space between grid items */
+            }
+
+            .item {
+                background-color: lightblue;
+                padding: 20px;
+                border: 1px solid #333;
+              }
+
+            /* Define a named area */
+            .item2 {
+              grid-area: 2 / 2 / 3 / 3; /* Row start / Column start / Row end / Column end */
+           }
+          </style>
+        </head>
+        <body>
+          <div class="grid-container">
+            <div class="item">1</div>
+            <div class="item item2">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+          </div>
+        </body>
+        </html>
+        ```
+        ### Example - In this example
+        + The **.grid-container is set as a grid** with three columns and two rows.
+        + Each **.item** is a **grid item** placed within the grid cells.
+        + **.item2** is assigned a **named area** using the grid-area property.
+
+    </details>
+
+---
 
   <details>
     <summary>23. Describe the use of CSS transitions and animations.</summary>
+
+| **CSS Transition**                                                                                                                                               | **CSS Animation**                                                                                                                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Transitions **allow you to smoothly change property values over a specified duration.**                                                                          | Animations **allow you to create more complex and customized effects by defining keyframes**.                                                                                        |
+| Commonly used **properties for transitions include** **transition-property**, **transition-duration**, **transition-timing-function**, and **transition-delay**. | **Keyframes are specific points in the animation sequence** where you can set different property values.                                                                             |
+| Transitions are **often used for hover effects, state changes, or user interactions**.                                                                           | Animations are **defined using @keyframes where you specify styles at different points in time.**                                                                                    |
+| They provide a **smooth transition between the original and new property values.**                                                                               | They **provide more control over the animation sequence** and are **suitable for more complex effects**. Animations **can be set to run infinitely or a specified number of times.** |
+
+### Basic Syntax of CSS Transition and its example :-
+
+- Syntax :-
+
+```css
+/* Apply a transition to the color property over 0.5 seconds */
+.element {
+  transition: color 0.5s ease;
+}
+```
+
+- Example :-
+
+```css
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: width 0.5s ease;
+}
+
+.box:hover {
+  width: 150px;
+}
+```
+
+### Basic Syntax of CSS Animations and its example :-
+
+- Syntax :-
+
+```css
+/* Define an animation with keyframes */
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100px;
+  }
+}
+
+/* Apply the animation to an element */
+.element {
+  animation: slide 2s ease infinite;
+}
+```
+
+- Example :-
+
+```css
+@keyframes colorChange {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  animation: colorChange 3s ease infinite;
+}
+```
+
   </details>
 
-  ---
+---
 
   <details>
     <summary>24. How does the CSS transform property work, and what are some use cases for it?</summary>
   </details>
+
+---
+
   <details>
     <summary>25. Explain the concept of Critical CSS.</summary>
+
+- Critical CSS is a **technique used in web development to improve the initial loading performance of a web page**.
+
+- The **idea is to identify and inline the minimal set of CSS required to render the above-the-fold content**, which is the **content that is initially visible to users without scrolling**.
+
+- **By delivering this critical CSS inline within the HTML document or as a small linked stylesheet**, you can **ensure that the essential styles are applied quickly, reducing the perceived page load time.**
+
+- Here's a simplified example of using critical CSS:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Critical CSS for above-the-fold content */
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      /* Link to the full stylesheet for non-critical styles */
+      <link rel="stylesheet" href="styles.css">
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Website</h1>
+      <nav>
+        <!-- Navigation links -->
+      </nav>
+    </header>
+    <!-- Rest of the page content -->
+  </body>
+</html>
+```
+
   </details>
+
+---
+
   <details>
     <summary>26. Explain the difference between em and rem units in CSS.</summary>
-  </details>
-  <details>
-    <summary>27. What is the CSS will-change property used for?</summary>
-  </details>
-  <details>
-    <summary>28. What are CSS Variables (Custom Properties), and how are they useful?</summary>
-  </details>
-  <details>
-    <summary>29. Discuss the importance of performance considerations in CSS, especially in the context of large-scale applications.</summary>
-  </details>
-  <details>
-    <summary>30. What is the purpose of media queries in responsive design?</summary>
-  </details>
+
+| **em**                                                                                                                                          | **rem**                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| The **em unit** is **relative to the font size of the closest parent element** with a specified font size.                                              | The **rem unit** is **relative to the font size of the root element(html)**.                                                       |
+| If **used on a property like font-size**, it will be **relative to the font size of the parent element.**                                               | It is **not affected by the font size of any parent element.**                                                                  |
+| Since **em** is based on the font size of the parent element, **changes in the parent's font size will affect the size of the child element using em**. | Changes in the **font size of parent elements do not affect the rem unit**. It **provides a more consistent and predictable size.** |
+| If you **want a size to be relative to the font size of a specific parent, use em.** | If you **want a size that remains consistent across the entire document, use rem.**  |
+| **em** may be **more suitable for text-related properties.** | rem is often **preferred for layout-related properties.**  |
+
+Usage Example of **em :-**
+
+```css
+.parent {
+  font-size: 16px; /* Base font size */
+}
+
+.child {
+  font-size: 1.5em; /* 1.5 times the font size of the parent, i.e., 24px (16 * 1.5) */
+}
+```
+
+Usage Example of **rem :-**
+
+```css
+html {
+font-size: 16px; /* Base font size for the entire document */
+}
+
+.element {
+font-size: 1.5rem; /* 1.5 times the root font size, i.e., 24px (16 * 1.5) */
+}
+```
+</details>
+
+---
+
+<details>
+  <summary>27. What is the CSS will-change property used for?</summary>
+
++ The **will-change** CSS property is **used to inform the browser that an element is likely to be changed in the future.**
++ **Allowing the browser** to **apply optimizations** for **smoother animations and transitions**. 
++ **By using will-change**, you can provide a **hint to the browser about what kind of changes to expect**, and it can make **performance optimizations accordingly.** 
++ **will-change** is particularly **useful when you know that certain properties of an element will be animated or transitioned.** 
++ The **browser can allocate resources more efficiently and avoid unnecessary computations** for elements that are unlikely to change. 
++ **Applying it to too many elements or using it unnecessarily can lead to increased memory usage.**
++ **You can specify multiple properties** by **separating them with spaces**, or you can **use the auto value** to let the browser decide which properties to optimize. **Example:** will-change: transform opacity; or will-change: auto;
+</details>
+
+---
+
+<details>
+  <summary>28. What are CSS Variables (Custom Properties), and how are they useful?</summary>
+
+* **CSS Variables allow you to define values in a single place** (typically **in the :root pseudo-class** or within a **specific element**) and **reuse them throughout your stylesheet**.
+
+* Variables can be **updated dynamically using JavaScript**, making it **easier to implement dynamic theming** or **respond to user interactions**.
+
+* Variables **improve the readability and maintenance of your stylesheets** by providing **meaningful names for values**, **reducing redundancy**, and making it **easier to update styles globally**.
+
+* Variables can be **scoped to specific elements**, allowing you to **define local variables within a particular section** of your stylesheet **without affecting the global scope**.
+* You can **provide fallback values** in case a variable is **not defined or supported by a browser**, **ensuring a graceful degradation of styles**.
+
+### Example :-
+```css
+:root {
+  --main-color: #3498db;
+  --accent-color: #e74c3c;
+}
+
+.button {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid var(--accent-color);
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+  border-color: var(--main-color);
+}
+
+```
+* In this example, two variables (**--main-color** and **--accent-color**) are defined in the :root pseudo-class.
+ 
+</details>
+
+---
+
+<details>
+  <summary>29. Discuss the importance of performance considerations in CSS, especially in the context of large-scale applications.</summary>
+
++ **Optimizing CSS for large-scale applications** is not just about aesthetics; it **directly impacts the overall performance and user satisfaction**.
+
++ **Balancing design flexibility with performance considerations** is **essential for delivering a fast, responsive, and enjoyable user experience**.
+
++ **Regular audits**, **testing**, and **staying informed about best practices** are **crucial for maintaining optimal performance in large-scale CSS applications.**
+
++ **Efficient CSS practices can significantly impact the loading speed**, **rendering performance**, and **overall user experience** of a website or web application. 
+</details>
+
+---
+
+<details>
+  <summary>30. What is the purpose of media queries in responsive design?</summary>
+
+  + **Allow you to apply styles based on various characteristics of the user's device or viewport**.
+
+  + **Enabling the creation of websites that adapt to different screen sizes, resolutions, and capabilities.** 
+
+  + **The primary purpose of media queries is to implement responsive design strategies.**
+
+  + **Providing a seamless and optimized user experience across a range of devices.**
+
+  + By leveraging media queries, **web developers can create flexible and adaptive layouts** that **enhance the user experience across a diverse range of devices**.
+</details>
 
 </details>
 
 ---
 
 <details>
-  <summary>JavaScript Interview Questions</summary>
+<summary>JavaScript Interview Questions</summary>
 
-  <details>
-    <summary>1.</summary>
-  </details>
-  <details>
-    <summary>2.</summary>
-  </details>
-  <details>
-    <summary>3.</summary>
-  </details>
-  <details>
-    <summary>4.</summary>
-  </details>
-  <details>
-    <summary>5.</summary>
-  </details>
-  <details>
-    <summary>6.</summary>
-  </details>
-  <details>
-    <summary>7.</summary>
-  </details>
-  <details>
-    <summary>8.</summary>
-  </details>
-  <details>
-    <summary>9.</summary>
-  </details>
-  <details>
-    <summary>10.</summary>
-  </details>
-  <details>
-    <summary>11.</summary>
-  </details>
-  <details>
-    <summary>12.</summary>
-  </details>
-  <details>
-    <summary>13.</summary>
-  </details>
-  <details>
-    <summary>14.</summary>
-  </details>
-  <details>
-    <summary>15.</summary>
-  </details>
-  <details>
-    <summary>16.</summary>
-  </details>
-  <details>
-    <summary>17.</summary>
-  </details>
-  <details>
-    <summary>18.</summary>
-  </details>
-  <details>
-    <summary>19.</summary>
-  </details>
-  <details>
-    <summary>20.</summary>
-  </details>
-  <details>
-    <summary>21.</summary>
-  </details>
-  <details>
-    <summary>22.</summary>
-  </details>
-  <details>
-    <summary>23.</summary>
-  </details>
-  <details>
-    <summary>24.</summary>
-  </details>
-  <details>
-    <summary>25.</summary>
-  </details>
-  <details>
-    <summary>26.</summary>
-  </details>
-  <details>
-    <summary>27.</summary>
-  </details>
-  <details>
-    <summary>28.</summary>
-  </details>
-  <details>
-    <summary>29.</summary>
-  </details>
-  <details>
-    <summary>30.</summary>
-  </details>
+<details>
+  <summary>1.</summary>
+</details>
+<details>
+  <summary>2.</summary>
+</details>
+<details>
+  <summary>3.</summary>
+</details>
+<details>
+  <summary>4.</summary>
+</details>
+<details>
+  <summary>5.</summary>
+</details>
+<details>
+  <summary>6.</summary>
+</details>
+<details>
+  <summary>7.</summary>
+</details>
+<details>
+  <summary>8.</summary>
+</details>
+<details>
+  <summary>9.</summary>
+</details>
+<details>
+  <summary>10.</summary>
+</details>
+<details>
+  <summary>11.</summary>
+</details>
+<details>
+  <summary>12.</summary>
+</details>
+<details>
+  <summary>13.</summary>
+</details>
+<details>
+  <summary>14.</summary>
+</details>
+<details>
+  <summary>15.</summary>
+</details>
+<details>
+  <summary>16.</summary>
+</details>
+<details>
+  <summary>17.</summary>
+</details>
+<details>
+  <summary>18.</summary>
+</details>
+<details>
+  <summary>19.</summary>
+</details>
+<details>
+  <summary>20.</summary>
+</details>
+<details>
+  <summary>21.</summary>
+</details>
+<details>
+  <summary>22.</summary>
+</details>
+<details>
+  <summary>23.</summary>
+</details>
+<details>
+  <summary>24.</summary>
+</details>
+<details>
+  <summary>25.</summary>
+</details>
+<details>
+  <summary>26.</summary>
+</details>
+<details>
+  <summary>27.</summary>
+</details>
+<details>
+  <summary>28.</summary>
+</details>
+<details>
+  <summary>29.</summary>
+</details>
+<details>
+  <summary>30.</summary>
+</details>
 
 </details>
 
 ---
 
 <details>
-  <summary>React Interview Questions</summary>
+<summary>React Interview Questions</summary>
 
-  <details>
-    <summary>1.</summary>
-  </details>
+<details>
+  <summary>1.</summary>
+</details>
 
-  <details>
-    <summary>2.</summary>
-  </details>
-  <details>
-    <summary>3.</summary>
-  </details>
-  <details>
-    <summary>4.</summary>
-  </details>
-  <details>
-    <summary>5.</summary>
-  </details>
-  <details>
-    <summary>6.</summary>
-  </details>
-  <details>
-    <summary>7.</summary>
-  </details>
-  <details>
-    <summary>8.</summary>
-  </details>
-  <details>
-    <summary>9.</summary>
-  </details>
-  <details>
-    <summary>10.</summary>
-  </details>
-  <details>
-    <summary>11.</summary>
-  </details>
-  <details>
-    <summary>12.</summary>
-  </details>
-  <details>
-    <summary>13.</summary>
-  </details>
-  <details>
-    <summary>14.</summary>
-  </details>
-  <details>
-    <summary>15.</summary>
-  </details>
-  <details>
-    <summary>16.</summary>
-  </details>
-  <details>
-    <summary>17.</summary>
-  </details>
-  <details>
-    <summary>18.</summary>
-  </details>
-  <details>
-    <summary>19.</summary>
-  </details>
-  <details>
-    <summary>20.</summary>
-  </details>
-  <details>
-    <summary>21.</summary>
-  </details>
-  <details>
-    <summary>22.</summary>
-  </details>
-  <details>
-    <summary>23.</summary>
-  </details>
-  <details>
-    <summary>24.</summary>
-  </details>
-  <details>
-    <summary>25.</summary>
-  </details>
-  <details>
-    <summary>26.</summary>
-  </details>
-  <details>
-    <summary>27.</summary>
-  </details>
-  <details>
-    <summary>28.</summary>
-  </details>
-  <details>
-    <summary>29.</summary>
-  </details>
-  <details>
-    <summary>30.</summary>
-  </details>
+<details>
+  <summary>2.</summary>
+</details>
+<details>
+  <summary>3.</summary>
+</details>
+<details>
+  <summary>4.</summary>
+</details>
+<details>
+  <summary>5.</summary>
+</details>
+<details>
+  <summary>6.</summary>
+</details>
+<details>
+  <summary>7.</summary>
+</details>
+<details>
+  <summary>8.</summary>
+</details>
+<details>
+  <summary>9.</summary>
+</details>
+<details>
+  <summary>10.</summary>
+</details>
+<details>
+  <summary>11.</summary>
+</details>
+<details>
+  <summary>12.</summary>
+</details>
+<details>
+  <summary>13.</summary>
+</details>
+<details>
+  <summary>14.</summary>
+</details>
+<details>
+  <summary>15.</summary>
+</details>
+<details>
+  <summary>16.</summary>
+</details>
+<details>
+  <summary>17.</summary>
+</details>
+<details>
+  <summary>18.</summary>
+</details>
+<details>
+  <summary>19.</summary>
+</details>
+<details>
+  <summary>20.</summary>
+</details>
+<details>
+  <summary>21.</summary>
+</details>
+<details>
+  <summary>22.</summary>
+</details>
+<details>
+  <summary>23.</summary>
+</details>
+<details>
+  <summary>24.</summary>
+</details>
+<details>
+  <summary>25.</summary>
+</details>
+<details>
+  <summary>26.</summary>
+</details>
+<details>
+  <summary>27.</summary>
+</details>
+<details>
+  <summary>28.</summary>
+</details>
+<details>
+  <summary>29.</summary>
+</details>
+<details>
+  <summary>30.</summary>
+</details>
 
 </details>
 
 ---
+
