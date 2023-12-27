@@ -1616,68 +1616,383 @@ const pi = 3.14;
 <details>
   <summary>6. Explain the concept of arrays in JavaScript and how to access elements in an array.</summary>
 
-+ In JavaScript, an array is a special type of object that is used to store multiple values in a single variable.
++ In JavaScript, **an array is a special type of object that is used to store multiple values in a single variable.**
 
-+ Arrays are commonly used to organize and manipulate sets of related data. 
++ Arrays are **commonly used to organize and manipulate sets of related data.** 
 
-+ Each element in an array has an index, starting from 0, which allows you to access and manipulate individual elements.
++ Each element in an **array has an index**, starting from **0**, which allows you to access and manipulate individual elements.
 
-+ To access elements in an array, use the square bracket notation with the index of the element you want to access. The index starts at 0 for the first element, 1 for the second, and so on.
++ To access elements in an array, **use the square bracket notation with the index of the element you want to access.** The **index starts at 0 for the first element, 1 for the second, and so on.**
 
 + **Creating Arrays :**
-```javascript
-// Using square brackets
-let myArray = [1, 2, 3, 4, 5];
+  ```javascript
+  // Using square brackets
+  let myArray = [1, 2, 3, 4, 5];
 
-// Using the Array constructor
-let anotherArray = new Array(1, 2, 3, 4, 5);
-```
+  // Using the Array constructor
+  let anotherArray = new Array(1, 2, 3, 4, 5);
+  ```
 + **Accessing Elements :** 
-```javascript
-let firstElement = myArray[0]; // Access the first element
-let thirdElement = myArray[2]; // Access the third element
-```
+  ```javascript
+  let firstElement = myArray[0]; // Access the first element
+  let thirdElement = myArray[2]; // Access the third element
+  ```
 + **Modifying Elements :**
+  ```javascript
+  myArray[1] = 10; // Change the value of the second element to 10
+  ```
+</details>
+
+---
+
+<details>
+  <summary>7. What is the DOM, and how do you manipulate it using JavaScript?</summary>
+
++ The DOM, or **Document Object Model**, is a programming interface for web documents. 
+
++ It represents the **structure of a document as a tree of objects**, where each object corresponds to a part of the document, such as **elements**, **attributes**, and **text**.
+
++ The **DOM provides a way for programs (especially JavaScript) to manipulate the content**, structure, and style of a web page dynamically.
+
++ Here's a brief overview of how you can manipulate the DOM using JavaScript: 
+
++ **Accessing Elements :** Common methods include **getElementById**, **getElementsByClassName**, **getElementsByTagName**, and **querySelector**:
+
+    ```javascript
+      // Get an element by its ID
+    let myElement = document.getElementById('myId');
+
+    // Get elements by class name
+    let elementsByClass = document.getElementsByClassName('myClass');
+
+    // Get elements by tag name
+    let elementsByTag = document.getElementsByTagName('div');
+
+    // Query selector (returns the first matching element)
+    let elementBySelector = document.querySelector('.myClass');
+    ```
+
++ **Modifying Content and Attributes :** 
+  ```javascript
+  // Change the text content of an element
+  myElement.textContent = 'New Text';
+
+  // Change the HTML content of an element
+  myElement.innerHTML = '<strong>New Content</strong>';
+
+  // Change the value of an attribute
+  myElement.setAttribute('src', 'new-image.jpg');
+
+  // Modify CSS styles
+  myElement.style.color = 'red';
+  ```
++ **Creating and Appending Elements :**
+  ```javascript
+  // Create a new element
+  let newElement = document.createElement('div');
+
+  // Set attributes and content
+  newElement.id = 'newId';
+  newElement.textContent = 'New Element';
+
+  // Append the new element to an existing one
+  document.body.appendChild(newElement);
+  ```
++ **Event Handling :**
+  ```javascript
+  // Add a click event listener to an element
+  myElement.addEventListener('click', function() {
+    alert('Element clicked!');
+  });
+  ```
++ **Removing Elements :**
+  ```javascript
+  // Remove an element
+  myElement.remove();
+  ```
+</details>
+
+---
+
+<details>
+  <summary>8. Explain the difference between null and undefined in JavaScript.</summary>
+
+| **NULL** | **UNDEFINED** |
+| -------- | ------------- |
+| The **null** value is explicitly assigned to a variable by the programmer to indicate that the **variable intentionally does not have any object value** or **does not point to any memory location**. | The undefined value is a **primitive value automatically assigned to variables** that have been declared but **not initialized.** |
+| It is often **used to represent the intentional absence of an object** value or as a placeholder for an object that does not exist. | It is also the **default return value of a function that doesn't explicitly return anything.** |
+| **null is used to explicitly represent the absence of an object value** or to indicate that a **variable intentionally does not point to any object**. | It indicates the **absence of a value in a variable**. undefined typically **indicates a variable that has been declared but not assigned any value** or a **function that doesn't return anything.** |
+</details>
+
+---
+
+<details>
+  <summary>9. Why do we use the word “debugger” in javascript?</summary>
+
++ The debugger for the browser must be **activated in order to debug the code.**
++ **Built-in debuggers may be switched on and off**, requiring the user to report faults. 
++ The **remaining section of the code** should **stop execution before moving on to the next line while debugging**.
+</details>
+
+---
+
+<details>
+  <summary>10. Explain Implicit Type Coercion in javascript.</summary>
+
++ **Implicit type coercion** in javascript is the **automatic conversion of value from one data type to another.** 
++ It **takes place when the operands of an expression are of different data types**. 
+  + **String coercion :** String coercion takes place while using the **‘ + ‘** operator. When a **number is added to a string, the number type is always converted to the string type.**
+
+    ```javascript
+    // Example 1.
+    var x = 3;
+    var y = "3";
+    x + y // Returns "33" 
+
+    //Example 2.
+    var x = 24;
+    var y = "Hello";
+    x + y   // Returns "24Hello";  
+    ```
+
+  + **Boolean coercion :** 
+    - Boolean coercion takes place when using **logical operators**, **ternary operators**, **if statements**, and **loop checks**. To understand boolean coercion in if statements and operators, we need to understand truthy and falsy values.
+    - *Truthy values are those which will be converted (coerced) to true.* 
+    - *Falsy values are those which will be converted to false.* All values **except false, 0, 0n, -0, “”, null, undefined, and NaN are truthy values.**
+      ```javascript
+      // If Statement:
+      var x = 0;
+      var y = 23;
+          
+      if(x) { console.log(x) }   // The code inside this block will not run since the value of x is 0(Falsy)  
+          
+      if(y) { console.log(y) }    // The code inside this block will run since the value of y is 23 (Truthy)
+      ```
+
+  + **Logical Operators :** 
+    - Logical operators in javascript, **unlike operators in other programming languages, do not return true or false.** They always **return one of the operands.**
+    - **OR ( | | ) operator -** If the first value is truthy, then the first value is returned. Otherwise, always the second value gets returned.
+    - **AND ( && ) operator -** If both the values are truthy, always the second value is returned. If the first value is falsy then the first value is returned or if the second value is falsy then the second value is returned.
+      ```javascript
+      // Example :
+      var x = 220;
+      var y = "Hello";
+      var z = undefined;
+          
+      x | | y    // Returns 220 since the first value is truthy
+          
+      x | | z   // Returns 220 since the first value is truthy
+          
+      x && y    // Returns "Hello" since both the values are truthy
+          
+      y && z   // Returns undefined since the second value is falsy
+          
+      if( x && y ){ 
+        console.log("Code runs" ); // This block runs because x && y returns "Hello" (Truthy)
+      }   
+          
+      if( x || z ){
+        console.log("Code runs");  // This block runs because x || y returns 220(Truthy)
+      }
+      ```
+  + **Equality coercion :** 
+    - **Equality coercion takes place when using ‘ == ‘** operator. As we have stated before. The ‘ == ‘ operator **compares values and not types**.
+    - While the above statement is a simple way to explain == operator, it’s not completely true. The reality is that while using the ‘==’ operator, coercion takes place.
+    - The ‘==’ operator, **converts both the operands to the same type and then compares them**.
+      ```javascript
+      // Example
+      var a = 12;
+      var b = "12";
+      a == b // Returns true because both 'a' and 'b' are converted to the same type and then compared. Hence the operands are equal.
+
+      // Example 
+      var a = 226;
+      var b = "226";
+
+      a === b // Returns false because coercion does not take place and the  operands are of different types. Hence they are not equal. 
+      ```
+</details>
+
+---
+
+<details>
+  <summary>11. Is javascript a statically typed or a dynamically typed language?</summary>
+
+| **Static Typing**  | **Dynamically Typing** |
+| -----------------  | ---------------------- |
+| Statically typed language, **where the type of a variable is checked during compile-time**.  | JavaScript is a dynamically typed language. In a dynamically typed language, **the type of a variable is checked during run-time.** |
+| Variables have type.  | Variables do not have type. |
+| Values have type.  | Values have no type. |
+| Variables cannot change type.  | Variables changes type dynamically. |
+
+## Note :-
++ Since **javascript is a loosely(dynamically) typed language**, variables in JS are **not associated with any type**. A variable can hold the value of any data type.
 ```javascript
-myArray[1] = 10; // Change the value of the second element to 10
+// Example
+var a = 23;
+var a = "Hello World!";
 ```
 </details>
 
 ---
 
 <details>
-  <summary>7.</summary>
+  <summary>12. What is NaN property in JavaScript?</summary>
+
++ NaN property represents the “Not-a-Number” value. It indicates a value that is not a legal number.
++ typeof of NaN will return a Number.
++ To check if a value is NaN, we use the isNaN() function. isNaN() function converts the given value to a Number type, and then equates to NaN.
+  ```javascript
+  isNaN("Hello")  // Returns true
+  isNaN(345)   // Returns false
+  isNaN('1')  // Returns false, since '1' is converted to Number type which results in 0 ( a number) 
+  isNaN(true) // Returns false, since true converted to Number type results in 1 ( a number)
+  isNaN(false) // Returns false
+  isNaN(undefined) // Returns true
+  ```
 </details>
 
 ---
 
 <details>
-  <summary>8.</summary>
+  <summary>13. Explain passed by value and passed by reference.</summary>
+
++ In JavaScript, **primitive data types are passed by value** and **non-primitive data types are passed by reference.**
+
++ For understanding passed by value and passed by reference, **we need to understand what happens when we create a variable and assign a value to it**,
+  ```javascript
+  var x = 2;
+  ```
++ In the above example, **we created a variable x and assigned it a value of “2”.** In the background, the **“=” (assign operator) allocates some space in the memory, stores the value “2” and returns the location of the allocated memory space.** Therefore, the variable **x in the above code points to the location of the memory space instead of pointing to the value 2 directly.**
+
+### Assign operator dealing with primitive types :
+![primitive types](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/003/408/original/Assign_operator_dealing_with_primitive_types.png?1654852446)
+```javascript
+// Example
+var y = 234;
+var z = y;
+```
+* In the above example, the **assign operator knows that the value assigned to y is a primitive type (number type in this case)**, so when the **second line code executes, where the value of y is assigned to z, the assign operator takes the value of y (234) and allocates a new space in the memory and returns the address**. Therefore, variable **z is not pointing to the location of variable y, instead, it is pointing to a new location in the memory.**
+  ```javascript
+  // Example
+  var y = #8454; // y pointing to address of the value 234
+
+  var z = y; 
+      
+  var z = #5411; // z pointing to a completely new address of the value 234
+      
+  // Changing the value of y
+  y = 23;
+  console.log(z);  // Returns 234, since z points to a new address in the memory so changes in y will not effect z
+  ```
++ From the above example, we can see that **primitive data types when passed to another variable, are passed by value**. Instead of just assigning the **same address to another variable, the value is passed and new space of memory is created.**
+
+### Assign operator dealing with non-primitive types :
+![non-primitive](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/003/410/original/Assign_operator_dealing_with_non-primitive_types.png?1654852531)
+```javascript
+// Example
+var obj = { name: "Vivek", surname: "Bisht" };
+var obj2 = obj;
+```
++ In the above example, the **assign operator directly passes the location of the variable obj to the variable obj2.** In other words, the **reference of the variable obj is passed to the variable obj2.**
+  ```javascript
+  var obj = #8711;  // obj pointing to address of { name: "Vivek", surname: "Bisht" }
+  var obj2 = obj;
+      
+  var obj2 = #8711; // obj2 pointing to the same address 
+
+  // changing the value of obj1
+          
+  obj.name = "Akki";
+  console.log(obj2);
+          
+  // Returns {name:"Akki", surname:"Bisht"} since both the variables are pointing to the same address.
+  ```
++ From the above example, we can see that **while passing non-primitive data types, the assigned operator directly passes the address (reference).** Therefore, non-primitive data types are always **passed by reference.**
 </details>
 
 ---
 
 <details>
-  <summary>9.</summary>
+  <summary>14. List some features of JavaScript.</summary>
+
++ **Some of the features of JavaScript are:**
++ Lightweight
++ Interpreted programming language
++ Good for the applications which are network-centric
++ Complementary to Java
++ Complementary to HTML
++ Open source
++ Cross-platform
 </details>
+
+---
+
 <details>
-  <summary>10.</summary>
+  <summary>15. What are functions in JavaScript? What are the different types of functions available in JavaScript?</summary>
+
++ In JavaScript, **functions are blocks of reusable code designed** to **perform a specific task** or calculate a value.
++  Functions **allow you to structure your code, make it more modular, and avoid redundancy.** 
++ They are a **fundamental building block in JavaScript** and play a crucial role in the language.
+
++ **Function Declaration :** A function in JavaScript can be declared using the function keyword. 
+  ```javascript
+    function greet(name) {
+      console.log("Hello, " + name + "!");
+    }
+  ```
++ **Function Expression :** You can also define a function using a function expression, where the function is assigned to a variable: 
+  ```javascript
+    let greet = function(name) {
+    console.log("Hello, " + name + "!");
+  };
+  ```
++ Some of the different commonly used functions are :-
+  + **Arrow Function :-** Arrow functions provide a **concise syntax for writing functions**, especially when the **function is simple and has a single statement**:
+    ```javascript
+    let greet = (name) => {
+    console.log("Hello, " + name + "!");
+    };
+    ```
+  + **Anonymous Functions :-** **Functions that are not assigned to a variable or declared with a name are called anonymous functions.** They are often **used as arguments to other functions** or within function expressions.
+    ```javascript
+    let add = function(x, y) {
+    return x + y;
+    };
+    ```
+  + **Immediately Invoked Function Expressions (IIFE) :-** An IIFE is a function that is defined and **executed immediately after creation.** It is often used to create a **private scope for variables to avoid polluting the global scope.**
+    ```javascript
+    (function() {
+    console.log("This is an IIFE.");
+    })();
+    ```
+  + **Callback Functions :-** Functions in JavaScript can be **passed as arguments to other functions.** **Functions that are passed as arguments to another function are called callback functions.**
+    ```javascript
+    function doSomething(callback) {
+      console.log("Doing something...");
+      callback();
+    }
+
+    doSomething(function() {
+      console.log("Callback function called.");
+    });
+
+    ```
+  + **Higher-Order Functions :-** Higher-order functions are **functions that can take other functions as arguments or return functions as their results.**
+    ```javascript
+    function multiplyBy(factor) {
+      return function(x) {
+      return x * factor;
+      };
+    }
+
+    let double = multiplyBy(2);
+    console.log(double(5)); // Outputs: 10
+    ```
 </details>
-<details>
-  <summary>11.</summary>
-</details>
-<details>
-  <summary>12.</summary>
-</details>
-<details>
-  <summary>13.</summary>
-</details>
-<details>
-  <summary>14.</summary>
-</details>
-<details>
-  <summary>15.</summary>
-</details>
+
+---
+
 <details>
   <summary>16.</summary>
 </details>
