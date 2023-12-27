@@ -1994,20 +1994,128 @@ var obj2 = obj;
 ---
 
 <details>
-  <summary>16.</summary>
+  <summary>16. What are Closures in JavaScript?</summary>
+
++ In JavaScript, a **closure is a function that retains access to variables from its lexical scope** even after the scope has finished executing.
+
++  In simpler terms, a **closure allows a function to access variables from an outer function, even after the outer function has completed execution.**
+
++ **Closures are created** whenever a **variable that is defined outside the current scope** is **accessed within the current scope**.
+
++ This **behavior is a result of JavaScript's lexical scoping.** Closures are **useful in various scenarios**, such as **creating private variables**, **implementing data encapsulation**, and **handling asynchronous operations.** 
+  ```javascript
+  function outerFunction() {
+    let outerVariable = 'I am from the outer function';
+
+    function innerFunction() {
+      console.log(outerVariable);
+    }
+
+    return innerFunction;
+  }
+
+  // Create a closure by assigning the inner function to a variable
+  let closure = outerFunction();
+
+  // Execute the closure
+  closure(); // Outputs: I am from the outer function
+  ```
 </details>
+
+---
+
 <details>
-  <summary>17.</summary>
+  <summary>17. What is an Immediately Invoked Function in JavaScript?</summary>
+
++ An **Immediately Invoked Function** ( known as IIFE and pronounced as IIFY) is a function that **runs as soon as it is defined.**
++ Syntax of IIFE :
+  ```javascript
+    (function(){ 
+  // Do something;
+    })();
+  ```
++ **To understand** IIFE, we need to **understand the two sets of parentheses** that are added **while creating an IIFE** :
+  * The first set of parenthesis:
+    ```javascript
+    (function (){
+      //Do something;
+    })
+    ```
++ While executing javascript code, whenever the **compiler sees the word “function”, it assumes that we are declaring a function in the code.**
+
++ Therefore, **if we do not use the first set of parentheses, the compiler throws an error because it thinks we are declaring a function**, and by the **syntax of declaring a function, a function should always have a name.**
+  ```javascript
+  function() {
+  //Do something;
+  }
+  // Compiler gives an error since the syntax of declaring a function is wrong in the code above.
+  ```
++ **To remove this error**, we **add the first set of parenthesis that tells the compiler that the function is not a function declaration**, instead, it’s a **function expression.**
+
++ The second set of parenthesis:
+  ```javascript
+  (function (){
+  //Do something;
+  })();
+  ```
++ From the definition of an IIFE, we know that our code should run as soon as it is defined. **A function runs only when it is invoked**. If we **do not invoke the function, the function declaration is returned:**
+  ```javascript
+  (function (){
+  // Do something;
+  })
+
+  // Returns the function declaration
+  ```
++ *Therefore to invoke the function, we use the second set of parenthesis.*
 </details>
+
+---
+
 <details>
-  <summary>18.</summary>
+  <summary>18. What do you mean by strict mode in javascript and characteristics of javascript strict-mode?</summary>
+
++  In ECMAScript 5, a **new feature called JavaScript Strict Mode** allows you to **write a code or a function in a "strict" operational environment**.
++   In most cases, this language is **'not particularly severe'** when it comes to throwing errors.
++  In 'Strict mode,' however, **all forms of errors**, including silent errors, **will be thrown.** As a result, **debugging becomes a lot simpler.**
++  Thus **programmer's chances of making an error are lowered.**
+
+## Characteristics of strict mode in javascript :-
+  * Duplicate arguments are not allowed by developers.
+  * In strict mode, you won't be able to use the JavaScript keyword as a parameter or function name.
+  * The 'use strict' keyword is used to define strict mode at the start of the script. Strict mode is supported by all browsers
+  * Engineers will not be allowed to create global variables in 'Strict Mode.
 </details>
+
+---
+
 <details>
-  <summary>19.</summary>
+  <summary>19. What is the ‘this’ keyword in JavaScript?</summary>
+
+-  **Functions in JavaScript are essential objects**. Like objects, *they can be assigned to variables, passed to other functions, and returned from functions.*
+-  And much **like objects, they have their own properties.** *‘this’ stores the current execution context of the JavaScript program.*
+-  Thus, **when it is used inside a function, the value of ‘this’ will change depending on how the function is defined, how it is invoked, and the default execution context.***
+-  **The value of the “this” keyword will always depend on the object that is invoking the function.** The *“this” keyword refers to the object that the function is a property of.*
+
 </details>
+
+---
+
 <details>
-  <summary>20.</summary>
+  <summary>20. Explain call(), apply() and, bind() methods.</summary>
+
+*In JavaScript, the call(), apply(), and bind() methods are used to manipulate the context (the value of this) of a function during its execution. They are often used in situations where you want to explicitly set the value of this or pass arguments to a function.* 
+
+| **call** | **apply** | **bind** |
+| -------- | --------- | -------- |
+| The call() method allows you to invoke a function with a specified this value and arguments provided individually. | **apply** | **bind** |
+| Syntax: function.call(thisArg, arg1, arg2, ...)| **apply** | **bind** |
+| **call** | **apply** | **bind** |
+| **call** | **apply** | **bind** |
+| **call** | **apply** | **bind** |
 </details>
+
+---
+
 <details>
   <summary>21.</summary>
 </details>
