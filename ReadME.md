@@ -1284,13 +1284,13 @@ var geoLocation = navigator.geolocation;
   <details>
     <summary>26. Explain the difference between em and rem units in CSS.</summary>
 
-| **em**                                                                                                                                          | **rem**                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| The **em unit** is **relative to the font size of the closest parent element** with a specified font size.                                              | The **rem unit** is **relative to the font size of the root element(html)**.                                                       |
-| If **used on a property like font-size**, it will be **relative to the font size of the parent element.**                                               | It is **not affected by the font size of any parent element.**                                                                  |
+| **em**                                                                                                                                                  | **rem**                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| The **em unit** is **relative to the font size of the closest parent element** with a specified font size.                                              | The **rem unit** is **relative to the font size of the root element(html)**.                                                        |
+| If **used on a property like font-size**, it will be **relative to the font size of the parent element.**                                               | It is **not affected by the font size of any parent element.**                                                                      |
 | Since **em** is based on the font size of the parent element, **changes in the parent's font size will affect the size of the child element using em**. | Changes in the **font size of parent elements do not affect the rem unit**. It **provides a more consistent and predictable size.** |
-| If you **want a size to be relative to the font size of a specific parent, use em.** | If you **want a size that remains consistent across the entire document, use rem.**  |
-| **em** may be **more suitable for text-related properties.** | rem is often **preferred for layout-related properties.**  |
+| If you **want a size to be relative to the font size of a specific parent, use em.**                                                                    | If you **want a size that remains consistent across the entire document, use rem.**                                                 |
+| **em** may be **more suitable for text-related properties.**                                                                                            | rem is often **preferred for layout-related properties.**                                                                           |
 
 Usage Example of **em :-**
 
@@ -1308,13 +1308,14 @@ Usage Example of **rem :-**
 
 ```css
 html {
-font-size: 16px; /* Base font size for the entire document */
+  font-size: 16px; /* Base font size for the entire document */
 }
 
 .element {
-font-size: 1.5rem; /* 1.5 times the root font size, i.e., 24px (16 * 1.5) */
+  font-size: 1.5rem; /* 1.5 times the root font size, i.e., 24px (16 * 1.5) */
 }
 ```
+
 </details>
 
 ---
@@ -1322,13 +1323,13 @@ font-size: 1.5rem; /* 1.5 times the root font size, i.e., 24px (16 * 1.5) */
 <details>
   <summary>27. What is the CSS will-change property used for?</summary>
 
-+ The **will-change** CSS property is **used to inform the browser that an element is likely to be changed in the future.**
-+ **Allowing the browser** to **apply optimizations** for **smoother animations and transitions**. 
-+ **By using will-change**, you can provide a **hint to the browser about what kind of changes to expect**, and it can make **performance optimizations accordingly.** 
-+ **will-change** is particularly **useful when you know that certain properties of an element will be animated or transitioned.** 
-+ The **browser can allocate resources more efficiently and avoid unnecessary computations** for elements that are unlikely to change. 
-+ **Applying it to too many elements or using it unnecessarily can lead to increased memory usage.**
-+ **You can specify multiple properties** by **separating them with spaces**, or you can **use the auto value** to let the browser decide which properties to optimize. **Example:** will-change: transform opacity; or will-change: auto;
+- The **will-change** CSS property is **used to inform the browser that an element is likely to be changed in the future.**
+- **Allowing the browser** to **apply optimizations** for **smoother animations and transitions**.
+- **By using will-change**, you can provide a **hint to the browser about what kind of changes to expect**, and it can make **performance optimizations accordingly.**
+- **will-change** is particularly **useful when you know that certain properties of an element will be animated or transitioned.**
+- The **browser can allocate resources more efficiently and avoid unnecessary computations** for elements that are unlikely to change.
+- **Applying it to too many elements or using it unnecessarily can lead to increased memory usage.**
+- **You can specify multiple properties** by **separating them with spaces**, or you can **use the auto value** to let the browser decide which properties to optimize. **Example:** will-change: transform opacity; or will-change: auto;
 </details>
 
 ---
@@ -1336,16 +1337,17 @@ font-size: 1.5rem; /* 1.5 times the root font size, i.e., 24px (16 * 1.5) */
 <details>
   <summary>28. What are CSS Variables (Custom Properties), and how are they useful?</summary>
 
-* **CSS Variables allow you to define values in a single place** (typically **in the :root pseudo-class** or within a **specific element**) and **reuse them throughout your stylesheet**.
+- **CSS Variables allow you to define values in a single place** (typically **in the :root pseudo-class** or within a **specific element**) and **reuse them throughout your stylesheet**.
 
-* Variables can be **updated dynamically using JavaScript**, making it **easier to implement dynamic theming** or **respond to user interactions**.
+- Variables can be **updated dynamically using JavaScript**, making it **easier to implement dynamic theming** or **respond to user interactions**.
 
-* Variables **improve the readability and maintenance of your stylesheets** by providing **meaningful names for values**, **reducing redundancy**, and making it **easier to update styles globally**.
+- Variables **improve the readability and maintenance of your stylesheets** by providing **meaningful names for values**, **reducing redundancy**, and making it **easier to update styles globally**.
 
-* Variables can be **scoped to specific elements**, allowing you to **define local variables within a particular section** of your stylesheet **without affecting the global scope**.
-* You can **provide fallback values** in case a variable is **not defined or supported by a browser**, **ensuring a graceful degradation of styles**.
+- Variables can be **scoped to specific elements**, allowing you to **define local variables within a particular section** of your stylesheet **without affecting the global scope**.
+- You can **provide fallback values** in case a variable is **not defined or supported by a browser**, **ensuring a graceful degradation of styles**.
 
 ### Example :-
+
 ```css
 :root {
   --main-color: #3498db;
@@ -1363,10 +1365,10 @@ font-size: 1.5rem; /* 1.5 times the root font size, i.e., 24px (16 * 1.5) */
   background-color: var(--accent-color);
   border-color: var(--main-color);
 }
-
 ```
-* In this example, two variables (**--main-color** and **--accent-color**) are defined in the :root pseudo-class.
- 
+
+- In this example, two variables (**--main-color** and **--accent-color**) are defined in the :root pseudo-class.
+
 </details>
 
 ---
@@ -1374,13 +1376,13 @@ font-size: 1.5rem; /* 1.5 times the root font size, i.e., 24px (16 * 1.5) */
 <details>
   <summary>29. Discuss the importance of performance considerations in CSS, especially in the context of large-scale applications.</summary>
 
-+ **Optimizing CSS for large-scale applications** is not just about aesthetics; it **directly impacts the overall performance and user satisfaction**.
+- **Optimizing CSS for large-scale applications** is not just about aesthetics; it **directly impacts the overall performance and user satisfaction**.
 
-+ **Balancing design flexibility with performance considerations** is **essential for delivering a fast, responsive, and enjoyable user experience**.
+- **Balancing design flexibility with performance considerations** is **essential for delivering a fast, responsive, and enjoyable user experience**.
 
-+ **Regular audits**, **testing**, and **staying informed about best practices** are **crucial for maintaining optimal performance in large-scale CSS applications.**
+- **Regular audits**, **testing**, and **staying informed about best practices** are **crucial for maintaining optimal performance in large-scale CSS applications.**
 
-+ **Efficient CSS practices can significantly impact the loading speed**, **rendering performance**, and **overall user experience** of a website or web application. 
+- **Efficient CSS practices can significantly impact the loading speed**, **rendering performance**, and **overall user experience** of a website or web application.
 </details>
 
 ---
@@ -1388,15 +1390,15 @@ font-size: 1.5rem; /* 1.5 times the root font size, i.e., 24px (16 * 1.5) */
 <details>
   <summary>30. What is the purpose of media queries in responsive design?</summary>
 
-  + **Allow you to apply styles based on various characteristics of the user's device or viewport**.
+- **Allow you to apply styles based on various characteristics of the user's device or viewport**.
 
-  + **Enabling the creation of websites that adapt to different screen sizes, resolutions, and capabilities.** 
+- **Enabling the creation of websites that adapt to different screen sizes, resolutions, and capabilities.**
 
-  + **The primary purpose of media queries is to implement responsive design strategies.**
+- **The primary purpose of media queries is to implement responsive design strategies.**
 
-  + **Providing a seamless and optimized user experience across a range of devices.**
+- **Providing a seamless and optimized user experience across a range of devices.**
 
-  + By leveraging media queries, **web developers can create flexible and adaptive layouts** that **enhance the user experience across a diverse range of devices**.
+- By leveraging media queries, **web developers can create flexible and adaptive layouts** that **enhance the user experience across a diverse range of devices**.
 </details>
 
 </details>
@@ -1407,29 +1409,254 @@ font-size: 1.5rem; /* 1.5 times the root font size, i.e., 24px (16 * 1.5) */
 <summary>JavaScript Interview Questions</summary>
 
 <details>
-  <summary>1.</summary>
-</details>
+  <summary>1. What is JavaScript?</summary>
+
+- JavaScript is a **popular web scripting language** and is **used for client-side and server-side development**.
+
+- The JavaScript code can be inserted into HTML pages that can be understood and executed by web browsers while also **supporting object-oriented programming abilities**.
+
+- It is designed to make web pages interactive and dynamic.
+
+- **Here are some key characteristics and aspects of JavaScript: -**
+
+  - **Client-Side Scripting :-**
+
+    - JavaScript is **mainly employed as a client-side scripting language**, executing code on the user's browser.
+    - It **enables the creation of dynamic content, manipulation of the Document Object Model (DOM), and handling user interactions** without the need for constant communication with the server.
+
+  - **Object-Oriented Programming: :-**
+
+    - **JavaScript is an object-oriented language**, supporting the creation and manipulation of objects.
+    - **Objects in JavaScript can be created from predefined classes or dynamically during runtime.**
+
+  - **Interactivity and Event Handling :-**
+
+    - It can **respond to various events** such as user **clicks**, **keyboard inputs**, and **form submissions**, allowing developers to **create responsive and engaging user interfaces.**
+
+  - **Cross-Browser Compatibility :-**
+
+    - JavaScript is **supported by all major web browsers**, ensuring that code written in **JavaScript works consistently across different platforms.**
+
+  - **Asynchronous Programming :-**
+
+    - JavaScript **supports asynchronous programming**, allowing certain tasks to be **executed independently without blocking the main execution thread**.
+
+  - **ECMAScript :-**
+
+    - JavaScript is **based on the ECMAScript standard**, which defines the language specifications.
+    - **Modern browsers implement the latest ECMAScript standards** to ensure compatibility with newer JavaScript features.
+
+  - **Server-Side Development :-** - **JavaScript has expanded its role to server-side development** with the **introduction of platforms like Node.js.** - This **allows developers** to **use JavaScript** for **both front-end and back-end development**, creating more cohesive and efficient development workflows.
+  </details>
+
+---
+
 <details>
-  <summary>2.</summary>
+  <summary>2. What is the difference between let, const, and var in variable declaration?</summary>
+
+| **var**                                                                                                                                                        | **let**                                                                                                                                                                              | **const**                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| Variables declared with **var are function-scoped.**                                                                                                           | Variables declared with **let are block-scoped.**                                                                                                                                    | Variables declared with **const are also block-scoped.**                                           |
+| This means that the **variable is only available within the function where it is declared.**                                                                   | This means that the **variable is only available within the block (enclosed by curly braces) where it is declared.**                                                                 | const **variables must be initialized at the time of declaration, and they cannot be reassigned.** |
+| **var** variables are **hoisted to the top of their scope.** This means that you can **use the variable before it is declared**, but it will be **undefined.** | let variables are **hoisted to the top of their block**, but **they are not initialized.** If you try to **use the variable before its declaration, you will get a ReferenceError.** | const **does not allow for variable redeclaration within the same block.**                         |
+| **var** allows for **variable redeclaration within the same scope.** var variables **can be reassigned.**                                                      | let **does not allow for variable redeclaration within the same block.** let **variables can be reassigned.**                                                                        | const is often **used for values that should not be changed, such as constants.**                  |
+
+### Example of _var_:-
+
+```javascript
+function example() {
+  console.log(x); // undefined
+  var x = 5;
+  console.log(x); // 5
+}
+```
+
+### Example of _let_:-
+
+```javascript
+if (true) {
+  console.log(x); // ReferenceError: Cannot access 'x' before initialization
+  let x = 5;
+  console.log(x); // 5
+}
+```
+
+### Example of _const_:-
+
+```javascript
+const pi = 3.14;
+// pi = 3.14159; // Error: Assignment to constant variable
+```
+
 </details>
+
+---
+
 <details>
-  <summary>3.</summary>
+  <summary>3. Explain the concept of hoisting in JavaScript.</summary>
+
+- **Hoisting is a behavior in JavaScript** where **variable** and **function declarations are moved to the top of their containing scope during the compilation phase.**
+
+- This means that you can **use variables or functions before they are declared in the code.**
+
+- It's important to note that **only the declarations are hoisted, not the initializations or assignments.**
+
+- When a variable is declared with **var**, the declaration is **hoisted to the top of its scope**, but the **initialization remains in place.**
+
+- If you **try to access the variable before its declaration**, it will exist but be **undefined.**
+  ```javascript
+  console.log(x); // undefined
+  var x = 5;
+  console.log(x); // 5
+  ```
+- Unlike **var**, **let** and **const** are hoisted to the **top of their block** but are **not initialized.**.Trying to **access them before their declaration results in a ReferenceError.**
+
+- **Function declarations are also hoisted to the top of their containing scope.** This means that you can **call a function before its declaration in the code.**
+  ```javascript
+  sayHello(); // "Hello, World!"
+  function sayHello() {
+    console.log("Hello, World!");
+  }
+  ```
+- It's important to note that **function expressions (where a function is assigned to a variable) are not hoisted in the same way as function declarations.**
 </details>
+
+---
+
 <details>
-  <summary>4.</summary>
-</details>
+  <summary>4. What are data types in JavaScript?</summary>
+
+- **Primitive Datatypes :-**
+
+  - **Number :-** *Represents numeric values*. It includes **integers** and **floating-point numbers.**
+    ```javascript
+    let num = 42;
+    let pi = 3.14;
+    ```
+
+  - **String :-** *Represents sequences of characters (text).*
+
+    ```javascript
+    let greeting = "Hello, World!";
+    ```
+
+  - **Boolean :-** *Represents a logical entity* and can have **only two values: true or false.**
+
+    ```javascript
+    let isTrue = true;
+    let isFalse = false;
+    ```
+
+  - **Null :-** *Represents the intentional absence of any object value.*
+
+    ```javascript
+    let nullValue = null;
+    ```
+
+  - **Undefined :-** *Represents an uninitialized variable* or the value of a **function argument that was not provided.**
+
+    ```javascript
+    let undefinedValue;
+    ```
+
+  - **BigInt :-**  *Represents integers of arbitrary precision.*
+
+    ```javascript
+    let bigIntValue = 9007199254740991n;
+    ```
+
+  - **Symbol :-** *Represents a unique identifier.* Symbols are often **used as property keys in objects** to **avoid naming conflicts.**
+
+    ```javascript
+    const sym = Symbol('uniqueSymbol');
+    ```
+- **Non-Primitive :-**
+  - **Object :-** *Represents a collection of key-value pairs* and is a fundamental **data structure in JavaScript.**
+  ```javascript
+  let person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+  };
+  ```
+  - **Functions :-** *A subtype of object, representing a callable object.*
+  ```javascript
+  function greet(name) {
+    console.log("Hello, " + name + "!");
+  }
+  ```
+  - **Array :-** *A subtype of object, representing a list of values.*
+  ```javascript
+  let numbers = [1, 2, 3, 4, 5];
+  ```
+  - **Date :-** *Represents a date and time.*
+  ```javascript
+  let currentDate = new Date();
+  ```
+  - **RegExp :-** *Represents a regular expression for pattern matching.*
+  ```javascript
+  let pattern = /[a-z]+/;
+  ```
+    </details>
+
+---
+
 <details>
-  <summary>5.</summary>
+  <summary>5. What is the difference between == and === in JavaScript?</summary>
+
+| **Equality Operator** | **Strict Equality Operator** |
+| --------------------- | -------------------------- |
+| This operator **performs type coercion**, which means it **converts the operands to the same type before making the comparison.** | This operator **does not perform type coercion**. It checks **both the value and the type of the operands.** |
+| For example, if you **compare a string and a number using ==**, JavaScript will attempt to **convert one or both of the operands to a common type (usually a number) before making the comparison.** | It **returns true** only if **both the value and the type of the operands are the same.** |
+| **Example:** "5" == 5 would **evaluate to true** because the **string "5" is coerced into the number 5.** | **Example:** "5" === 5 would **evaluate to false** because the **string and the number have different types.** |
 </details>
+
+---
+
 <details>
-  <summary>6.</summary>
+  <summary>6. Explain the concept of arrays in JavaScript and how to access elements in an array.</summary>
+
++ In JavaScript, an array is a special type of object that is used to store multiple values in a single variable.
+
++ Arrays are commonly used to organize and manipulate sets of related data. 
+
++ Each element in an array has an index, starting from 0, which allows you to access and manipulate individual elements.
+
++ To access elements in an array, use the square bracket notation with the index of the element you want to access. The index starts at 0 for the first element, 1 for the second, and so on.
+
++ **Creating Arrays :**
+```javascript
+// Using square brackets
+let myArray = [1, 2, 3, 4, 5];
+
+// Using the Array constructor
+let anotherArray = new Array(1, 2, 3, 4, 5);
+```
++ **Accessing Elements :** 
+```javascript
+let firstElement = myArray[0]; // Access the first element
+let thirdElement = myArray[2]; // Access the third element
+```
++ **Modifying Elements :**
+```javascript
+myArray[1] = 10; // Change the value of the second element to 10
+```
 </details>
+
+---
+
 <details>
   <summary>7.</summary>
 </details>
+
+---
+
 <details>
   <summary>8.</summary>
 </details>
+
+---
+
 <details>
   <summary>9.</summary>
 </details>
@@ -1599,4 +1826,3 @@ font-size: 1.5rem; /* 1.5 times the root font size, i.e., 24px (16 * 1.5) */
 </details>
 
 ---
-
