@@ -2234,19 +2234,102 @@ var obj2 = obj;
 
       console.log(i); // Gives reference error since i cannot be accessed outside of the for loop block
     ```
+
+  - **Scope Chain :** JavaScript engine also uses Scope to find variables. Let’s understand that using an example:
+    ```javascript
+    var y = 24;
+
+    function favFunction(){
+      var x = 667;
+      var anotherFavFunction = function(){
+      console.log(x); // Does not find x inside anotherFavFunction, so looks for variable inside favFunction, outputs 667
+    }
+
+    var yetAnotherFavFunction = function(){
+      console.log(y); // Does not find y inside yetAnotherFavFunction, so looks for variable inside favFunction and does not find it, so looks for variable in global scope, finds it and outputs 24
+    }
+
+    anotherFavFunction();
+    yetAnotherFavFunction();
+  }
+  favFunction();
+  ```
+- As you can see in the code above, if the **javascript engine does not find the variable in local scope, it tries to check for the variable in the outer scope.** If the variable does not exist in the outer scope, it **tries to find the variable in the global scope.** If the variable is **not found in the global space as well, a reference error is thrown.**
 </details>
 
 ---
 
 <details>
-  <summary>23. </summary>
+  <summary>23. What are object prototypes?</summary>
+
+- **All javascript objects inherit properties from a prototype**. For example, **Date objects inherit properties** from the **Date prototype**, **Math objects inherit properties** from the **Math prototype**, **Array objects inherit properties** from the **Array prototype.**
+- **On top of the chain is Object.prototype.** Every prototype inherits properties and methods from the Object.prototype.
+- **A prototype is a blueprint of an object. The prototype allows us to use properties and methods on an object even if the properties and methods do not exist on the current object.**
+![proto-type](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/003/411/original/object_prototypes.png?1654853384)
+
+  ```javascript
+    var arr = [];
+    arr.push(2);
+
+    console.log(arr); // Outputs [2]
+  ```
+- In the code above, as one can see, **we have not defined any property or method called push on the array “arr” but the javascript engine does not throw an error.**
+- The **reason is the use of prototypes. As we discussed before, Array objects inherit properties from the Array prototype. The javascript engine sees that the method push does not exist on the current array object and therefore, looks for the method push inside the Array prototype and it finds the method.**
+- **Whenever the property or method is not found on the current object**, the **javascript engine will always try to look in its prototype and if it still does not exist, it looks inside the prototype's prototype and so on.**
 </details>
+
+---
+
 <details>
-  <summary>24.</summary>
+  <summary>24. What is memoization?</summary>
+
+- Memoization is a form of caching where the return value of a function is cached based on its parameters. If the parameter of that function is not changed, the cached version of the function is returned.
+- Memoization is used for expensive function calls but in the following example, we are considering a simple function for understanding the concept of memoization better.
+  ```javascript
+    function addTo256(num){
+      return num + 256;
+    }
+    addTo256(20); // Returns 276
+    addTo256(40); // Returns 296
+    addTo256(20); // Returns 276
+  ```
+- When we are calling the function addTo256 again with the same parameter (“20” in the case above), we are computing the result again for the same parameter.
+- Computing the result with the same parameter, again and again, is not a big deal in the above case, but imagine if the function does some heavy-duty work, then, computing the result again and again with the same parameter will lead to wastage of time.
+- This is where memoization comes in, by using memoization we can store(cache) the computed results based on the parameters. If the same parameter is used again while invoking the function, instead of computing the result, we directly return the stored (cached) value.
+- Let’s convert the above function addTo256, to a memoized function:
+  ```javascript
+      function memoizedAddTo256(){
+        var cache = {};
+
+        return function(num){
+        if(num in cache){
+          console.log("cached value");
+          return cache[num]
+        }else{
+          cache[num] = num + 256;
+          return cache[num];
+        }
+      }
+    }
+    var memoizedFunc = memoizedAddTo256();
+
+    memoizedFunc(20); // Normal return
+    memoizedFunc(20); // Cached return
+  ```
 </details>
+
+---
+
 <details>
-  <summary>25.</summary>
+  <summary>25. What are the types of errors in javascript?</summary>
+
+- There are two types of errors in javascript.
+- **Syntax error:** Syntax errors are mistakes or spelling problems in the code that cause the program to not execute at all or to stop running halfway through. Error messages are usually supplied as well.
+- **Logical error:** Reasoning mistakes occur when the syntax is proper but the logic or program is incorrect. The application executes without problems in this case. However, the output findings are inaccurate. These are sometimes more difficult to correct than syntax issues since these applications do not display error signals for logic faults
 </details>
+
+---
+
 <details>
   <summary>26.</summary>
 </details>
