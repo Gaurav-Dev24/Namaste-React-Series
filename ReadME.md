@@ -2107,23 +2107,139 @@ var obj2 = obj;
 
 | **call** | **apply** | **bind** |
 | -------- | --------- | -------- |
-| The call() method allows you to invoke a function with a specified this value and arguments provided individually. | **apply** | **bind** |
-| Syntax: function.call(thisArg, arg1, arg2, ...)| **apply** | **bind** |
-| **call** | **apply** | **bind** |
-| **call** | **apply** | **bind** |
-| **call** | **apply** | **bind** |
+| The **call() method allows you to invoke a function with a specified this value and arguments provided individually.** | Similar to call(), the **apply() method is used to invoke a function, but it takes arguments as an array.** | The **bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.** bind() does not immediately invoke the function; it returns a new function with the specified context and arguments. |
+| Syntax: function.call(thisArg, arg1, arg2, ...)| Syntax: function.apply(thisArg, [argsArray]) | Syntax: function.bind(thisArg[, arg1[, arg2[, ...]]]) |
+
+### Example of call() :-
+  ```javascript
+  function greet(name) {
+  console.log(`Hello, ${name}! I am ${this.name}.`);
+  }
+
+  const person = { name: 'John' };
+  greet.call(person, 'Alice'); // Outputs: Hello, Alice! I am John.
+  ```
+### Example of apply() :-
+  ```javascript
+  function greet(name, age) {
+  console.log(`Hello, ${name}! I am ${this.name} and I am ${age} years old.`);
+  }
+
+  const person = { name: 'John' };
+  greet.apply(person, ['Alice', 30]); // Outputs: Hello, Alice! I am John and I am 30 years old.
+  ```
+### Example of bind() :-
+  ```javascript
+  function greet(name) {
+  console.log(`Hello, ${name}! I am ${this.name}.`);
+  }
+
+  const person = { name: 'John' };
+  const greetJohn = greet.bind(person);
+  greetJohn('Alice'); // Outputs: Hello, Alice! I am John.
+  ```
 </details>
 
 ---
 
 <details>
-  <summary>21.</summary>
+  <summary>21. What is currying in JavaScript?</summary>
+
+- Currying is an advanced **technique to transform a function of arguments n, to n functions of one or fewer arguments.**
+  * Example of a curried function:
+    ```javascript
+    function add (a) {
+      return function(b){
+      return a + b;
+    }
+  }
+
+  add(3)(4) 
+  ```
+- By using the currying technique, **we do not change the functionality of a function, we just change the way it is invoked**.
+  * Let’s see currying in action:
+    ```javascript
+    function multiply(a,b){
+    return a*b;
+  }
+
+  function currying(fn){
+    return function(a){
+      return function(b){
+        return fn(a,b);
+      }
+    }
+  }
+
+  var curriedMultiply = currying(multiply);
+
+  multiply(4, 3); // Returns 12
+
+  curriedMultiply(4)(3); // Also returns 12
+  ```
+- As one can see in the code above, **we have transformed the function multiply(a,b)** to a function **curriedMultiply** , which takes in **one parameter at a time.**
 </details>
+
+---
+
 <details>
-  <summary>22.</summary>
+  <summary>22. Explain Scope and Scope Chain in javascript.</summary>
+
+- **Scope in JS determines the accessibility of variables and functions at various parts of one’s code.** Scope in javascript is denoted by {}.
+- It is a **place where one can access specified variables or functions.** Lexical Environment is created whenever execution context is created.
+- **Lexical Environment is the local memory along with lexical environment of the parent.**
+- **Scope is nothing but the chain of all the lexical environment and parents reference.**
+
+### Types of Scope:-
+  - **Global Scope :-**
+    - Variables or functions declared in the **global namespace have global scope**, which **means all the variables and functions having global scope can be accessed from anywhere inside the code.**
+    ```javascript
+      var globalVariable = "Hello world";
+
+      function sendMessage(){
+        return globalVariable; // can access globalVariable since it's written in global space
+      }
+      function sendMessage2(){
+        return sendMessage(); // Can access sendMessage function since it's written in global space
+      }
+      sendMessage2();  // Returns “Hello world”
+    ```
+  - **Function/Local Scope :-**
+    - Any **variables or functions declared inside a function have local/function scope**, which **means that all the variables and functions declared inside a function, can be accessed from within the function and not outside of it.**
+    ```javascript
+        function awesomeFunction(){
+        var a = 2;
+
+        var multiplyBy2 = function(){
+        console.log(a*2); // Can access variable "a" since a and multiplyBy2 both are written inside the same function
+        }
+      }
+      console.log(a); // Throws reference error since a is written in local scope and cannot be accessed outside
+
+      multiplyBy2(); // Throws reference error since multiplyBy2 is written in local scope
+    ```
+  - **Block Scope :-**
+    - **Block scope is related to the variables declared using let and const.** Variables declared with **var do not have block scope.** 
+    - Block scope tells us that **any variable declared inside a block { }, can be accessed only inside that block and cannot be accessed outside of it.**
+    ```javascript
+      {
+        let x = 45;
+      }
+
+      console.log(x); // Gives reference error since x cannot be accessed outside of the block
+
+      for(let i=0; i<2; i++){
+        // do something
+      }
+
+      console.log(i); // Gives reference error since i cannot be accessed outside of the for loop block
+    ```
 </details>
+
+---
+
 <details>
-  <summary>23.</summary>
+  <summary>23. </summary>
 </details>
 <details>
   <summary>24.</summary>
