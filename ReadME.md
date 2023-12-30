@@ -84,16 +84,18 @@
 - Meta tags convey information about the document itself, such as character encoding, page description, keywords, viewport settings, and more.
 
 - Meta tags are placed within the &lt;head&gt; section of an HTML document.
-- Here are some common meta tags and their purposes: - `<meta charset="UTF-8">` --> **Specifies the character encoding for the document**. In this example, it's set to UTF-8, which is a widely used character encoding for displaying various characters and symbols.
+- Here are some common meta tags and their purposes: -
+- *`<meta charset="UTF-8">`* --> **Specifies the character encoding for the document**. In this example, it's set to UTF-8, which is a widely used character encoding for displaying various characters and symbols.
 
-      - `<meta name="viewport" content="width=device-width, initial-scale=1.0">` --> **Defines the viewport properties, especially important for responsive web design**. It ensures that the page is displayed properly on different devices and screen sizes.
+- *`<meta name="viewport" content="width=device-width, initial-scale=1.0">`* --> **Defines the viewport properties, especially important for responsive web design**. It ensures that the page is displayed properly on different devices and screen sizes.
 
-      - `<meta name="description" content="A brief description of the page">` --> **Provides a concise description of the HTML document**. This description may be used by search engines when displaying search results.
+- *`<meta name="description" content="A brief description of the page">`* --> **Provides a concise description of the HTML document**. This description may be used by search engines when displaying search results.
 
-      - `<meta name="keywords" content="keyword1, keyword2, keyword3">` --> **Specifies a comma-separated list of keywords relevant to the content of the page**. This information was historically used by search engines for indexing.
+- *`<meta name="keywords" content="keyword1, keyword2, keyword3">`* --> **Specifies a comma-separated list of keywords relevant to the content of the page**. This information was historically used by search engines for indexing.
 
-      - `<meta name="author" content="Author Name">` --> **Identifies the author of the document.**
-      - `<meta http-equiv="refresh" content="5;url=https://example.com/">` --> **Redirects the browser to another URL after a specified number of seconds (in this example, 5 seconds).**
+- *`<meta name="author" content="Author Name">`* --> **Identifies the author of the document.**
+
+- *`<meta http-equiv="refresh" content="5;url=https://example.com/">`* --> **Redirects the browser to another URL after a specified number of seconds (in this example, 5 seconds).**
 
   </details>
 
@@ -105,11 +107,11 @@
 | HTML                                                                                                                  | HTML5                                                                                                                           |
 | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | It **didn’t support &lt;audio&gt; and &lt;video&gt; without the use of Flash player support.**                        | It **supports audio and video controls with the use of &lt;audio&gt; and &lt;video&gt; tags.**                                  |
-| It **uses cookies to store temporary data**. **Does not allow JavaScript** to run in the browser.                     | It uses **SQL databases and application cache to store offline data**.                                                          |
-| **Not possible to draw shapes** like circles, rectangles, triangles, etc.                                             | **Allows JavaScript to run in the background**. This is possible due to JS Web worker API in HTML5.                             |
-| Elements like **nav** and **header** were not present. The **doctype declaration is too long and complicated**.       | **HTML5 allows drawing shapes** like circles, rectangles, triangles, etc.                                                       |
-| **Vector graphics are possible in HTML with the help of various technologies** such as VML, Silver-light, Flash, etc. | New elements for web structure like **nav**, **header**, **footer**, etc. The **doctype declaration is quite simple and easy**. |
-| It **does not allow drag-and-drop effects**.                                                                          | **Vector graphics is additionally an integral part** of HTML5 like **SVG** and **canvas.**                                      |
+| It **uses cookies to store temporary data**. **Does not allow JavaScript** to run in the browser.                     | It uses **SQL databases and application cache to store offline data**. **Allows JavaScript to run in the background**. This is possible due to JS Web worker API in HTML5.                                                          |
+| **Not possible to draw shapes** like circles, rectangles, triangles, etc.                                             |   **HTML5 allows drawing shapes** like circles, rectangles, triangles, etc.                          |
+|  Elements like **nav** and **header** were not present. The **doctype declaration is too long and complicated**.       |     New elements for web structure like **nav**, **header**, **footer**, etc. The **doctype declaration is quite simple and easy**.                                                   |
+| **Vector graphics are possible in HTML with the help of various technologies** such as VML, Silver-light, Flash, etc. | **Vector graphics is additionally an integral part** of HTML5 like **SVG** and **canvas.  |
+| It **does not allow drag-and-drop effects**.                                                                          | It **allow drag-and-drop effects**.                                       |
 
 </details>
 
@@ -159,9 +161,9 @@
 
 | **"a" tag (Anchor Tag)**                                                                                                                                                                      | **link tag**                                                                                                                                                                                                           |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| The `<a>` tag is **primarily used to create hyperlinks**, allowing users to navigate to other pages or resources.                                                                             | **The `<link>` tag is used to include external resources and define relationships between the current document and external resources**. It is commonly used to link external stylesheets, icons, and other resources. |
+| The `<a>` tag is **primarily used to create hyperlinks**, allowing users to navigate to other pages or resources.| **The `<link>` tag is used to include external resources and define relationships between the current document and external resources**.  |
 | **It can be used to link to external resources (other websites) or internal resources (other pages within the same website)**. The **href** attribute is used to specify the destination URL. | **It is often placed within the `<head>` section of an HTML document**. Common attributes include rel (relationship), href (URL of the external resource), and type (the MIME type of the resource).                   |
-| The `<a>` tag can also be used to **create links within the same page using the fragment identifier (#)** to target an element with a specific id attribute.                                  | Row 3, Col 2                                                                                                                                                                                                           |
+| The `<a>` tag can also be used to **create links within the same page using the fragment identifier (#)** to target an element with a specific id attribute.                                  | It is commonly used to link external stylesheets, icons, and other resources.                                                                                                                                                                                                         |
 | Example :- `<a href="https://www.example.com">Visit Example.com</a>`                                                                                                                          | Example :- `<link rel="stylesheet" href="styles.css" />`                                                                                                                                                               |
 
   </details>
