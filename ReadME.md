@@ -44,15 +44,15 @@
   <details>
     <summary>4. What are Attributes in tags? </summary>
 
-- Attributes provide additional information about HTML elements and are used within the opening tag of an element.
+- **Attributes provide additional information about HTML elements** and are used within the opening tag of an element.
 
-- Attributes are always included in the opening tag and are written as name/value pairs.
+- Attributes are always **included in the opening tag and are written as name/value pairs.**
 
   ```html
   <tagname attribute="value">Content</tagname>
   ```
 
-- Attributes can be used to modify the behavior or appearance of an element. Different elements support different attributes.
+- Attributes can be **used to modify the behavior or appearance of an element.** Different elements support different attributes.
   ```html
   <a href="https://www.example.com">Visit Example.com</a>
   ```
@@ -64,13 +64,13 @@
   <details>
     <summary>5. What are void elements in HTML?</summary>
 
-- HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example
+- **HTML elements which do not have closing tags or do not need to be closed are Void elements.** For Example
   ```html
   <br />, <img />,
   <hr />
   <input /> <meta />, <link />, etc
   ```
-- Void elements, also known as self-closing or empty elements, are HTML elements that do not have any content between an opening tag and a closing tag.
+- Void elements, also known as **self-closing or empty elements,** are HTML elements that **do not have any content between an opening tag and a closing tag.**
 
   </details>
 
@@ -79,15 +79,15 @@
   <details>
     <summary>6. What are Meta tags? </summary>
 
-- Meta tags in HTML provide metadata about the HTML document. Metadata is information about data, and in the context of HTML.
+- Meta tags in HTML **provide metadata about the HTML document.** **Metadata is information about data**, and in the context of HTML.
 
-- Meta tags convey information about the document itself, such as character encoding, page description, keywords, viewport settings, and more.
+- Meta tags **convey information about the document itself,** such as **character encoding**, **page description**, **keywords**, **viewport settings**, and more.
 
 - Meta tags are placed within the &lt;head&gt; section of an HTML document.
 - Here are some common meta tags and their purposes: -
-- *`<meta charset="UTF-8">`* --> **Specifies the character encoding for the document**. In this example, it's set to UTF-8, which is a widely used character encoding for displaying various characters and symbols.
+- *`<meta charset="UTF-8">`* --> **Specifies the character encoding for the document**. In this example, it's set to **UTF-8**, which is a **widely used character encoding for displaying various characters and symbols.**
 
-- *`<meta name="viewport" content="width=device-width, initial-scale=1.0">`* --> **Defines the viewport properties, especially important for responsive web design**. It ensures that the page is displayed properly on different devices and screen sizes.
+- *`<meta name="viewport" content="width=device-width, initial-scale=1.0">`* --> **Defines the viewport properties, especially important for responsive web design**. It **ensures that the page is displayed properly on different devices and screen sizes.**
 
 - *`<meta name="description" content="A brief description of the page">`* --> **Provides a concise description of the HTML document**. This description may be used by search engines when displaying search results.
 
