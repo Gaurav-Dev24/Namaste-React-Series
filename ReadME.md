@@ -2356,20 +2356,20 @@ var obj2 = obj;
 <summary>React Interview Questions</summary>
 
 <details>
-  <summary>1.</summary>
+  <summary>1. What is React?</summary>
 </details>
 
 <details>
-  <summary>2.</summary>
+  <summary>2. State the difference between Library and Framework.</summary>
 </details>
 <details>
-  <summary>3.</summary>
+  <summary>3. What is CDN?</summary>
 </details>
 <details>
-  <summary>4.</summary>
+  <summary>4. What is cross-origin in CDN links?</summary>
 </details>
 <details>
-  <summary>5.</summary>
+  <summary>5. How to create elements in react using createElement() API?</summary>
 </details>
 <details>
   <summary>6.</summary>
