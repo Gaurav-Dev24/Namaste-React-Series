@@ -27,6 +27,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  // this browserslist is to make our app compatible for browsers, it takes array of browsers where our app will support
   "browserslist": [
     "defaults and fully supports es6-module",
     "maintained node versions"
